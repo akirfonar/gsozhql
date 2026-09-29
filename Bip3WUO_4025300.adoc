@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+pdf.deqvrne.cn/blog/380307134.sHTML +
+pdf.deqvrne.cn/blog/855814475.sHTML +
+pdf.deqvrne.cn/blog/209840736.sHTML +
+pdf.deqvrne.cn/blog/459102746.sHTML +
+pdf.deqvrne.cn/blog/970369743.sHTML +
+pdf.deqvrne.cn/blog/966481978.sHTML +
+pdf.deqvrne.cn/blog/292086581.sHTML +
+pdf.deqvrne.cn/blog/308647535.sHTML +
+pdf.deqvrne.cn/blog/858319870.sHTML +
+pdf.deqvrne.cn/blog/292087417.sHTML +
+pdf.deqvrne.cn/blog/272416246.sHTML +
+pdf.deqvrne.cn/blog/079951452.sHTML +
+pdf.deqvrne.cn/blog/613025974.sHTML +
+pdf.deqvrne.cn/blog/971880782.sHTML +
+pdf.deqvrne.cn/blog/948140357.sHTML +
+pdf.deqvrne.cn/blog/542966705.sHTML +
+pdf.deqvrne.cn/blog/921611241.sHTML +
+pdf.deqvrne.cn/blog/976694708.sHTML +
+pdf.deqvrne.cn/blog/853165703.sHTML +
+pdf.deqvrne.cn/blog/945367020.sHTML +
+pdf.deqvrne.cn/blog/670912924.sHTML +
+pdf.deqvrne.cn/blog/639741241.sHTML +
+pdf.deqvrne.cn/blog/593268535.sHTML +
+pdf.deqvrne.cn/blog/181437703.sHTML +
+pdf.deqvrne.cn/blog/088692586.sHTML +
+pdf.deqvrne.cn/blog/834681313.sHTML +
+pdf.deqvrne.cn/blog/441368128.sHTML +
+pdf.deqvrne.cn/blog/874181898.sHTML +
+pdf.deqvrne.cn/blog/178584006.sHTML +
+pdf.deqvrne.cn/blog/167931288.sHTML +
+pdf.deqvrne.cn/blog/778358999.sHTML +
+pdf.deqvrne.cn/blog/341978457.sHTML +
+pdf.deqvrne.cn/blog/530531479.sHTML +
+pdf.deqvrne.cn/blog/525319758.sHTML +
+pdf.deqvrne.cn/blog/418109869.sHTML +
+pdf.deqvrne.cn/blog/025370869.sHTML +
+pdf.deqvrne.cn/blog/410372531.sHTML +
+pdf.deqvrne.cn/blog/685920083.sHTML +
+pdf.deqvrne.cn/blog/001279501.sHTML +
+pdf.deqvrne.cn/blog/250478555.sHTML +
+pdf.deqvrne.cn/blog/292598108.sHTML +
+pdf.deqvrne.cn/blog/644753646.sHTML +
+pdf.deqvrne.cn/blog/996052352.sHTML +
+pdf.deqvrne.cn/blog/965081581.sHTML +
+pdf.deqvrne.cn/blog/636820314.sHTML +
+pdf.deqvrne.cn/blog/525764213.sHTML +
+pdf.deqvrne.cn/blog/728426898.sHTML +
+pdf.deqvrne.cn/blog/436925364.sHTML +
+pdf.deqvrne.cn/blog/300814258.sHTML +
+pdf.deqvrne.cn/blog/414620864.sHTML +
+pdf.deqvrne.cn/blog/669689202.sHTML +
+pdf.deqvrne.cn/blog/848341289.sHTML +
+pdf.deqvrne.cn/blog/055617711.sHTML +
+pdf.deqvrne.cn/blog/178917899.sHTML +
+pdf.deqvrne.cn/blog/807642530.sHTML +
+pdf.deqvrne.cn/blog/907452568.sHTML +
+pdf.deqvrne.cn/blog/667379646.sHTML +
+pdf.deqvrne.cn/blog/771791796.sHTML +
+pdf.deqvrne.cn/blog/641850677.sHTML +
+pdf.deqvrne.cn/blog/091858578.sHTML +
+pdf.deqvrne.cn/blog/380996302.sHTML +
+pdf.deqvrne.cn/blog/947963529.sHTML +
+pdf.deqvrne.cn/blog/290847489.sHTML +
+pdf.deqvrne.cn/blog/668585291.sHTML +
+pdf.deqvrne.cn/blog/385668509.sHTML +
+pdf.deqvrne.cn/blog/735923578.sHTML +
+pdf.deqvrne.cn/blog/633197542.sHTML +
+pdf.deqvrne.cn/blog/336818919.sHTML +
+pdf.deqvrne.cn/blog/419358619.sHTML +
+pdf.deqvrne.cn/blog/241080968.sHTML +
+pdf.deqvrne.cn/blog/685974070.sHTML +
+pdf.deqvrne.cn/blog/964758692.sHTML +
+pdf.deqvrne.cn/blog/414207692.sHTML +
+pdf.deqvrne.cn/blog/606273663.sHTML +
+pdf.deqvrne.cn/blog/281496196.sHTML +
+pdf.deqvrne.cn/blog/157539635.sHTML +
+pdf.deqvrne.cn/blog/649194087.sHTML +
+pdf.deqvrne.cn/blog/416461420.sHTML +
+pdf.deqvrne.cn/blog/635314253.sHTML +
+pdf.deqvrne.cn/blog/186920318.sHTML +
+pdf.deqvrne.cn/blog/485907979.sHTML +
+pdf.deqvrne.cn/blog/050246916.sHTML +
+pdf.deqvrne.cn/blog/909639152.sHTML +
+pdf.deqvrne.cn/blog/179135357.sHTML +
+pdf.deqvrne.cn/blog/734635857.sHTML +
+pdf.deqvrne.cn/blog/273535173.sHTML +
+pdf.deqvrne.cn/blog/813529134.sHTML +
+pdf.deqvrne.cn/blog/792538158.sHTML +
+pdf.deqvrne.cn/blog/736453613.sHTML +
+pdf.deqvrne.cn/blog/670243024.sHTML +
+pdf.deqvrne.cn/blog/771559304.sHTML +
+pdf.deqvrne.cn/blog/414703603.sHTML +
+pdf.deqvrne.cn/blog/046931920.sHTML +
+pdf.deqvrne.cn/blog/747041581.sHTML +
+pdf.deqvrne.cn/blog/969260864.sHTML +
+pdf.deqvrne.cn/blog/032081931.sHTML +
+pdf.deqvrne.cn/blog/413207131.sHTML +
+pdf.deqvrne.cn/blog/224446851.sHTML +
+pdf.deqvrne.cn/blog/461424920.sHTML +
+pdf.deqvrne.cn/blog/858197544.sHTML +
+pdf.deqvrne.cn/blog/612251777.sHTML +
+pdf.deqvrne.cn/blog/792081925.sHTML +
+pdf.deqvrne.cn/blog/185423216.sHTML +
+pdf.deqvrne.cn/blog/414920803.sHTML +
+pdf.deqvrne.cn/blog/840234688.sHTML +
+pdf.deqvrne.cn/blog/199506810.sHTML +
+pdf.deqvrne.cn/blog/774406234.sHTML +
+pdf.deqvrne.cn/blog/636865715.sHTML +
+pdf.deqvrne.cn/blog/495296810.sHTML +
+pdf.deqvrne.cn/blog/637108692.sHTML +
+pdf.deqvrne.cn/blog/135431985.sHTML +
+pdf.deqvrne.cn/blog/752093647.sHTML +
+pdf.deqvrne.cn/blog/963768697.sHTML +
+pdf.deqvrne.cn/blog/180310315.sHTML +
+pdf.deqvrne.cn/blog/414277922.sHTML +
+pdf.deqvrne.cn/blog/291531435.sHTML +
+pdf.deqvrne.cn/blog/303546470.sHTML +
+pdf.deqvrne.cn/blog/176357920.sHTML +
+pdf.deqvrne.cn/blog/414653141.sHTML +
+pdf.deqvrne.cn/blog/170865719.sHTML +
+pdf.deqvrne.cn/blog/600745470.sHTML +
+pdf.deqvrne.cn/blog/919691829.sHTML +
+pdf.deqvrne.cn/blog/447192087.sHTML +
+pdf.deqvrne.cn/blog/875319207.sHTML +
+pdf.deqvrne.cn/blog/130869885.sHTML +
+pdf.deqvrne.cn/blog/117014181.sHTML +
+pdf.deqvrne.cn/blog/830685144.sHTML +
+pdf.deqvrne.cn/blog/911370319.sHTML +
+pdf.deqvrne.cn/blog/970204375.sHTML +
+pdf.deqvrne.cn/blog/262902452.sHTML +
+pdf.deqvrne.cn/blog/303649703.sHTML +
+pdf.deqvrne.cn/blog/353170209.sHTML +
+pdf.deqvrne.cn/blog/070311328.sHTML +
+pdf.deqvrne.cn/blog/968653587.sHTML +
+pdf.deqvrne.cn/blog/523683124.sHTML +
+pdf.deqvrne.cn/blog/521970364.sHTML +
+pdf.deqvrne.cn/blog/604255358.sHTML +
+pdf.deqvrne.cn/blog/070086085.sHTML +
+pdf.deqvrne.cn/blog/303593868.sHTML +
+pdf.deqvrne.cn/blog/005591457.sHTML +
+pdf.deqvrne.cn/blog/292553642.sHTML +
+pdf.deqvrne.cn/blog/307542581.sHTML +
+pdf.deqvrne.cn/blog/303193642.sHTML +
+pdf.deqvrne.cn/blog/074865758.sHTML +
+pdf.deqvrne.cn/blog/174774206.sHTML +
+pdf.deqvrne.cn/blog/551744024.sHTML +
+pdf.deqvrne.cn/blog/946998753.sHTML +
+pdf.deqvrne.cn/blog/678683256.sHTML +
+pdf.deqvrne.cn/blog/336447395.sHTML +
+pdf.deqvrne.cn/blog/803179413.sHTML +
+pdf.deqvrne.cn/blog/013532954.sHTML +
+pdf.deqvrne.cn/blog/371752302.sHTML +
+pdf.deqvrne.cn/blog/075354869.sHTML +
+pdf.deqvrne.cn/blog/735791029.sHTML +
+pdf.deqvrne.cn/blog/739630108.sHTML +
+pdf.deqvrne.cn/blog/764213192.sHTML +
+pdf.deqvrne.cn/blog/408825425.sHTML +
+pdf.deqvrne.cn/blog/949096734.sHTML +
+pdf.deqvrne.cn/blog/737220619.sHTML +
+pdf.deqvrne.cn/blog/951674401.sHTML +
+pdf.deqvrne.cn/blog/747042681.sHTML +
+pdf.deqvrne.cn/blog/621975329.sHTML +
+pdf.deqvrne.cn/blog/064516451.sHTML +
+pdf.deqvrne.cn/blog/568639029.sHTML +
+pdf.deqvrne.cn/blog/500852414.sHTML +
+pdf.deqvrne.cn/blog/429674855.sHTML +
+pdf.deqvrne.cn/blog/679520766.sHTML +
+pdf.deqvrne.cn/blog/284541462.sHTML +
+pdf.deqvrne.cn/blog/864725943.sHTML +
+pdf.deqvrne.cn/blog/640332592.sHTML +
+pdf.deqvrne.cn/blog/419033159.sHTML +
+pdf.deqvrne.cn/blog/855470815.sHTML +
+pdf.deqvrne.cn/blog/575420936.sHTML +
+pdf.deqvrne.cn/blog/075047647.sHTML +
+pdf.deqvrne.cn/blog/797619777.sHTML +
+pdf.deqvrne.cn/blog/872093164.sHTML +
+pdf.deqvrne.cn/blog/292148603.sHTML +
+pdf.deqvrne.cn/blog/864953619.sHTML +
+pdf.deqvrne.cn/blog/420926486.sHTML +
+pdf.deqvrne.cn/blog/281398575.sHTML +
+pdf.deqvrne.cn/blog/199211825.sHTML +
+pdf.deqvrne.cn/blog/581986037.sHTML +
+pdf.deqvrne.cn/blog/743153761.sHTML +
+pdf.deqvrne.cn/blog/647107486.sHTML +
+pdf.deqvrne.cn/blog/531087047.sHTML +
+pdf.deqvrne.cn/blog/853719377.sHTML +
+pdf.deqvrne.cn/blog/681035947.sHTML +
+pdf.deqvrne.cn/blog/137605968.sHTML +
+pdf.deqvrne.cn/blog/071942246.sHTML +
+pdf.deqvrne.cn/blog/975842793.sHTML +
+pdf.deqvrne.cn/blog/705871097.sHTML +
+pdf.deqvrne.cn/blog/736698091.sHTML +
+pdf.deqvrne.cn/blog/103203813.sHTML +
+pdf.deqvrne.cn/blog/181377096.sHTML +
+pdf.deqvrne.cn/blog/853150331.sHTML +
+pdf.deqvrne.cn/blog/398042819.sHTML +
+pdf.deqvrne.cn/blog/522658653.sHTML +
+pdf.deqvrne.cn/blog/504568638.sHTML +
+pdf.deqvrne.cn/blog/792503320.sHTML +
+pdf.deqvrne.cn/blog/969753243.sHTML +
+pdf.deqvrne.cn/blog/853165479.sHTML +
+pdf.deqvrne.cn/blog/513907599.sHTML +
+pdf.deqvrne.cn/blog/631975369.sHTML +
+pdf.deqvrne.cn/blog/636420319.sHTML +
+pdf.deqvrne.cn/blog/418608707.sHTML +
+pdf.deqvrne.cn/blog/524319210.sHTML +
+pdf.deqvrne.cn/blog/425476031.sHTML +
+pdf.deqvrne.cn/blog/629058934.sHTML +
+pdf.deqvrne.cn/blog/855869311.sHTML +
+pdf.deqvrne.cn/blog/955310369.sHTML +
+pdf.deqvrne.cn/blog/070865914.sHTML +
+pdf.deqvrne.cn/blog/207594765.sHTML +
+pdf.deqvrne.cn/blog/414770303.sHTML +
+pdf.deqvrne.cn/blog/075320810.sHTML +
+pdf.deqvrne.cn/blog/229590855.sHTML +
+pdf.deqvrne.cn/blog/525081085.sHTML +
+pdf.deqvrne.cn/blog/185319208.sHTML +
+pdf.deqvrne.cn/blog/964269702.sHTML +
+pdf.deqvrne.cn/blog/082235995.sHTML +
+pdf.deqvrne.cn/blog/419758641.sHTML +
+pdf.deqvrne.cn/blog/741530470.sHTML +
+pdf.deqvrne.cn/blog/286975319.sHTML +
+pdf.deqvrne.cn/blog/615771659.sHTML +
+pdf.deqvrne.cn/blog/681902131.sHTML +
+pdf.deqvrne.cn/blog/414320375.sHTML +
+pdf.deqvrne.cn/blog/464203143.sHTML +
+pdf.deqvrne.cn/blog/910634029.sHTML +
+pdf.deqvrne.cn/blog/070975320.sHTML +
+pdf.deqvrne.cn/blog/006350205.sHTML +
+pdf.deqvrne.cn/blog/631920814.sHTML +
+pdf.deqvrne.cn/blog/203603646.sHTML +
+pdf.deqvrne.cn/blog/710381642.sHTML +
+pdf.deqvrne.cn/blog/076972036.sHTML +
+pdf.deqvrne.cn/blog/630838137.sHTML +
+pdf.deqvrne.cn/blog/741619142.sHTML +
+pdf.deqvrne.cn/blog/180531475.sHTML +
+pdf.deqvrne.cn/blog/187697297.sHTML +
+pdf.deqvrne.cn/blog/141485425.sHTML +
+pdf.deqvrne.cn/blog/834574530.sHTML +
+pdf.deqvrne.cn/blog/636420369.sHTML +
+pdf.deqvrne.cn/blog/070865836.sHTML +
+pdf.deqvrne.cn/blog/852053253.sHTML +
+pdf.deqvrne.cn/blog/625314969.sHTML +
+pdf.deqvrne.cn/blog/524710314.sHTML +
+pdf.deqvrne.cn/blog/071974681.sHTML +
+pdf.deqvrne.cn/blog/303192009.sHTML +
+pdf.deqvrne.cn/blog/852058364.sHTML +
+pdf.deqvrne.cn/blog/121977080.sHTML +
+pdf.deqvrne.cn/blog/769255860.sHTML +
+pdf.deqvrne.cn/blog/854420819.sHTML +
+pdf.deqvrne.cn/blog/858082536.sHTML +
+pdf.deqvrne.cn/blog/854975381.sHTML +
+pdf.deqvrne.cn/blog/419758603.sHTML +
+pdf.deqvrne.cn/blog/308643257.sHTML +
+pdf.deqvrne.cn/blog/514719203.sHTML +
+pdf.deqvrne.cn/blog/069242758.sHTML +
+pdf.deqvrne.cn/blog/174511733.sHTML +
+pdf.deqvrne.cn/blog/070814753.sHTML +
+pdf.deqvrne.cn/blog/858608641.sHTML +
+pdf.deqvrne.cn/blog/296081936.sHTML +
+pdf.deqvrne.cn/blog/519038001.sHTML +
+pdf.deqvrne.cn/blog/286537036.sHTML +
+pdf.deqvrne.cn/blog/968257684.sHTML +
+pdf.deqvrne.cn/blog/414259258.sHTML +
+pdf.deqvrne.cn/blog/413160219.sHTML +
+pdf.deqvrne.cn/blog/247253631.sHTML +
+pdf.deqvrne.cn/blog/418647654.sHTML +
+pdf.deqvrne.cn/blog/056722785.sHTML +
+pdf.deqvrne.cn/blog/214792031.sHTML +
+pdf.deqvrne.cn/blog/636922031.sHTML +
+pdf.deqvrne.cn/blog/792083694.sHTML +
+pdf.deqvrne.cn/blog/900523441.sHTML +
+pdf.deqvrne.cn/blog/914864702.sHTML +
+pdf.deqvrne.cn/blog/303199764.sHTML +
+pdf.deqvrne.cn/blog/180842554.sHTML +
+pdf.deqvrne.cn/blog/292197086.sHTML +
+pdf.deqvrne.cn/blog/039753164.sHTML +
+pdf.deqvrne.cn/blog/181474397.sHTML +
+pdf.deqvrne.cn/blog/631986475.sHTML +
+pdf.deqvrne.cn/blog/935511684.sHTML +
+pdf.deqvrne.cn/blog/095320819.sHTML +
+pdf.deqvrne.cn/blog/747213224.sHTML +
+pdf.deqvrne.cn/blog/188054257.sHTML +
+pdf.deqvrne.cn/blog/469714702.sHTML +
+pdf.deqvrne.cn/blog/960864447.sHTML +
+pdf.deqvrne.cn/blog/192032592.sHTML +
+pdf.deqvrne.cn/blog/633198664.sHTML +
+pdf.deqvrne.cn/blog/914770369.sHTML +
+pdf.deqvrne.cn/blog/635538086.sHTML +
+pdf.deqvrne.cn/blog/858087920.sHTML +
+pdf.deqvrne.cn/blog/464258142.sHTML +
+pdf.deqvrne.cn/blog/303647208.sHTML +
+pdf.deqvrne.cn/blog/363261925.sHTML +
+pdf.deqvrne.cn/blog/186476797.sHTML +
+pdf.deqvrne.cn/blog/300211964.sHTML +
+pdf.deqvrne.cn/blog/637047036.sHTML +
+pdf.deqvrne.cn/blog/680228891.sHTML +
+pdf.deqvrne.cn/blog/625420008.sHTML +
+pdf.deqvrne.cn/blog/769208136.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日20时01分21秒
