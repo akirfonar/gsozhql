@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+www.blog.rfkjg01.cn/POST/529979203.Shtml +
+www.blog.rfkjg01.cn/POST/182086531.Shtml +
+www.blog.rfkjg01.cn/POST/174979804.Shtml +
+www.blog.rfkjg01.cn/POST/100819147.Shtml +
+www.blog.rfkjg01.cn/POST/914221097.Shtml +
+www.blog.rfkjg01.cn/POST/180081532.Shtml +
+www.blog.rfkjg01.cn/POST/419970874.Shtml +
+www.blog.rfkjg01.cn/POST/309319258.Shtml +
+www.blog.rfkjg01.cn/POST/026443163.Shtml +
+www.blog.rfkjg01.cn/POST/915976581.Shtml +
+www.blog.rfkjg01.cn/POST/715061655.Shtml +
+www.blog.rfkjg01.cn/POST/069270814.Shtml +
+www.blog.rfkjg01.cn/POST/260869703.Shtml +
+www.blog.rfkjg01.cn/POST/636425509.Shtml +
+www.blog.rfkjg01.cn/POST/070273642.Shtml +
+www.blog.rfkjg01.cn/POST/304258619.Shtml +
+www.blog.rfkjg01.cn/POST/025470876.Shtml +
+www.blog.rfkjg01.cn/POST/517198864.Shtml +
+www.blog.rfkjg01.cn/POST/766844843.Shtml +
+www.blog.rfkjg01.cn/POST/416081981.Shtml +
+www.blog.rfkjg01.cn/POST/808358647.Shtml +
+www.blog.rfkjg01.cn/POST/070216862.Shtml +
+www.blog.rfkjg01.cn/POST/815773960.Shtml +
+www.blog.rfkjg01.cn/POST/636475536.Shtml +
+www.blog.rfkjg01.cn/POST/525475308.Shtml +
+www.blog.rfkjg01.cn/POST/403864310.Shtml +
+www.blog.rfkjg01.cn/POST/525986092.Shtml +
+www.blog.rfkjg01.cn/POST/748753669.Shtml +
+www.blog.rfkjg01.cn/POST/109203147.Shtml +
+www.blog.rfkjg01.cn/POST/418718208.Shtml +
+www.blog.rfkjg01.cn/POST/514731300.Shtml +
+www.blog.rfkjg01.cn/POST/853198131.Shtml +
+www.blog.rfkjg01.cn/POST/791664753.Shtml +
+www.blog.rfkjg01.cn/POST/609724647.Shtml +
+www.blog.rfkjg01.cn/POST/525470586.Shtml +
+www.blog.rfkjg01.cn/POST/069713220.Shtml +
+www.blog.rfkjg01.cn/POST/464209764.Shtml +
+www.blog.rfkjg01.cn/POST/525508692.Shtml +
+www.blog.rfkjg01.cn/POST/986465475.Shtml +
+www.blog.rfkjg01.cn/POST/525316970.Shtml +
+www.blog.rfkjg01.cn/POST/410831920.Shtml +
+www.blog.rfkjg01.cn/POST/242021319.Shtml +
+www.blog.rfkjg01.cn/POST/525396470.Shtml +
+www.blog.rfkjg01.cn/POST/857542708.Shtml +
+www.blog.rfkjg01.cn/POST/747087586.Shtml +
+www.blog.rfkjg01.cn/POST/303203148.Shtml +
+www.blog.rfkjg01.cn/POST/403810759.Shtml +
+www.blog.rfkjg01.cn/POST/348603708.Shtml +
+www.blog.rfkjg01.cn/POST/397546920.Shtml +
+www.blog.rfkjg01.cn/POST/410864358.Shtml +
+www.blog.rfkjg01.cn/POST/858644507.Shtml +
+www.blog.rfkjg01.cn/POST/955364757.Shtml +
+www.blog.rfkjg01.cn/POST/130975324.Shtml +
+www.blog.rfkjg01.cn/POST/936425369.Shtml +
+www.blog.rfkjg01.cn/POST/303640364.Shtml +
+www.blog.rfkjg01.cn/POST/659017715.Shtml +
+www.blog.rfkjg01.cn/POST/573939075.Shtml +
+www.blog.rfkjg01.cn/POST/304208658.Shtml +
+www.blog.rfkjg01.cn/POST/307046586.Shtml +
+www.blog.rfkjg01.cn/POST/017173971.Shtml +
+www.blog.rfkjg01.cn/POST/102882491.Shtml +
+www.blog.rfkjg01.cn/POST/158087520.Shtml +
+www.blog.rfkjg01.cn/POST/157086097.Shtml +
+www.blog.rfkjg01.cn/POST/228217132.Shtml +
+www.blog.rfkjg01.cn/POST/292036470.Shtml +
+www.blog.rfkjg01.cn/POST/638613864.Shtml +
+www.blog.rfkjg01.cn/POST/303647581.Shtml +
+www.blog.rfkjg01.cn/POST/007020796.Shtml +
+www.blog.rfkjg01.cn/POST/636976420.Shtml +
+www.blog.rfkjg01.cn/POST/070819925.Shtml +
+www.blog.rfkjg01.cn/POST/180879769.Shtml +
+www.blog.rfkjg01.cn/POST/834681228.Shtml +
+www.blog.rfkjg01.cn/POST/858164081.Shtml +
+www.blog.rfkjg01.cn/POST/303138703.Shtml +
+www.blog.rfkjg01.cn/POST/393523062.Shtml +
+www.blog.rfkjg01.cn/POST/403669708.Shtml +
+www.blog.rfkjg01.cn/POST/418213119.Shtml +
+www.blog.rfkjg01.cn/POST/084307252.Shtml +
+www.blog.rfkjg01.cn/POST/302199974.Shtml +
+www.blog.rfkjg01.cn/POST/529803803.Shtml +
+www.blog.rfkjg01.cn/POST/258643147.Shtml +
+www.blog.rfkjg01.cn/POST/198861920.Shtml +
+www.blog.rfkjg01.cn/POST/630876192.Shtml +
+www.blog.rfkjg01.cn/POST/819758202.Shtml +
+www.blog.rfkjg01.cn/POST/414203703.Shtml +
+www.blog.rfkjg01.cn/POST/189213818.Shtml +
+www.blog.rfkjg01.cn/POST/375319258.Shtml +
+www.blog.rfkjg01.cn/POST/076448692.Shtml +
+www.blog.rfkjg01.cn/POST/171194758.Shtml +
+www.blog.rfkjg01.cn/POST/405865469.Shtml +
+www.blog.rfkjg01.cn/POST/630536452.Shtml +
+www.blog.rfkjg01.cn/POST/014975831.Shtml +
+www.blog.rfkjg01.cn/POST/935325363.Shtml +
+www.blog.rfkjg01.cn/POST/970821920.Shtml +
+www.blog.rfkjg01.cn/POST/418642507.Shtml +
+www.blog.rfkjg01.cn/POST/301427025.Shtml +
+www.blog.rfkjg01.cn/POST/309875370.Shtml +
+www.blog.rfkjg01.cn/POST/960209991.Shtml +
+www.blog.rfkjg01.cn/POST/630875380.Shtml +
+www.blog.rfkjg01.cn/POST/774621818.Shtml +
+www.blog.rfkjg01.cn/POST/469381075.Shtml +
+www.blog.rfkjg01.cn/POST/181696586.Shtml +
+www.blog.rfkjg01.cn/POST/844754377.Shtml +
+www.blog.rfkjg01.cn/POST/850371925.Shtml +
+www.blog.rfkjg01.cn/POST/158642536.Shtml +
+www.blog.rfkjg01.cn/POST/969414703.Shtml +
+www.blog.rfkjg01.cn/POST/414754203.Shtml +
+www.blog.rfkjg01.cn/POST/410442215.Shtml +
+www.blog.rfkjg01.cn/POST/522086438.Shtml +
+www.blog.rfkjg01.cn/POST/304218692.Shtml +
+www.blog.rfkjg01.cn/POST/576972149.Shtml +
+www.blog.rfkjg01.cn/POST/529758363.Shtml +
+www.blog.rfkjg01.cn/POST/969158697.Shtml +
+www.blog.rfkjg01.cn/POST/885066177.Shtml +
+www.blog.rfkjg01.cn/POST/288319253.Shtml +
+www.blog.rfkjg01.cn/POST/214861925.Shtml +
+www.blog.rfkjg01.cn/POST/969365480.Shtml +
+www.blog.rfkjg01.cn/POST/574213153.Shtml +
+www.blog.rfkjg01.cn/POST/731970970.Shtml +
+www.blog.rfkjg01.cn/POST/303108142.Shtml +
+www.blog.rfkjg01.cn/POST/864703129.Shtml +
+www.blog.rfkjg01.cn/POST/434851306.Shtml +
+www.blog.rfkjg01.cn/POST/829145797.Shtml +
+www.blog.rfkjg01.cn/POST/747091532.Shtml +
+www.blog.rfkjg01.cn/POST/241714220.Shtml +
+www.blog.rfkjg01.cn/POST/076532425.Shtml +
+www.blog.rfkjg01.cn/POST/308159725.Shtml +
+www.blog.rfkjg01.cn/POST/072081920.Shtml +
+www.blog.rfkjg01.cn/POST/010864259.Shtml +
+www.blog.rfkjg01.cn/POST/463714253.Shtml +
+www.blog.rfkjg01.cn/POST/963194703.Shtml +
+www.blog.rfkjg01.cn/POST/181925319.Shtml +
+www.blog.rfkjg01.cn/POST/182081081.Shtml +
+www.blog.rfkjg01.cn/POST/620321044.Shtml +
+www.blog.rfkjg01.cn/POST/075581986.Shtml +
+www.blog.rfkjg01.cn/POST/309703369.Shtml +
+www.blog.rfkjg01.cn/POST/631420203.Shtml +
+www.blog.rfkjg01.cn/POST/526491092.Shtml +
+www.blog.rfkjg01.cn/POST/633549768.Shtml +
+www.blog.rfkjg01.cn/POST/403753642.Shtml +
+www.blog.rfkjg01.cn/POST/249440445.Shtml +
+www.blog.rfkjg01.cn/POST/857548643.Shtml +
+www.blog.rfkjg01.cn/POST/936922586.Shtml +
+www.blog.rfkjg01.cn/POST/303815975.Shtml +
+www.blog.rfkjg01.cn/POST/525864969.Shtml +
+www.blog.rfkjg01.cn/POST/764999582.Shtml +
+www.blog.rfkjg01.cn/POST/858158641.Shtml +
+www.blog.rfkjg01.cn/POST/416865397.Shtml +
+www.blog.rfkjg01.cn/POST/309203109.Shtml +
+www.blog.rfkjg01.cn/POST/636942925.Shtml +
+www.blog.rfkjg01.cn/POST/024253642.Shtml +
+www.blog.rfkjg01.cn/POST/625081980.Shtml +
+www.blog.rfkjg01.cn/POST/020810970.Shtml +
+www.blog.rfkjg01.cn/POST/189692981.Shtml +
+www.blog.rfkjg01.cn/POST/181972198.Shtml +
+www.blog.rfkjg01.cn/POST/636998644.Shtml +
+www.blog.rfkjg01.cn/POST/858435320.Shtml +
+www.blog.rfkjg01.cn/POST/241048768.Shtml +
+www.blog.rfkjg01.cn/POST/334680372.Shtml +
+www.blog.rfkjg01.cn/POST/630536470.Shtml +
+www.blog.rfkjg01.cn/POST/247592898.Shtml +
+www.blog.rfkjg01.cn/POST/969208692.Shtml +
+www.blog.rfkjg01.cn/POST/001079029.Shtml +
+www.blog.rfkjg01.cn/POST/286086946.Shtml +
+www.blog.rfkjg01.cn/POST/853193647.Shtml +
+www.blog.rfkjg01.cn/POST/744203863.Shtml +
+www.blog.rfkjg01.cn/POST/719175873.Shtml +
+www.blog.rfkjg01.cn/POST/985420319.Shtml +
+www.blog.rfkjg01.cn/POST/092758643.Shtml +
+www.blog.rfkjg01.cn/POST/404713532.Shtml +
+www.blog.rfkjg01.cn/POST/733646703.Shtml +
+www.blog.rfkjg01.cn/POST/085146297.Shtml +
+www.blog.rfkjg01.cn/POST/858679869.Shtml +
+www.blog.rfkjg01.cn/POST/525386979.Shtml +
+www.blog.rfkjg01.cn/POST/705022488.Shtml +
+www.blog.rfkjg01.cn/POST/266172843.Shtml +
+www.blog.rfkjg01.cn/POST/423674849.Shtml +
+www.blog.rfkjg01.cn/POST/994573731.Shtml +
+www.blog.rfkjg01.cn/POST/594467996.Shtml +
+www.blog.rfkjg01.cn/POST/917125348.Shtml +
+www.blog.rfkjg01.cn/POST/170470870.Shtml +
+www.blog.rfkjg01.cn/POST/182597542.Shtml +
+www.blog.rfkjg01.cn/POST/968608196.Shtml +
+www.blog.rfkjg01.cn/POST/181470970.Shtml +
+www.blog.rfkjg01.cn/POST/525314203.Shtml +
+www.blog.rfkjg01.cn/POST/228074579.Shtml +
+www.blog.rfkjg01.cn/POST/223457736.Shtml +
+www.blog.rfkjg01.cn/POST/743108108.Shtml +
+www.blog.rfkjg01.cn/POST/124640746.Shtml +
+www.blog.rfkjg01.cn/POST/457929802.Shtml +
+www.blog.rfkjg01.cn/POST/402457463.Shtml +
+www.blog.rfkjg01.cn/POST/568768534.Shtml +
+www.blog.rfkjg01.cn/POST/613089707.Shtml +
+www.blog.rfkjg01.cn/POST/901418046.Shtml +
+www.blog.rfkjg01.cn/POST/582750449.Shtml +
+www.blog.rfkjg01.cn/POST/179574263.Shtml +
+www.blog.rfkjg01.cn/POST/234796635.Shtml +
+www.blog.rfkjg01.cn/POST/969158263.Shtml +
+www.blog.rfkjg01.cn/POST/414864358.Shtml +
+www.blog.rfkjg01.cn/POST/070861921.Shtml +
+www.blog.rfkjg01.cn/POST/074315031.Shtml +
+www.blog.rfkjg01.cn/POST/525753203.Shtml +
+www.blog.rfkjg01.cn/POST/955275827.Shtml +
+www.blog.rfkjg01.cn/POST/296085983.Shtml +
+www.blog.rfkjg01.cn/POST/526481204.Shtml +
+www.blog.rfkjg01.cn/POST/292053164.Shtml +
+www.blog.rfkjg01.cn/POST/968319978.Shtml +
+www.blog.rfkjg01.cn/POST/297536419.Shtml +
+www.blog.rfkjg01.cn/POST/369497219.Shtml +
+www.blog.rfkjg01.cn/POST/636970815.Shtml +
+www.blog.rfkjg01.cn/POST/515986870.Shtml +
+www.blog.rfkjg01.cn/POST/746970963.Shtml +
+www.blog.rfkjg01.cn/POST/525718697.Shtml +
+www.blog.rfkjg01.cn/POST/181974869.Shtml +
+www.blog.rfkjg01.cn/POST/413974314.Shtml +
+www.blog.rfkjg01.cn/POST/818619875.Shtml +
+www.blog.rfkjg01.cn/POST/182503192.Shtml +
+www.blog.rfkjg01.cn/POST/214214213.Shtml +
+www.blog.rfkjg01.cn/POST/631497086.Shtml +
+www.blog.rfkjg01.cn/POST/418719208.Shtml +
+www.blog.rfkjg01.cn/POST/211582673.Shtml +
+www.blog.rfkjg01.cn/POST/976970370.Shtml +
+www.blog.rfkjg01.cn/POST/075870869.Shtml +
+www.blog.rfkjg01.cn/POST/264203682.Shtml +
+www.blog.rfkjg01.cn/POST/070592003.Shtml +
+www.blog.rfkjg01.cn/POST/284720376.Shtml +
+www.blog.rfkjg01.cn/POST/703155319.Shtml +
+www.blog.rfkjg01.cn/POST/965369242.Shtml +
+www.blog.rfkjg01.cn/POST/307536468.Shtml +
+www.blog.rfkjg01.cn/POST/074269754.Shtml +
+www.blog.rfkjg01.cn/POST/374729258.Shtml +
+www.blog.rfkjg01.cn/POST/079532036.Shtml +
+www.blog.rfkjg01.cn/POST/586587149.Shtml +
+www.blog.rfkjg01.cn/POST/192169375.Shtml +
+www.blog.rfkjg01.cn/POST/077559212.Shtml +
+www.blog.rfkjg01.cn/POST/086987131.Shtml +
+www.blog.rfkjg01.cn/POST/359214320.Shtml +
+www.blog.rfkjg01.cn/POST/410875477.Shtml +
+www.blog.rfkjg01.cn/POST/507486082.Shtml +
+www.blog.rfkjg01.cn/POST/800828103.Shtml +
+www.blog.rfkjg01.cn/POST/792654706.Shtml +
+www.blog.rfkjg01.cn/POST/208212142.Shtml +
+www.blog.rfkjg01.cn/POST/793605586.Shtml +
+www.blog.rfkjg01.cn/POST/607636834.Shtml +
+www.blog.rfkjg01.cn/POST/312728382.Shtml +
+www.blog.rfkjg01.cn/POST/002735618.Shtml +
+www.blog.rfkjg01.cn/POST/209891906.Shtml +
+www.blog.rfkjg01.cn/POST/509805511.Shtml +
+www.blog.rfkjg01.cn/POST/036036503.Shtml +
+www.blog.rfkjg01.cn/POST/708103869.Shtml +
+www.blog.rfkjg01.cn/POST/861974220.Shtml +
+www.blog.rfkjg01.cn/POST/436420325.Shtml +
+www.blog.rfkjg01.cn/POST/638647586.Shtml +
+www.blog.rfkjg01.cn/POST/431531970.Shtml +
+www.blog.rfkjg01.cn/POST/411586146.Shtml +
+www.blog.rfkjg01.cn/POST/232062801.Shtml +
+www.blog.rfkjg01.cn/POST/852088647.Shtml +
+www.blog.rfkjg01.cn/POST/307533752.Shtml +
+www.blog.rfkjg01.cn/POST/641531975.Shtml +
+www.blog.rfkjg01.cn/POST/843197081.Shtml +
+www.blog.rfkjg01.cn/POST/748648103.Shtml +
+www.blog.rfkjg01.cn/POST/728524956.Shtml +
+www.blog.rfkjg01.cn/POST/307758692.Shtml +
+www.blog.rfkjg01.cn/POST/198602081.Shtml +
+www.blog.rfkjg01.cn/POST/575368692.Shtml +
+www.blog.rfkjg01.cn/POST/075586936.Shtml +
+www.blog.rfkjg01.cn/POST/746431592.Shtml +
+www.blog.rfkjg01.cn/POST/285177474.Shtml +
+www.blog.rfkjg01.cn/POST/536081920.Shtml +
+www.blog.rfkjg01.cn/POST/308647530.Shtml +
+www.blog.rfkjg01.cn/POST/307219426.Shtml +
+www.blog.rfkjg01.cn/POST/292581986.Shtml +
+www.blog.rfkjg01.cn/POST/989675800.Shtml +
+www.blog.rfkjg01.cn/POST/458811457.Shtml +
+www.blog.rfkjg01.cn/POST/170820819.Shtml +
+www.blog.rfkjg01.cn/POST/414205314.Shtml +
+www.blog.rfkjg01.cn/POST/181972042.Shtml +
+www.blog.rfkjg01.cn/POST/076442147.Shtml +
+www.blog.rfkjg01.cn/POST/181320920.Shtml +
+www.blog.rfkjg01.cn/POST/308642546.Shtml +
+www.blog.rfkjg01.cn/POST/025818879.Shtml +
+www.blog.rfkjg01.cn/POST/925470863.Shtml +
+www.blog.rfkjg01.cn/POST/630429925.Shtml +
+www.blog.rfkjg01.cn/POST/617807245.Shtml +
+www.blog.rfkjg01.cn/POST/415836438.Shtml +
+www.blog.rfkjg01.cn/POST/935869769.Shtml +
+www.blog.rfkjg01.cn/POST/966593256.Shtml +
+www.blog.rfkjg01.cn/POST/304415870.Shtml +
+www.blog.rfkjg01.cn/POST/621481470.Shtml +
+www.blog.rfkjg01.cn/POST/747110258.Shtml +
+www.blog.rfkjg01.cn/POST/581970531.Shtml +
+www.blog.rfkjg01.cn/POST/743158092.Shtml +
+www.blog.rfkjg01.cn/POST/075958692.Shtml +
+www.blog.rfkjg01.cn/POST/525375920.Shtml +
+www.blog.rfkjg01.cn/POST/517904268.Shtml +
+www.blog.rfkjg01.cn/POST/453032800.Shtml +
+www.blog.rfkjg01.cn/POST/362499372.Shtml +
+www.blog.rfkjg01.cn/POST/500413193.Shtml +
+www.blog.rfkjg01.cn/POST/969786475.Shtml +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日14时58分04秒
