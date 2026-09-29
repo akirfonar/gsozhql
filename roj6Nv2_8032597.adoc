@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+www.blog.hzisl21.cn/POST/077081929.Shtml +
+www.blog.hzisl21.cn/POST/827807926.Shtml +
+www.blog.hzisl21.cn/POST/941896858.Shtml +
+www.blog.hzisl21.cn/POST/969753759.Shtml +
+www.blog.hzisl21.cn/POST/250125377.Shtml +
+www.blog.hzisl21.cn/POST/035486431.Shtml +
+www.blog.hzisl21.cn/POST/744205920.Shtml +
+www.blog.hzisl21.cn/POST/764269819.Shtml +
+www.blog.hzisl21.cn/POST/364253720.Shtml +
+www.blog.hzisl21.cn/POST/457425796.Shtml +
+www.blog.hzisl21.cn/POST/531294887.Shtml +
+www.blog.hzisl21.cn/POST/404351905.Shtml +
+www.blog.hzisl21.cn/POST/013520352.Shtml +
+www.blog.hzisl21.cn/POST/767338055.Shtml +
+www.blog.hzisl21.cn/POST/934838280.Shtml +
+www.blog.hzisl21.cn/POST/433837872.Shtml +
+www.blog.hzisl21.cn/POST/783388554.Shtml +
+www.blog.hzisl21.cn/POST/342340184.Shtml +
+www.blog.hzisl21.cn/POST/779882356.Shtml +
+www.blog.hzisl21.cn/POST/870839929.Shtml +
+www.blog.hzisl21.cn/POST/137140140.Shtml +
+www.blog.hzisl21.cn/POST/556724185.Shtml +
+www.blog.hzisl21.cn/POST/661312882.Shtml +
+www.blog.hzisl21.cn/POST/314596587.Shtml +
+www.blog.hzisl21.cn/POST/227563673.Shtml +
+www.blog.hzisl21.cn/POST/562458695.Shtml +
+www.blog.hzisl21.cn/POST/161394016.Shtml +
+www.blog.hzisl21.cn/POST/077109946.Shtml +
+www.blog.hzisl21.cn/POST/644918065.Shtml +
+www.blog.hzisl21.cn/POST/717312555.Shtml +
+www.blog.hzisl21.cn/POST/469770586.Shtml +
+www.blog.hzisl21.cn/POST/580821531.Shtml +
+www.blog.hzisl21.cn/POST/392014819.Shtml +
+www.blog.hzisl21.cn/POST/794205424.Shtml +
+www.blog.hzisl21.cn/POST/884146277.Shtml +
+www.blog.hzisl21.cn/POST/358710575.Shtml +
+www.blog.hzisl21.cn/POST/124630155.Shtml +
+www.blog.hzisl21.cn/POST/742158325.Shtml +
+www.blog.hzisl21.cn/POST/914369314.Shtml +
+www.blog.hzisl21.cn/POST/758658647.Shtml +
+www.blog.hzisl21.cn/POST/163407415.Shtml +
+www.blog.hzisl21.cn/POST/557374687.Shtml +
+www.blog.hzisl21.cn/POST/496562550.Shtml +
+www.blog.hzisl21.cn/POST/196977984.Shtml +
+www.blog.hzisl21.cn/POST/971432693.Shtml +
+www.blog.hzisl21.cn/POST/420097670.Shtml +
+www.blog.hzisl21.cn/POST/758670321.Shtml +
+www.blog.hzisl21.cn/POST/050306376.Shtml +
+www.blog.hzisl21.cn/POST/784680049.Shtml +
+www.blog.hzisl21.cn/POST/058508030.Shtml +
+www.blog.hzisl21.cn/POST/564647970.Shtml +
+www.blog.hzisl21.cn/POST/601929002.Shtml +
+www.blog.hzisl21.cn/POST/010813686.Shtml +
+www.blog.hzisl21.cn/POST/087890239.Shtml +
+www.blog.hzisl21.cn/POST/458488243.Shtml +
+www.blog.hzisl21.cn/POST/533927294.Shtml +
+www.blog.hzisl21.cn/POST/353116564.Shtml +
+www.blog.hzisl21.cn/POST/043597732.Shtml +
+www.blog.hzisl21.cn/POST/334063850.Shtml +
+www.blog.hzisl21.cn/POST/864897546.Shtml +
+www.blog.hzisl21.cn/POST/359824865.Shtml +
+www.blog.hzisl21.cn/POST/464358875.Shtml +
+www.blog.hzisl21.cn/POST/212906986.Shtml +
+www.blog.hzisl21.cn/POST/636587553.Shtml +
+www.blog.hzisl21.cn/POST/196208110.Shtml +
+www.blog.hzisl21.cn/POST/036554360.Shtml +
+www.blog.hzisl21.cn/POST/686099775.Shtml +
+www.blog.hzisl21.cn/POST/975947005.Shtml +
+www.blog.hzisl21.cn/POST/988276326.Shtml +
+www.blog.hzisl21.cn/POST/704399348.Shtml +
+www.blog.hzisl21.cn/POST/421667721.Shtml +
+www.blog.hzisl21.cn/POST/372662276.Shtml +
+www.blog.hzisl21.cn/POST/087666050.Shtml +
+www.blog.hzisl21.cn/POST/760495430.Shtml +
+www.blog.hzisl21.cn/POST/265516555.Shtml +
+www.blog.hzisl21.cn/POST/115074503.Shtml +
+www.blog.hzisl21.cn/POST/156323027.Shtml +
+www.blog.hzisl21.cn/POST/562561524.Shtml +
+www.blog.hzisl21.cn/POST/321172668.Shtml +
+www.blog.hzisl21.cn/POST/511543643.Shtml +
+www.blog.hzisl21.cn/POST/682280934.Shtml +
+www.blog.hzisl21.cn/POST/987755008.Shtml +
+www.blog.hzisl21.cn/POST/611280921.Shtml +
+www.blog.hzisl21.cn/POST/300528553.Shtml +
+www.blog.hzisl21.cn/POST/013285308.Shtml +
+www.blog.hzisl21.cn/POST/740915419.Shtml +
+www.blog.hzisl21.cn/POST/574230985.Shtml +
+www.blog.hzisl21.cn/POST/766444006.Shtml +
+www.blog.hzisl21.cn/POST/372334401.Shtml +
+www.blog.hzisl21.cn/POST/699050367.Shtml +
+www.blog.hzisl21.cn/POST/302523534.Shtml +
+www.blog.hzisl21.cn/POST/212738353.Shtml +
+www.blog.hzisl21.cn/POST/599562954.Shtml +
+www.blog.hzisl21.cn/POST/002406357.Shtml +
+www.blog.hzisl21.cn/POST/892079636.Shtml +
+www.blog.hzisl21.cn/POST/059633997.Shtml +
+www.blog.hzisl21.cn/POST/161394260.Shtml +
+www.blog.hzisl21.cn/POST/150779019.Shtml +
+www.blog.hzisl21.cn/POST/952470377.Shtml +
+www.blog.hzisl21.cn/POST/667174118.Shtml +
+www.blog.hzisl21.cn/POST/891930817.Shtml +
+www.blog.hzisl21.cn/POST/817896290.Shtml +
+www.blog.hzisl21.cn/POST/296359819.Shtml +
+www.blog.hzisl21.cn/POST/494128556.Shtml +
+www.blog.hzisl21.cn/POST/323023652.Shtml +
+www.blog.hzisl21.cn/POST/327745285.Shtml +
+www.blog.hzisl21.cn/POST/592238081.Shtml +
+www.blog.hzisl21.cn/POST/783178446.Shtml +
+www.blog.hzisl21.cn/POST/020079686.Shtml +
+www.blog.hzisl21.cn/POST/567746228.Shtml +
+www.blog.hzisl21.cn/POST/001574680.Shtml +
+www.blog.hzisl21.cn/POST/456626019.Shtml +
+www.blog.hzisl21.cn/POST/888599500.Shtml +
+www.blog.hzisl21.cn/POST/223967846.Shtml +
+www.blog.hzisl21.cn/POST/964708753.Shtml +
+www.blog.hzisl21.cn/POST/012148131.Shtml +
+www.blog.hzisl21.cn/POST/414758708.Shtml +
+www.blog.hzisl21.cn/POST/742435831.Shtml +
+www.blog.hzisl21.cn/POST/188608648.Shtml +
+www.blog.hzisl21.cn/POST/136929753.Shtml +
+www.blog.hzisl21.cn/POST/300379864.Shtml +
+www.blog.hzisl21.cn/POST/564128528.Shtml +
+www.blog.hzisl21.cn/POST/380696296.Shtml +
+www.blog.hzisl21.cn/POST/914208697.Shtml +
+www.blog.hzisl21.cn/POST/059993945.Shtml +
+www.blog.hzisl21.cn/POST/764203697.Shtml +
+www.blog.hzisl21.cn/POST/748253702.Shtml +
+www.blog.hzisl21.cn/POST/181146531.Shtml +
+www.blog.hzisl21.cn/POST/494351413.Shtml +
+www.blog.hzisl21.cn/POST/570869319.Shtml +
+www.blog.hzisl21.cn/POST/401357901.Shtml +
+www.blog.hzisl21.cn/POST/636203692.Shtml +
+www.blog.hzisl21.cn/POST/858664758.Shtml +
+www.blog.hzisl21.cn/POST/181925314.Shtml +
+www.blog.hzisl21.cn/POST/303114793.Shtml +
+www.blog.hzisl21.cn/POST/770608426.Shtml +
+www.blog.hzisl21.cn/POST/642509936.Shtml +
+www.blog.hzisl21.cn/POST/036988082.Shtml +
+www.blog.hzisl21.cn/POST/969261092.Shtml +
+www.blog.hzisl21.cn/POST/570471997.Shtml +
+www.blog.hzisl21.cn/POST/308715937.Shtml +
+www.blog.hzisl21.cn/POST/575658264.Shtml +
+www.blog.hzisl21.cn/POST/636652430.Shtml +
+www.blog.hzisl21.cn/POST/043244482.Shtml +
+www.blog.hzisl21.cn/POST/609432376.Shtml +
+www.blog.hzisl21.cn/POST/588887761.Shtml +
+www.blog.hzisl21.cn/POST/193806059.Shtml +
+www.blog.hzisl21.cn/POST/311650593.Shtml +
+www.blog.hzisl21.cn/POST/862045910.Shtml +
+www.blog.hzisl21.cn/POST/033706385.Shtml +
+www.blog.hzisl21.cn/POST/643827210.Shtml +
+www.blog.hzisl21.cn/POST/532272676.Shtml +
+www.blog.hzisl21.cn/POST/643822605.Shtml +
+www.blog.hzisl21.cn/POST/037226105.Shtml +
+www.blog.hzisl21.cn/POST/699878042.Shtml +
+www.blog.hzisl21.cn/POST/598832261.Shtml +
+www.blog.hzisl21.cn/POST/532665493.Shtml +
+www.blog.hzisl21.cn/POST/288694529.Shtml +
+www.blog.hzisl21.cn/POST/938575235.Shtml +
+www.blog.hzisl21.cn/POST/132053436.Shtml +
+www.blog.hzisl21.cn/POST/420325471.Shtml +
+www.blog.hzisl21.cn/POST/570157844.Shtml +
+www.blog.hzisl21.cn/POST/631937059.Shtml +
+www.blog.hzisl21.cn/POST/960870931.Shtml +
+www.blog.hzisl21.cn/POST/700822883.Shtml +
+www.blog.hzisl21.cn/POST/642197254.Shtml +
+www.blog.hzisl21.cn/POST/142719875.Shtml +
+www.blog.hzisl21.cn/POST/203273765.Shtml +
+www.blog.hzisl21.cn/POST/919872198.Shtml +
+www.blog.hzisl21.cn/POST/948483726.Shtml +
+www.blog.hzisl21.cn/POST/679124781.Shtml +
+www.blog.hzisl21.cn/POST/739218011.Shtml +
+www.blog.hzisl21.cn/POST/681972181.Shtml +
+www.blog.hzisl21.cn/POST/758101436.Shtml +
+www.blog.hzisl21.cn/POST/075324758.Shtml +
+www.blog.hzisl21.cn/POST/459070746.Shtml +
+www.blog.hzisl21.cn/POST/875981538.Shtml +
+www.blog.hzisl21.cn/POST/008709264.Shtml +
+www.blog.hzisl21.cn/POST/686092260.Shtml +
+www.blog.hzisl21.cn/POST/297193225.Shtml +
+www.blog.hzisl21.cn/POST/808204098.Shtml +
+www.blog.hzisl21.cn/POST/221702580.Shtml +
+www.blog.hzisl21.cn/POST/192592148.Shtml +
+www.blog.hzisl21.cn/POST/308659719.Shtml +
+www.blog.hzisl21.cn/POST/460977532.Shtml +
+www.blog.hzisl21.cn/POST/308764375.Shtml +
+www.blog.hzisl21.cn/POST/871436589.Shtml +
+www.blog.hzisl21.cn/POST/200987092.Shtml +
+www.blog.hzisl21.cn/POST/701948464.Shtml +
+www.blog.hzisl21.cn/POST/753193600.Shtml +
+www.blog.hzisl21.cn/POST/186987365.Shtml +
+www.blog.hzisl21.cn/POST/940940785.Shtml +
+www.blog.hzisl21.cn/POST/742625921.Shtml +
+www.blog.hzisl21.cn/POST/521938754.Shtml +
+www.blog.hzisl21.cn/POST/420370926.Shtml +
+www.blog.hzisl21.cn/POST/853766942.Shtml +
+www.blog.hzisl21.cn/POST/186593693.Shtml +
+www.blog.hzisl21.cn/POST/197659810.Shtml +
+www.blog.hzisl21.cn/POST/285367637.Shtml +
+www.blog.hzisl21.cn/POST/977339499.Shtml +
+www.blog.hzisl21.cn/POST/184134534.Shtml +
+www.blog.hzisl21.cn/POST/267457900.Shtml +
+www.blog.hzisl21.cn/POST/643018137.Shtml +
+www.blog.hzisl21.cn/POST/058648921.Shtml +
+www.blog.hzisl21.cn/POST/642003254.Shtml +
+www.blog.hzisl21.cn/POST/520432208.Shtml +
+www.blog.hzisl21.cn/POST/155825124.Shtml +
+www.blog.hzisl21.cn/POST/808158154.Shtml +
+www.blog.hzisl21.cn/POST/182103369.Shtml +
+www.blog.hzisl21.cn/POST/253270938.Shtml +
+www.blog.hzisl21.cn/POST/410371482.Shtml +
+www.blog.hzisl21.cn/POST/583204937.Shtml +
+www.blog.hzisl21.cn/POST/187014366.Shtml +
+www.blog.hzisl21.cn/POST/419326986.Shtml +
+www.blog.hzisl21.cn/POST/864319376.Shtml +
+www.blog.hzisl21.cn/POST/984156696.Shtml +
+www.blog.hzisl21.cn/POST/742108209.Shtml +
+www.blog.hzisl21.cn/POST/642115376.Shtml +
+www.blog.hzisl21.cn/POST/321581789.Shtml +
+www.blog.hzisl21.cn/POST/914320614.Shtml +
+www.blog.hzisl21.cn/POST/648675971.Shtml +
+www.blog.hzisl21.cn/POST/536098653.Shtml +
+www.blog.hzisl21.cn/POST/471549776.Shtml +
+www.blog.hzisl21.cn/POST/557759810.Shtml +
+www.blog.hzisl21.cn/POST/020987148.Shtml +
+www.blog.hzisl21.cn/POST/209660043.Shtml +
+www.blog.hzisl21.cn/POST/543383274.Shtml +
+www.blog.hzisl21.cn/POST/326481911.Shtml +
+www.blog.hzisl21.cn/POST/715995999.Shtml +
+www.blog.hzisl21.cn/POST/282776655.Shtml +
+www.blog.hzisl21.cn/POST/255498959.Shtml +
+www.blog.hzisl21.cn/POST/082610043.Shtml +
+www.blog.hzisl21.cn/POST/093772327.Shtml +
+www.blog.hzisl21.cn/POST/970436597.Shtml +
+www.blog.hzisl21.cn/POST/297653436.Shtml +
+www.blog.hzisl21.cn/POST/253614366.Shtml +
+www.blog.hzisl21.cn/POST/535481103.Shtml +
+www.blog.hzisl21.cn/POST/208760470.Shtml +
+www.blog.hzisl21.cn/POST/889218984.Shtml +
+www.blog.hzisl21.cn/POST/734536566.Shtml +
+www.blog.hzisl21.cn/POST/383915966.Shtml +
+www.blog.hzisl21.cn/POST/358212624.Shtml +
+www.blog.hzisl21.cn/POST/915376587.Shtml +
+www.blog.hzisl21.cn/POST/934430756.Shtml +
+www.blog.hzisl21.cn/POST/133254719.Shtml +
+www.blog.hzisl21.cn/POST/253255499.Shtml +
+www.blog.hzisl21.cn/POST/727390410.Shtml +
+www.blog.hzisl21.cn/POST/293701981.Shtml +
+www.blog.hzisl21.cn/POST/854814847.Shtml +
+www.blog.hzisl21.cn/POST/247648609.Shtml +
+www.blog.hzisl21.cn/POST/751110948.Shtml +
+www.blog.hzisl21.cn/POST/136537032.Shtml +
+www.blog.hzisl21.cn/POST/137719820.Shtml +
+www.blog.hzisl21.cn/POST/921010437.Shtml +
+www.blog.hzisl21.cn/POST/529570203.Shtml +
+www.blog.hzisl21.cn/POST/174905318.Shtml +
+www.blog.hzisl21.cn/POST/293693250.Shtml +
+www.blog.hzisl21.cn/POST/367290735.Shtml +
+www.blog.hzisl21.cn/POST/994376676.Shtml +
+www.blog.hzisl21.cn/POST/896463720.Shtml +
+www.blog.hzisl21.cn/POST/247609760.Shtml +
+www.blog.hzisl21.cn/POST/145030772.Shtml +
+www.blog.hzisl21.cn/POST/913769782.Shtml +
+www.blog.hzisl21.cn/POST/040808792.Shtml +
+www.blog.hzisl21.cn/POST/082773192.Shtml +
+www.blog.hzisl21.cn/POST/895953942.Shtml +
+www.blog.hzisl21.cn/POST/241433062.Shtml +
+www.blog.hzisl21.cn/POST/270782944.Shtml +
+www.blog.hzisl21.cn/POST/864769821.Shtml +
+www.blog.hzisl21.cn/POST/662139273.Shtml +
+www.blog.hzisl21.cn/POST/799989900.Shtml +
+www.blog.hzisl21.cn/POST/815549150.Shtml +
+www.blog.hzisl21.cn/POST/760493568.Shtml +
+www.blog.hzisl21.cn/POST/392957161.Shtml +
+www.blog.hzisl21.cn/POST/445787950.Shtml +
+www.blog.hzisl21.cn/POST/814365971.Shtml +
+www.blog.hzisl21.cn/POST/048158204.Shtml +
+www.blog.hzisl21.cn/POST/975459215.Shtml +
+www.blog.hzisl21.cn/POST/697364320.Shtml +
+www.blog.hzisl21.cn/POST/803265471.Shtml +
+www.blog.hzisl21.cn/POST/960483250.Shtml +
+www.blog.hzisl21.cn/POST/242153759.Shtml +
+www.blog.hzisl21.cn/POST/531214421.Shtml +
+www.blog.hzisl21.cn/POST/309214875.Shtml +
+www.blog.hzisl21.cn/POST/404871063.Shtml +
+www.blog.hzisl21.cn/POST/308751487.Shtml +
+www.blog.hzisl21.cn/POST/248287143.Shtml +
+www.blog.hzisl21.cn/POST/742658214.Shtml +
+www.blog.hzisl21.cn/POST/642560876.Shtml +
+www.blog.hzisl21.cn/POST/547082543.Shtml +
+www.blog.hzisl21.cn/POST/420321971.Shtml +
+www.blog.hzisl21.cn/POST/080949369.Shtml +
+www.blog.hzisl21.cn/POST/197114860.Shtml +
+www.blog.hzisl21.cn/POST/217712846.Shtml +
+www.blog.hzisl21.cn/POST/854214876.Shtml +
+www.blog.hzisl21.cn/POST/586542193.Shtml +
+www.blog.hzisl21.cn/POST/206341785.Shtml +
+www.blog.hzisl21.cn/POST/259599490.Shtml +
+www.blog.hzisl21.cn/POST/033163999.Shtml +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日14时49分24秒
