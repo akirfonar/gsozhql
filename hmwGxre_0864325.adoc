@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.enhnas.asia/blog/215100169.sHTML +
+wap.enhnas.asia/blog/392086492.sHTML +
+wap.enhnas.asia/blog/024718697.sHTML +
+wap.enhnas.asia/blog/418657503.sHTML +
+wap.enhnas.asia/blog/291492758.sHTML +
+wap.enhnas.asia/blog/828543733.sHTML +
+wap.enhnas.asia/blog/975082719.sHTML +
+wap.enhnas.asia/blog/319770476.sHTML +
+wap.enhnas.asia/blog/858103209.sHTML +
+wap.enhnas.asia/blog/736082253.sHTML +
+wap.enhnas.asia/blog/425931954.sHTML +
+wap.enhnas.asia/blog/308676096.sHTML +
+wap.enhnas.asia/blog/142548270.sHTML +
+wap.enhnas.asia/blog/636537820.sHTML +
+wap.enhnas.asia/blog/157512947.sHTML +
+wap.enhnas.asia/blog/465314470.sHTML +
+wap.enhnas.asia/blog/850975837.sHTML +
+wap.enhnas.asia/blog/426530881.sHTML +
+wap.enhnas.asia/blog/131920811.sHTML +
+wap.enhnas.asia/blog/742269775.sHTML +
+wap.enhnas.asia/blog/182546495.sHTML +
+wap.enhnas.asia/blog/963380972.sHTML +
+wap.enhnas.asia/blog/307264353.sHTML +
+wap.enhnas.asia/blog/520531020.sHTML +
+wap.enhnas.asia/blog/571947242.sHTML +
+wap.enhnas.asia/blog/298753253.sHTML +
+wap.enhnas.asia/blog/480123851.sHTML +
+wap.enhnas.asia/blog/986133068.sHTML +
+wap.enhnas.asia/blog/875036408.sHTML +
+wap.enhnas.asia/blog/636664314.sHTML +
+wap.enhnas.asia/blog/955597438.sHTML +
+wap.enhnas.asia/blog/198037783.sHTML +
+wap.enhnas.asia/blog/853868404.sHTML +
+wap.enhnas.asia/blog/839356857.sHTML +
+wap.enhnas.asia/blog/141917359.sHTML +
+wap.enhnas.asia/blog/517345451.sHTML +
+wap.enhnas.asia/blog/373555563.sHTML +
+wap.enhnas.asia/blog/945262464.sHTML +
+wap.enhnas.asia/blog/045683954.sHTML +
+wap.enhnas.asia/blog/635308029.sHTML +
+wap.enhnas.asia/blog/741857047.sHTML +
+wap.enhnas.asia/blog/618079680.sHTML +
+wap.enhnas.asia/blog/291447532.sHTML +
+wap.enhnas.asia/blog/632581639.sHTML +
+wap.enhnas.asia/blog/770209208.sHTML +
+wap.enhnas.asia/blog/952220179.sHTML +
+wap.enhnas.asia/blog/345689861.sHTML +
+wap.enhnas.asia/blog/296480908.sHTML +
+wap.enhnas.asia/blog/568858796.sHTML +
+wap.enhnas.asia/blog/529641852.sHTML +
+wap.enhnas.asia/blog/934652333.sHTML +
+wap.enhnas.asia/blog/588449228.sHTML +
+wap.enhnas.asia/blog/437002700.sHTML +
+wap.enhnas.asia/blog/779002724.sHTML +
+wap.enhnas.asia/blog/545224940.sHTML +
+wap.enhnas.asia/blog/369672001.sHTML +
+wap.enhnas.asia/blog/066165714.sHTML +
+wap.enhnas.asia/blog/100617272.sHTML +
+wap.enhnas.asia/blog/343638806.sHTML +
+wap.enhnas.asia/blog/228152233.sHTML +
+wap.enhnas.asia/blog/227889583.sHTML +
+wap.enhnas.asia/blog/924904685.sHTML +
+wap.enhnas.asia/blog/490802347.sHTML +
+wap.enhnas.asia/blog/884170012.sHTML +
+wap.enhnas.asia/blog/306301654.sHTML +
+wap.enhnas.asia/blog/345363689.sHTML +
+wap.enhnas.asia/blog/132470038.sHTML +
+wap.enhnas.asia/blog/389284912.sHTML +
+wap.enhnas.asia/blog/339628914.sHTML +
+wap.enhnas.asia/blog/609914505.sHTML +
+wap.enhnas.asia/blog/455689027.sHTML +
+wap.enhnas.asia/blog/322748266.sHTML +
+wap.enhnas.asia/blog/832845838.sHTML +
+wap.enhnas.asia/blog/876271383.sHTML +
+wap.enhnas.asia/blog/595940240.sHTML +
+wap.enhnas.asia/blog/755273966.sHTML +
+wap.enhnas.asia/blog/432728266.sHTML +
+wap.enhnas.asia/blog/891753884.sHTML +
+wap.enhnas.asia/blog/156151239.sHTML +
+wap.enhnas.asia/blog/636439776.sHTML +
+wap.enhnas.asia/blog/038041228.sHTML +
+wap.enhnas.asia/blog/716551838.sHTML +
+wap.enhnas.asia/blog/438834039.sHTML +
+wap.enhnas.asia/blog/994011483.sHTML +
+wap.enhnas.asia/blog/837917674.sHTML +
+wap.enhnas.asia/blog/334528452.sHTML +
+wap.enhnas.asia/blog/512973402.sHTML +
+wap.enhnas.asia/blog/371625628.sHTML +
+wap.enhnas.asia/blog/582822294.sHTML +
+wap.enhnas.asia/blog/918718446.sHTML +
+wap.enhnas.asia/blog/111315579.sHTML +
+wap.enhnas.asia/blog/099943722.sHTML +
+wap.enhnas.asia/blog/560617338.sHTML +
+wap.enhnas.asia/blog/860624988.sHTML +
+wap.enhnas.asia/blog/216447221.sHTML +
+wap.enhnas.asia/blog/909630290.sHTML +
+wap.enhnas.asia/blog/056621718.sHTML +
+wap.enhnas.asia/blog/534405301.sHTML +
+wap.enhnas.asia/blog/412480341.sHTML +
+wap.enhnas.asia/blog/045162465.sHTML +
+wap.enhnas.asia/blog/768567440.sHTML +
+wap.enhnas.asia/blog/385240183.sHTML +
+wap.enhnas.asia/blog/553703730.sHTML +
+wap.enhnas.asia/blog/262414180.sHTML +
+wap.enhnas.asia/blog/366188945.sHTML +
+wap.enhnas.asia/blog/630050634.sHTML +
+wap.enhnas.asia/blog/854826071.sHTML +
+wap.enhnas.asia/blog/181087654.sHTML +
+wap.enhnas.asia/blog/040159332.sHTML +
+wap.enhnas.asia/blog/152749510.sHTML +
+wap.enhnas.asia/blog/105244801.sHTML +
+wap.enhnas.asia/blog/223057952.sHTML +
+wap.enhnas.asia/blog/046139821.sHTML +
+wap.enhnas.asia/blog/725738394.sHTML +
+wap.enhnas.asia/blog/834589555.sHTML +
+wap.enhnas.asia/blog/871133073.sHTML +
+wap.enhnas.asia/blog/384697575.sHTML +
+wap.enhnas.asia/blog/403866197.sHTML +
+wap.enhnas.asia/blog/260110590.sHTML +
+wap.enhnas.asia/blog/926687833.sHTML +
+wap.enhnas.asia/blog/401207073.sHTML +
+wap.enhnas.asia/blog/449299690.sHTML +
+wap.enhnas.asia/blog/033730998.sHTML +
+wap.enhnas.asia/blog/767806685.sHTML +
+wap.enhnas.asia/blog/174758185.sHTML +
+wap.enhnas.asia/blog/911453031.sHTML +
+wap.enhnas.asia/blog/756223395.sHTML +
+wap.enhnas.asia/blog/107833724.sHTML +
+wap.enhnas.asia/blog/371504934.sHTML +
+wap.enhnas.asia/blog/099530742.sHTML +
+wap.enhnas.asia/blog/038040961.sHTML +
+wap.enhnas.asia/blog/612989684.sHTML +
+wap.enhnas.asia/blog/433050013.sHTML +
+wap.enhnas.asia/blog/370620500.sHTML +
+wap.enhnas.asia/blog/763549340.sHTML +
+wap.enhnas.asia/blog/882173835.sHTML +
+wap.enhnas.asia/blog/810873384.sHTML +
+wap.enhnas.asia/blog/094499176.sHTML +
+wap.enhnas.asia/blog/838596796.sHTML +
+wap.enhnas.asia/blog/954069185.sHTML +
+wap.enhnas.asia/blog/425622484.sHTML +
+wap.enhnas.asia/blog/220024056.sHTML +
+wap.enhnas.asia/blog/117029146.sHTML +
+wap.enhnas.asia/blog/832950661.sHTML +
+wap.enhnas.asia/blog/446868047.sHTML +
+wap.enhnas.asia/blog/167239134.sHTML +
+wap.enhnas.asia/blog/377805442.sHTML +
+wap.enhnas.asia/blog/095902722.sHTML +
+wap.enhnas.asia/blog/059404450.sHTML +
+wap.enhnas.asia/blog/068997777.sHTML +
+wap.enhnas.asia/blog/123990012.sHTML +
+wap.enhnas.asia/blog/604549371.sHTML +
+wap.enhnas.asia/blog/879998238.sHTML +
+wap.enhnas.asia/blog/756496445.sHTML +
+wap.enhnas.asia/blog/435349774.sHTML +
+wap.enhnas.asia/blog/093438799.sHTML +
+wap.enhnas.asia/blog/399000040.sHTML +
+wap.enhnas.asia/blog/082787621.sHTML +
+wap.enhnas.asia/blog/125314470.sHTML +
+wap.enhnas.asia/blog/959751975.sHTML +
+wap.enhnas.asia/blog/521306778.sHTML +
+wap.enhnas.asia/blog/798394235.sHTML +
+wap.enhnas.asia/blog/652984682.sHTML +
+wap.enhnas.asia/blog/967565701.sHTML +
+wap.enhnas.asia/blog/160481671.sHTML +
+wap.enhnas.asia/blog/166924753.sHTML +
+wap.enhnas.asia/blog/617396607.sHTML +
+wap.enhnas.asia/blog/278909441.sHTML +
+wap.enhnas.asia/blog/377327816.sHTML +
+wap.enhnas.asia/blog/806111392.sHTML +
+wap.enhnas.asia/blog/040507277.sHTML +
+wap.enhnas.asia/blog/494181736.sHTML +
+wap.enhnas.asia/blog/128720136.sHTML +
+wap.enhnas.asia/blog/346475443.sHTML +
+wap.enhnas.asia/blog/227839605.sHTML +
+wap.enhnas.asia/blog/748129515.sHTML +
+wap.enhnas.asia/blog/065090629.sHTML +
+wap.enhnas.asia/blog/093916256.sHTML +
+wap.enhnas.asia/blog/120173906.sHTML +
+wap.enhnas.asia/blog/931818568.sHTML +
+wap.enhnas.asia/blog/502372961.sHTML +
+wap.enhnas.asia/blog/824663961.sHTML +
+wap.enhnas.asia/blog/101736287.sHTML +
+wap.enhnas.asia/blog/383416028.sHTML +
+wap.enhnas.asia/blog/136524460.sHTML +
+wap.enhnas.asia/blog/777853402.sHTML +
+wap.enhnas.asia/blog/728867890.sHTML +
+wap.enhnas.asia/blog/373923913.sHTML +
+wap.enhnas.asia/blog/606234565.sHTML +
+wap.enhnas.asia/blog/555128996.sHTML +
+wap.enhnas.asia/blog/073562845.sHTML +
+wap.enhnas.asia/blog/058774310.sHTML +
+wap.enhnas.asia/blog/880134002.sHTML +
+wap.enhnas.asia/blog/389562951.sHTML +
+wap.enhnas.asia/blog/728890674.sHTML +
+wap.enhnas.asia/blog/967903323.sHTML +
+wap.enhnas.asia/blog/944673906.sHTML +
+wap.enhnas.asia/blog/806456628.sHTML +
+wap.enhnas.asia/blog/520170173.sHTML +
+wap.enhnas.asia/blog/217464273.sHTML +
+wap.enhnas.asia/blog/446895334.sHTML +
+wap.enhnas.asia/blog/118456256.sHTML +
+wap.enhnas.asia/blog/056293802.sHTML +
+wap.enhnas.asia/blog/239671042.sHTML +
+wap.enhnas.asia/blog/629340276.sHTML +
+wap.enhnas.asia/blog/677789773.sHTML +
+wap.enhnas.asia/blog/992077126.sHTML +
+wap.enhnas.asia/blog/055684373.sHTML +
+wap.enhnas.asia/blog/120374423.sHTML +
+wap.enhnas.asia/blog/256412479.sHTML +
+wap.enhnas.asia/blog/517849519.sHTML +
+wap.enhnas.asia/blog/110695738.sHTML +
+wap.enhnas.asia/blog/081981982.sHTML +
+wap.enhnas.asia/blog/975746802.sHTML +
+wap.enhnas.asia/blog/525329042.sHTML +
+wap.enhnas.asia/blog/791085919.sHTML +
+wap.enhnas.asia/blog/297583819.sHTML +
+wap.enhnas.asia/blog/104203142.sHTML +
+wap.enhnas.asia/blog/379925322.sHTML +
+wap.enhnas.asia/blog/096081986.sHTML +
+wap.enhnas.asia/blog/491019243.sHTML +
+wap.enhnas.asia/blog/648759594.sHTML +
+wap.enhnas.asia/blog/377273950.sHTML +
+wap.enhnas.asia/blog/156439171.sHTML +
+wap.enhnas.asia/blog/052454128.sHTML +
+wap.enhnas.asia/blog/018940025.sHTML +
+wap.enhnas.asia/blog/968975364.sHTML +
+wap.enhnas.asia/blog/858047758.sHTML +
+wap.enhnas.asia/blog/876687516.sHTML +
+wap.enhnas.asia/blog/747646197.sHTML +
+wap.enhnas.asia/blog/279528467.sHTML +
+wap.enhnas.asia/blog/858197036.sHTML +
+wap.enhnas.asia/blog/441293950.sHTML +
+wap.enhnas.asia/blog/885895600.sHTML +
+wap.enhnas.asia/blog/517839563.sHTML +
+wap.enhnas.asia/blog/631975819.sHTML +
+wap.enhnas.asia/blog/071974243.sHTML +
+wap.enhnas.asia/blog/181427920.sHTML +
+wap.enhnas.asia/blog/304978687.sHTML +
+wap.enhnas.asia/blog/749208132.sHTML +
+wap.enhnas.asia/blog/125314219.sHTML +
+wap.enhnas.asia/blog/636481970.sHTML +
+wap.enhnas.asia/blog/474276031.sHTML +
+wap.enhnas.asia/blog/814420869.sHTML +
+wap.enhnas.asia/blog/297508258.sHTML +
+wap.enhnas.asia/blog/997429006.sHTML +
+wap.enhnas.asia/blog/595795809.sHTML +
+wap.enhnas.asia/blog/819486925.sHTML +
+wap.enhnas.asia/blog/963198649.sHTML +
+wap.enhnas.asia/blog/188647981.sHTML +
+wap.enhnas.asia/blog/637046470.sHTML +
+wap.enhnas.asia/blog/376925310.sHTML +
+wap.enhnas.asia/blog/313102197.sHTML +
+wap.enhnas.asia/blog/419881365.sHTML +
+wap.enhnas.asia/blog/062956284.sHTML +
+wap.enhnas.asia/blog/293321975.sHTML +
+wap.enhnas.asia/blog/060086976.sHTML +
+wap.enhnas.asia/blog/126372122.sHTML +
+wap.enhnas.asia/blog/138199259.sHTML +
+wap.enhnas.asia/blog/269311119.sHTML +
+wap.enhnas.asia/blog/977698705.sHTML +
+wap.enhnas.asia/blog/308054679.sHTML +
+wap.enhnas.asia/blog/853256532.sHTML +
+wap.enhnas.asia/blog/792714365.sHTML +
+wap.enhnas.asia/blog/907423560.sHTML +
+wap.enhnas.asia/blog/373402130.sHTML +
+wap.enhnas.asia/blog/636009204.sHTML +
+wap.enhnas.asia/blog/181008119.sHTML +
+wap.enhnas.asia/blog/025822660.sHTML +
+wap.enhnas.asia/blog/297048432.sHTML +
+wap.enhnas.asia/blog/686047153.sHTML +
+wap.enhnas.asia/blog/735918207.sHTML +
+wap.enhnas.asia/blog/759561583.sHTML +
+wap.enhnas.asia/blog/727890650.sHTML +
+wap.enhnas.asia/blog/520431548.sHTML +
+wap.enhnas.asia/blog/410388114.sHTML +
+wap.enhnas.asia/blog/960922616.sHTML +
+wap.enhnas.asia/blog/414831759.sHTML +
+wap.enhnas.asia/blog/097531975.sHTML +
+wap.enhnas.asia/blog/853147554.sHTML +
+wap.enhnas.asia/blog/849434288.sHTML +
+wap.enhnas.asia/blog/418647203.sHTML +
+wap.enhnas.asia/blog/740581947.sHTML +
+wap.enhnas.asia/blog/602065031.sHTML +
+wap.enhnas.asia/blog/570508658.sHTML +
+wap.enhnas.asia/blog/180975462.sHTML +
+wap.enhnas.asia/blog/258208697.sHTML +
+wap.enhnas.asia/blog/469270879.sHTML +
+wap.enhnas.asia/blog/314765870.sHTML +
+wap.enhnas.asia/blog/195681472.sHTML +
+wap.enhnas.asia/blog/076754714.sHTML +
+wap.enhnas.asia/blog/187508825.sHTML +
+wap.enhnas.asia/blog/910877693.sHTML +
+wap.enhnas.asia/blog/061097108.sHTML +
+wap.enhnas.asia/blog/308947932.sHTML +
+wap.enhnas.asia/blog/855437587.sHTML +
+wap.enhnas.asia/blog/580482647.sHTML +
+wap.enhnas.asia/blog/664547693.sHTML +
+wap.enhnas.asia/blog/642253276.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时50分28秒
