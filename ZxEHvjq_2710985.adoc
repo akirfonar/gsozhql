@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.kiatfl.asia/blog/804214922.sHTML +
+wap.kiatfl.asia/blog/617099963.sHTML +
+wap.kiatfl.asia/blog/911431086.sHTML +
+wap.kiatfl.asia/blog/075431034.sHTML +
+wap.kiatfl.asia/blog/654204719.sHTML +
+wap.kiatfl.asia/blog/306302290.sHTML +
+wap.kiatfl.asia/blog/651116618.sHTML +
+wap.kiatfl.asia/blog/638535357.sHTML +
+wap.kiatfl.asia/blog/017139620.sHTML +
+wap.kiatfl.asia/blog/162951338.sHTML +
+wap.kiatfl.asia/blog/298642141.sHTML +
+wap.kiatfl.asia/blog/850369253.sHTML +
+wap.kiatfl.asia/blog/519975810.sHTML +
+wap.kiatfl.asia/blog/520820814.sHTML +
+wap.kiatfl.asia/blog/302103147.sHTML +
+wap.kiatfl.asia/blog/413208147.sHTML +
+wap.kiatfl.asia/blog/499243944.sHTML +
+wap.kiatfl.asia/blog/468753681.sHTML +
+wap.kiatfl.asia/blog/092088192.sHTML +
+wap.kiatfl.asia/blog/181989065.sHTML +
+wap.kiatfl.asia/blog/202208103.sHTML +
+wap.kiatfl.asia/blog/168951300.sHTML +
+wap.kiatfl.asia/blog/969758664.sHTML +
+wap.kiatfl.asia/blog/296431329.sHTML +
+wap.kiatfl.asia/blog/638697086.sHTML +
+wap.kiatfl.asia/blog/747586697.sHTML +
+wap.kiatfl.asia/blog/846290662.sHTML +
+wap.kiatfl.asia/blog/241919758.sHTML +
+wap.kiatfl.asia/blog/303864208.sHTML +
+wap.kiatfl.asia/blog/631531425.sHTML +
+wap.kiatfl.asia/blog/181921147.sHTML +
+wap.kiatfl.asia/blog/969203647.sHTML +
+wap.kiatfl.asia/blog/183197085.sHTML +
+wap.kiatfl.asia/blog/027063373.sHTML +
+wap.kiatfl.asia/blog/292082036.sHTML +
+wap.kiatfl.asia/blog/292486647.sHTML +
+wap.kiatfl.asia/blog/987542470.sHTML +
+wap.kiatfl.asia/blog/418642581.sHTML +
+wap.kiatfl.asia/blog/433440025.sHTML +
+wap.kiatfl.asia/blog/191481420.sHTML +
+wap.kiatfl.asia/blog/181597531.sHTML +
+wap.kiatfl.asia/blog/742647536.sHTML +
+wap.kiatfl.asia/blog/069275303.sHTML +
+wap.kiatfl.asia/blog/413203197.sHTML +
+wap.kiatfl.asia/blog/083092423.sHTML +
+wap.kiatfl.asia/blog/968775324.sHTML +
+wap.kiatfl.asia/blog/962081920.sHTML +
+wap.kiatfl.asia/blog/529818708.sHTML +
+wap.kiatfl.asia/blog/410864214.sHTML +
+wap.kiatfl.asia/blog/918669881.sHTML +
+wap.kiatfl.asia/blog/410416410.sHTML +
+wap.kiatfl.asia/blog/969258691.sHTML +
+wap.kiatfl.asia/blog/963720081.sHTML +
+wap.kiatfl.asia/blog/066425520.sHTML +
+wap.kiatfl.asia/blog/852586119.sHTML +
+wap.kiatfl.asia/blog/842057531.sHTML +
+wap.kiatfl.asia/blog/820869742.sHTML +
+wap.kiatfl.asia/blog/963699253.sHTML +
+wap.kiatfl.asia/blog/638643110.sHTML +
+wap.kiatfl.asia/blog/849700003.sHTML +
+wap.kiatfl.asia/blog/053146472.sHTML +
+wap.kiatfl.asia/blog/170865192.sHTML +
+wap.kiatfl.asia/blog/269885369.sHTML +
+wap.kiatfl.asia/blog/518636308.sHTML +
+wap.kiatfl.asia/blog/081420586.sHTML +
+wap.kiatfl.asia/blog/396850864.sHTML +
+wap.kiatfl.asia/blog/789026891.sHTML +
+wap.kiatfl.asia/blog/829041380.sHTML +
+wap.kiatfl.asia/blog/007021584.sHTML +
+wap.kiatfl.asia/blog/937271605.sHTML +
+wap.kiatfl.asia/blog/409935045.sHTML +
+wap.kiatfl.asia/blog/775604135.sHTML +
+wap.kiatfl.asia/blog/822399611.sHTML +
+wap.kiatfl.asia/blog/063239506.sHTML +
+wap.kiatfl.asia/blog/557395620.sHTML +
+wap.kiatfl.asia/blog/075314253.sHTML +
+wap.kiatfl.asia/blog/463202142.sHTML +
+wap.kiatfl.asia/blog/181592604.sHTML +
+wap.kiatfl.asia/blog/514214308.sHTML +
+wap.kiatfl.asia/blog/029763153.sHTML +
+wap.kiatfl.asia/blog/056307019.sHTML +
+wap.kiatfl.asia/blog/872283972.sHTML +
+wap.kiatfl.asia/blog/529868753.sHTML +
+wap.kiatfl.asia/blog/642405834.sHTML +
+wap.kiatfl.asia/blog/919208125.sHTML +
+wap.kiatfl.asia/blog/080633705.sHTML +
+wap.kiatfl.asia/blog/934266130.sHTML +
+wap.kiatfl.asia/blog/835191324.sHTML +
+wap.kiatfl.asia/blog/458757253.sHTML +
+wap.kiatfl.asia/blog/291436414.sHTML +
+wap.kiatfl.asia/blog/636475881.sHTML +
+wap.kiatfl.asia/blog/303592032.sHTML +
+wap.kiatfl.asia/blog/308192076.sHTML +
+wap.kiatfl.asia/blog/064203691.sHTML +
+wap.kiatfl.asia/blog/852009264.sHTML +
+wap.kiatfl.asia/blog/636979868.sHTML +
+wap.kiatfl.asia/blog/747086922.sHTML +
+wap.kiatfl.asia/blog/555702357.sHTML +
+wap.kiatfl.asia/blog/347042536.sHTML +
+wap.kiatfl.asia/blog/043380998.sHTML +
+wap.kiatfl.asia/blog/294614869.sHTML +
+wap.kiatfl.asia/blog/354753869.sHTML +
+wap.kiatfl.asia/blog/951003814.sHTML +
+wap.kiatfl.asia/blog/307868792.sHTML +
+wap.kiatfl.asia/blog/296492036.sHTML +
+wap.kiatfl.asia/blog/070831447.sHTML +
+wap.kiatfl.asia/blog/741971147.sHTML +
+wap.kiatfl.asia/blog/185419219.sHTML +
+wap.kiatfl.asia/blog/297581425.sHTML +
+wap.kiatfl.asia/blog/366339953.sHTML +
+wap.kiatfl.asia/blog/081283206.sHTML +
+wap.kiatfl.asia/blog/406451031.sHTML +
+wap.kiatfl.asia/blog/181975819.sHTML +
+wap.kiatfl.asia/blog/414831091.sHTML +
+wap.kiatfl.asia/blog/146930870.sHTML +
+wap.kiatfl.asia/blog/131642581.sHTML +
+wap.kiatfl.asia/blog/998445167.sHTML +
+wap.kiatfl.asia/blog/625410534.sHTML +
+wap.kiatfl.asia/blog/115117355.sHTML +
+wap.kiatfl.asia/blog/178606227.sHTML +
+wap.kiatfl.asia/blog/303547204.sHTML +
+wap.kiatfl.asia/blog/292592086.sHTML +
+wap.kiatfl.asia/blog/458648699.sHTML +
+wap.kiatfl.asia/blog/296652083.sHTML +
+wap.kiatfl.asia/blog/525768301.sHTML +
+wap.kiatfl.asia/blog/303198203.sHTML +
+wap.kiatfl.asia/blog/418314269.sHTML +
+wap.kiatfl.asia/blog/794708247.sHTML +
+wap.kiatfl.asia/blog/631972031.sHTML +
+wap.kiatfl.asia/blog/514527565.sHTML +
+wap.kiatfl.asia/blog/525531974.sHTML +
+wap.kiatfl.asia/blog/181038192.sHTML +
+wap.kiatfl.asia/blog/962042581.sHTML +
+wap.kiatfl.asia/blog/636825368.sHTML +
+wap.kiatfl.asia/blog/136420429.sHTML +
+wap.kiatfl.asia/blog/567455652.sHTML +
+wap.kiatfl.asia/blog/183148141.sHTML +
+wap.kiatfl.asia/blog/413644708.sHTML +
+wap.kiatfl.asia/blog/652017461.sHTML +
+wap.kiatfl.asia/blog/071479314.sHTML +
+wap.kiatfl.asia/blog/742083142.sHTML +
+wap.kiatfl.asia/blog/838567073.sHTML +
+wap.kiatfl.asia/blog/858697586.sHTML +
+wap.kiatfl.asia/blog/197693664.sHTML +
+wap.kiatfl.asia/blog/133864987.sHTML +
+wap.kiatfl.asia/blog/139860326.sHTML +
+wap.kiatfl.asia/blog/138197140.sHTML +
+wap.kiatfl.asia/blog/337161049.sHTML +
+wap.kiatfl.asia/blog/220621820.sHTML +
+wap.kiatfl.asia/blog/254009438.sHTML +
+wap.kiatfl.asia/blog/937333721.sHTML +
+wap.kiatfl.asia/blog/593437271.sHTML +
+wap.kiatfl.asia/blog/600105609.sHTML +
+wap.kiatfl.asia/blog/623075702.sHTML +
+wap.kiatfl.asia/blog/366551610.sHTML +
+wap.kiatfl.asia/blog/254998987.sHTML +
+wap.kiatfl.asia/blog/056859076.sHTML +
+wap.kiatfl.asia/blog/030561550.sHTML +
+wap.kiatfl.asia/blog/143933399.sHTML +
+wap.kiatfl.asia/blog/254616064.sHTML +
+wap.kiatfl.asia/blog/972859193.sHTML +
+wap.kiatfl.asia/blog/970426082.sHTML +
+wap.kiatfl.asia/blog/247708766.sHTML +
+wap.kiatfl.asia/blog/526032540.sHTML +
+wap.kiatfl.asia/blog/748221008.sHTML +
+wap.kiatfl.asia/blog/201193359.sHTML +
+wap.kiatfl.asia/blog/632098608.sHTML +
+wap.kiatfl.asia/blog/088338495.sHTML +
+wap.kiatfl.asia/blog/959981486.sHTML +
+wap.kiatfl.asia/blog/292009368.sHTML +
+wap.kiatfl.asia/blog/070997947.sHTML +
+wap.kiatfl.asia/blog/303142530.sHTML +
+wap.kiatfl.asia/blog/281975507.sHTML +
+wap.kiatfl.asia/blog/296420863.sHTML +
+wap.kiatfl.asia/blog/303197581.sHTML +
+wap.kiatfl.asia/blog/963750803.sHTML +
+wap.kiatfl.asia/blog/170319758.sHTML +
+wap.kiatfl.asia/blog/522081583.sHTML +
+wap.kiatfl.asia/blog/747039869.sHTML +
+wap.kiatfl.asia/blog/292598674.sHTML +
+wap.kiatfl.asia/blog/525314203.sHTML +
+wap.kiatfl.asia/blog/392036961.sHTML +
+wap.kiatfl.asia/blog/186219875.sHTML +
+wap.kiatfl.asia/blog/969753314.sHTML +
+wap.kiatfl.asia/blog/746642158.sHTML +
+wap.kiatfl.asia/blog/529970825.sHTML +
+wap.kiatfl.asia/blog/746908758.sHTML +
+wap.kiatfl.asia/blog/086037153.sHTML +
+wap.kiatfl.asia/blog/308275143.sHTML +
+wap.kiatfl.asia/blog/293108724.sHTML +
+wap.kiatfl.asia/blog/293659716.sHTML +
+wap.kiatfl.asia/blog/446008728.sHTML +
+wap.kiatfl.asia/blog/420436587.sHTML +
+wap.kiatfl.asia/blog/427932569.sHTML +
+wap.kiatfl.asia/blog/631042108.sHTML +
+wap.kiatfl.asia/blog/197143669.sHTML +
+wap.kiatfl.asia/blog/797654765.sHTML +
+wap.kiatfl.asia/blog/386438709.sHTML +
+wap.kiatfl.asia/blog/801981608.sHTML +
+wap.kiatfl.asia/blog/864332198.sHTML +
+wap.kiatfl.asia/blog/460321481.sHTML +
+wap.kiatfl.asia/blog/668916893.sHTML +
+wap.kiatfl.asia/blog/835685962.sHTML +
+wap.kiatfl.asia/blog/520564810.sHTML +
+wap.kiatfl.asia/blog/191427822.sHTML +
+wap.kiatfl.asia/blog/937276109.sHTML +
+wap.kiatfl.asia/blog/548887600.sHTML +
+wap.kiatfl.asia/blog/699834377.sHTML +
+wap.kiatfl.asia/blog/194339448.sHTML +
+wap.kiatfl.asia/blog/710266049.sHTML +
+wap.kiatfl.asia/blog/923332711.sHTML +
+wap.kiatfl.asia/blog/699829044.sHTML +
+wap.kiatfl.asia/blog/946650223.sHTML +
+wap.kiatfl.asia/blog/427044704.sHTML +
+wap.kiatfl.asia/blog/975321082.sHTML +
+wap.kiatfl.asia/blog/070376219.sHTML +
+wap.kiatfl.asia/blog/131097669.sHTML +
+wap.kiatfl.asia/blog/297092204.sHTML +
+wap.kiatfl.asia/blog/077582589.sHTML +
+wap.kiatfl.asia/blog/086537092.sHTML +
+wap.kiatfl.asia/blog/095235212.sHTML +
+wap.kiatfl.asia/blog/308209815.sHTML +
+wap.kiatfl.asia/blog/981981087.sHTML +
+wap.kiatfl.asia/blog/197092153.sHTML +
+wap.kiatfl.asia/blog/470542114.sHTML +
+wap.kiatfl.asia/blog/768250932.sHTML +
+wap.kiatfl.asia/blog/853736543.sHTML +
+wap.kiatfl.asia/blog/936647759.sHTML +
+wap.kiatfl.asia/blog/960543214.sHTML +
+wap.kiatfl.asia/blog/248109236.sHTML +
+wap.kiatfl.asia/blog/364265376.sHTML +
+wap.kiatfl.asia/blog/464315403.sHTML +
+wap.kiatfl.asia/blog/136047115.sHTML +
+wap.kiatfl.asia/blog/197098103.sHTML +
+wap.kiatfl.asia/blog/214528070.sHTML +
+wap.kiatfl.asia/blog/682093157.sHTML +
+wap.kiatfl.asia/blog/472544814.sHTML +
+wap.kiatfl.asia/blog/247193714.sHTML +
+wap.kiatfl.asia/blog/208103262.sHTML +
+wap.kiatfl.asia/blog/810322532.sHTML +
+wap.kiatfl.asia/blog/419876998.sHTML +
+wap.kiatfl.asia/blog/075437860.sHTML +
+wap.kiatfl.asia/blog/186582198.sHTML +
+wap.kiatfl.asia/blog/536598603.sHTML +
+wap.kiatfl.asia/blog/197153246.sHTML +
+wap.kiatfl.asia/blog/148721265.sHTML +
+wap.kiatfl.asia/blog/255443877.sHTML +
+wap.kiatfl.asia/blog/366054940.sHTML +
+wap.kiatfl.asia/blog/821166004.sHTML +
+wap.kiatfl.asia/blog/648276382.sHTML +
+wap.kiatfl.asia/blog/437161109.sHTML +
+wap.kiatfl.asia/blog/421116665.sHTML +
+wap.kiatfl.asia/blog/198721162.sHTML +
+wap.kiatfl.asia/blog/205600044.sHTML +
+wap.kiatfl.asia/blog/811500498.sHTML +
+wap.kiatfl.asia/blog/376115094.sHTML +
+wap.kiatfl.asia/blog/759449554.sHTML +
+wap.kiatfl.asia/blog/483289488.sHTML +
+wap.kiatfl.asia/blog/998043377.sHTML +
+wap.kiatfl.asia/blog/700410509.sHTML +
+wap.kiatfl.asia/blog/815266065.sHTML +
+wap.kiatfl.asia/blog/759498872.sHTML +
+wap.kiatfl.asia/blog/727165094.sHTML +
+wap.kiatfl.asia/blog/598799337.sHTML +
+wap.kiatfl.asia/blog/157610599.sHTML +
+wap.kiatfl.asia/blog/482798321.sHTML +
+wap.kiatfl.asia/blog/932718321.sHTML +
+wap.kiatfl.asia/blog/255165004.sHTML +
+wap.kiatfl.asia/blog/310227150.sHTML +
+wap.kiatfl.asia/blog/710054655.sHTML +
+wap.kiatfl.asia/blog/008404834.sHTML +
+wap.kiatfl.asia/blog/071434269.sHTML +
+wap.kiatfl.asia/blog/308764832.sHTML +
+wap.kiatfl.asia/blog/571087098.sHTML +
+wap.kiatfl.asia/blog/319361579.sHTML +
+wap.kiatfl.asia/blog/747043704.sHTML +
+wap.kiatfl.asia/blog/248105471.sHTML +
+wap.kiatfl.asia/blog/037762665.sHTML +
+wap.kiatfl.asia/blog/587278877.sHTML +
+wap.kiatfl.asia/blog/421605650.sHTML +
+wap.kiatfl.asia/blog/439698782.sHTML +
+wap.kiatfl.asia/blog/150858179.sHTML +
+wap.kiatfl.asia/blog/338737338.sHTML +
+wap.kiatfl.asia/blog/808285746.sHTML +
+wap.kiatfl.asia/blog/351558364.sHTML +
+wap.kiatfl.asia/blog/848573726.sHTML +
+wap.kiatfl.asia/blog/583509390.sHTML +
+wap.kiatfl.asia/blog/237178332.sHTML +
+wap.kiatfl.asia/blog/635968579.sHTML +
+wap.kiatfl.asia/blog/458153692.sHTML +
+wap.kiatfl.asia/blog/569313760.sHTML +
+wap.kiatfl.asia/blog/364531697.sHTML +
+wap.kiatfl.asia/blog/302703192.sHTML +
+wap.kiatfl.asia/blog/414753644.sHTML +
+wap.kiatfl.asia/blog/193153542.sHTML +
+wap.kiatfl.asia/blog/209448333.sHTML +
+wap.kiatfl.asia/blog/655600845.sHTML +
+wap.kiatfl.asia/blog/568475029.sHTML +
+wap.kiatfl.asia/blog/226611554.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时56分58秒
