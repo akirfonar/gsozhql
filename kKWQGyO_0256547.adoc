@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+www.blog.yhzeb94.cn/POST/299371448.Shtml +
+www.blog.yhzeb94.cn/POST/206671210.Shtml +
+www.blog.yhzeb94.cn/POST/248103259.Shtml +
+www.blog.yhzeb94.cn/POST/075471938.Shtml +
+www.blog.yhzeb94.cn/POST/197644425.Shtml +
+www.blog.yhzeb94.cn/POST/688155972.Shtml +
+www.blog.yhzeb94.cn/POST/309769847.Shtml +
+www.blog.yhzeb94.cn/POST/167964647.Shtml +
+www.blog.yhzeb94.cn/POST/355825504.Shtml +
+www.blog.yhzeb94.cn/POST/354210876.Shtml +
+www.blog.yhzeb94.cn/POST/646543105.Shtml +
+www.blog.yhzeb94.cn/POST/244331533.Shtml +
+www.blog.yhzeb94.cn/POST/480082450.Shtml +
+www.blog.yhzeb94.cn/POST/271676734.Shtml +
+www.blog.yhzeb94.cn/POST/809719818.Shtml +
+www.blog.yhzeb94.cn/POST/588650810.Shtml +
+www.blog.yhzeb94.cn/POST/319264275.Shtml +
+www.blog.yhzeb94.cn/POST/575976534.Shtml +
+www.blog.yhzeb94.cn/POST/306932199.Shtml +
+www.blog.yhzeb94.cn/POST/242198755.Shtml +
+www.blog.yhzeb94.cn/POST/025324704.Shtml +
+www.blog.yhzeb94.cn/POST/402671053.Shtml +
+www.blog.yhzeb94.cn/POST/420476936.Shtml +
+www.blog.yhzeb94.cn/POST/754926437.Shtml +
+www.blog.yhzeb94.cn/POST/964543103.Shtml +
+www.blog.yhzeb94.cn/POST/575981032.Shtml +
+www.blog.yhzeb94.cn/POST/198258754.Shtml +
+www.blog.yhzeb94.cn/POST/364870981.Shtml +
+www.blog.yhzeb94.cn/POST/048602583.Shtml +
+www.blog.yhzeb94.cn/POST/808219815.Shtml +
+www.blog.yhzeb94.cn/POST/464347153.Shtml +
+www.blog.yhzeb94.cn/POST/243159099.Shtml +
+www.blog.yhzeb94.cn/POST/248921437.Shtml +
+www.blog.yhzeb94.cn/POST/507942291.Shtml +
+www.blog.yhzeb94.cn/POST/465936488.Shtml +
+www.blog.yhzeb94.cn/POST/197719219.Shtml +
+www.blog.yhzeb94.cn/POST/425481098.Shtml +
+www.blog.yhzeb94.cn/POST/438151428.Shtml +
+www.blog.yhzeb94.cn/POST/910336758.Shtml +
+www.blog.yhzeb94.cn/POST/958463898.Shtml +
+www.blog.yhzeb94.cn/POST/462485154.Shtml +
+www.blog.yhzeb94.cn/POST/572537593.Shtml +
+www.blog.yhzeb94.cn/POST/942491208.Shtml +
+www.blog.yhzeb94.cn/POST/586592158.Shtml +
+www.blog.yhzeb94.cn/POST/247198706.Shtml +
+www.blog.yhzeb94.cn/POST/688698864.Shtml +
+www.blog.yhzeb94.cn/POST/551340663.Shtml +
+www.blog.yhzeb94.cn/POST/531148603.Shtml +
+www.blog.yhzeb94.cn/POST/208108264.Shtml +
+www.blog.yhzeb94.cn/POST/280435973.Shtml +
+www.blog.yhzeb94.cn/POST/197643210.Shtml +
+www.blog.yhzeb94.cn/POST/181987032.Shtml +
+www.blog.yhzeb94.cn/POST/885397851.Shtml +
+www.blog.yhzeb94.cn/POST/248109259.Shtml +
+www.blog.yhzeb94.cn/POST/415436148.Shtml +
+www.blog.yhzeb94.cn/POST/103654447.Shtml +
+www.blog.yhzeb94.cn/POST/527587271.Shtml +
+www.blog.yhzeb94.cn/POST/345801246.Shtml +
+www.blog.yhzeb94.cn/POST/014219810.Shtml +
+www.blog.yhzeb94.cn/POST/564870817.Shtml +
+www.blog.yhzeb94.cn/POST/979886037.Shtml +
+www.blog.yhzeb94.cn/POST/070658704.Shtml +
+www.blog.yhzeb94.cn/POST/353258209.Shtml +
+www.blog.yhzeb94.cn/POST/575264264.Shtml +
+www.blog.yhzeb94.cn/POST/320432593.Shtml +
+www.blog.yhzeb94.cn/POST/858754360.Shtml +
+www.blog.yhzeb94.cn/POST/025439814.Shtml +
+www.blog.yhzeb94.cn/POST/199265832.Shtml +
+www.blog.yhzeb94.cn/POST/136042143.Shtml +
+www.blog.yhzeb94.cn/POST/809719325.Shtml +
+www.blog.yhzeb94.cn/POST/931823525.Shtml +
+www.blog.yhzeb94.cn/POST/353219312.Shtml +
+www.blog.yhzeb94.cn/POST/381597610.Shtml +
+www.blog.yhzeb94.cn/POST/653159886.Shtml +
+www.blog.yhzeb94.cn/POST/464821953.Shtml +
+www.blog.yhzeb94.cn/POST/131597058.Shtml +
+www.blog.yhzeb94.cn/POST/303755313.Shtml +
+www.blog.yhzeb94.cn/POST/561234634.Shtml +
+www.blog.yhzeb94.cn/POST/031658254.Shtml +
+www.blog.yhzeb94.cn/POST/682543650.Shtml +
+www.blog.yhzeb94.cn/POST/708750436.Shtml +
+www.blog.yhzeb94.cn/POST/025927648.Shtml +
+www.blog.yhzeb94.cn/POST/570086552.Shtml +
+www.blog.yhzeb94.cn/POST/748243036.Shtml +
+www.blog.yhzeb94.cn/POST/360554048.Shtml +
+www.blog.yhzeb94.cn/POST/588090549.Shtml +
+www.blog.yhzeb94.cn/POST/721381599.Shtml +
+www.blog.yhzeb94.cn/POST/540055094.Shtml +
+www.blog.yhzeb94.cn/POST/604838276.Shtml +
+www.blog.yhzeb94.cn/POST/586594014.Shtml +
+www.blog.yhzeb94.cn/POST/143059605.Shtml +
+www.blog.yhzeb94.cn/POST/487261676.Shtml +
+www.blog.yhzeb94.cn/POST/326115059.Shtml +
+www.blog.yhzeb94.cn/POST/725471451.Shtml +
+www.blog.yhzeb94.cn/POST/487260048.Shtml +
+www.blog.yhzeb94.cn/POST/914074455.Shtml +
+www.blog.yhzeb94.cn/POST/316432043.Shtml +
+www.blog.yhzeb94.cn/POST/150582143.Shtml +
+www.blog.yhzeb94.cn/POST/545965605.Shtml +
+www.blog.yhzeb94.cn/POST/694872760.Shtml +
+www.blog.yhzeb94.cn/POST/631019325.Shtml +
+www.blog.yhzeb94.cn/POST/292481910.Shtml +
+www.blog.yhzeb94.cn/POST/736998097.Shtml +
+www.blog.yhzeb94.cn/POST/833900656.Shtml +
+www.blog.yhzeb94.cn/POST/414213142.Shtml +
+www.blog.yhzeb94.cn/POST/844205270.Shtml +
+www.blog.yhzeb94.cn/POST/596431699.Shtml +
+www.blog.yhzeb94.cn/POST/969755429.Shtml +
+www.blog.yhzeb94.cn/POST/308013758.Shtml +
+www.blog.yhzeb94.cn/POST/187087043.Shtml +
+www.blog.yhzeb94.cn/POST/651624104.Shtml +
+www.blog.yhzeb94.cn/POST/105012858.Shtml +
+www.blog.yhzeb94.cn/POST/779161095.Shtml +
+www.blog.yhzeb94.cn/POST/148197681.Shtml +
+www.blog.yhzeb94.cn/POST/768380199.Shtml +
+www.blog.yhzeb94.cn/POST/333339025.Shtml +
+www.blog.yhzeb94.cn/POST/520314697.Shtml +
+www.blog.yhzeb94.cn/POST/358220219.Shtml +
+www.blog.yhzeb94.cn/POST/969986143.Shtml +
+www.blog.yhzeb94.cn/POST/181008196.Shtml +
+www.blog.yhzeb94.cn/POST/308642546.Shtml +
+www.blog.yhzeb94.cn/POST/182531970.Shtml +
+www.blog.yhzeb94.cn/POST/370975869.Shtml +
+www.blog.yhzeb94.cn/POST/968757647.Shtml +
+www.blog.yhzeb94.cn/POST/858642581.Shtml +
+www.blog.yhzeb94.cn/POST/275054710.Shtml +
+www.blog.yhzeb94.cn/POST/214203142.Shtml +
+www.blog.yhzeb94.cn/POST/171088647.Shtml +
+www.blog.yhzeb94.cn/POST/692086476.Shtml +
+www.blog.yhzeb94.cn/POST/912752467.Shtml +
+www.blog.yhzeb94.cn/POST/391189572.Shtml +
+www.blog.yhzeb94.cn/POST/633542475.Shtml +
+www.blog.yhzeb94.cn/POST/181492031.Shtml +
+www.blog.yhzeb94.cn/POST/292585424.Shtml +
+www.blog.yhzeb94.cn/POST/525379320.Shtml +
+www.blog.yhzeb94.cn/POST/858142247.Shtml +
+www.blog.yhzeb94.cn/POST/520686586.Shtml +
+www.blog.yhzeb94.cn/POST/996865316.Shtml +
+www.blog.yhzeb94.cn/POST/504801391.Shtml +
+www.blog.yhzeb94.cn/POST/809081931.Shtml +
+www.blog.yhzeb94.cn/POST/392581936.Shtml +
+www.blog.yhzeb94.cn/POST/572579302.Shtml +
+www.blog.yhzeb94.cn/POST/474210369.Shtml +
+www.blog.yhzeb94.cn/POST/636481926.Shtml +
+www.blog.yhzeb94.cn/POST/747081974.Shtml +
+www.blog.yhzeb94.cn/POST/072425368.Shtml +
+www.blog.yhzeb94.cn/POST/521970986.Shtml +
+www.blog.yhzeb94.cn/POST/842081470.Shtml +
+www.blog.yhzeb94.cn/POST/458224279.Shtml +
+www.blog.yhzeb94.cn/POST/063746218.Shtml +
+www.blog.yhzeb94.cn/POST/625819464.Shtml +
+www.blog.yhzeb94.cn/POST/181324769.Shtml +
+www.blog.yhzeb94.cn/POST/605511548.Shtml +
+www.blog.yhzeb94.cn/POST/525366036.Shtml +
+www.blog.yhzeb94.cn/POST/863202058.Shtml +
+www.blog.yhzeb94.cn/POST/292081869.Shtml +
+www.blog.yhzeb94.cn/POST/060376976.Shtml +
+www.blog.yhzeb94.cn/POST/855374381.Shtml +
+www.blog.yhzeb94.cn/POST/070209194.Shtml +
+www.blog.yhzeb94.cn/POST/242088192.Shtml +
+www.blog.yhzeb94.cn/POST/170364214.Shtml +
+www.blog.yhzeb94.cn/POST/152080609.Shtml +
+www.blog.yhzeb94.cn/POST/636581964.Shtml +
+www.blog.yhzeb94.cn/POST/636420592.Shtml +
+www.blog.yhzeb94.cn/POST/468753147.Shtml +
+www.blog.yhzeb94.cn/POST/797536319.Shtml +
+www.blog.yhzeb94.cn/POST/186425319.Shtml +
+www.blog.yhzeb94.cn/POST/414208642.Shtml +
+www.blog.yhzeb94.cn/POST/647044253.Shtml +
+www.blog.yhzeb94.cn/POST/628579689.Shtml +
+www.blog.yhzeb94.cn/POST/027597603.Shtml +
+www.blog.yhzeb94.cn/POST/742109219.Shtml +
+www.blog.yhzeb94.cn/POST/247092143.Shtml +
+www.blog.yhzeb94.cn/POST/982777393.Shtml +
+www.blog.yhzeb94.cn/POST/353204319.Shtml +
+www.blog.yhzeb94.cn/POST/269260921.Shtml +
+www.blog.yhzeb94.cn/POST/633321992.Shtml +
+www.blog.yhzeb94.cn/POST/539277318.Shtml +
+www.blog.yhzeb94.cn/POST/688608193.Shtml +
+www.blog.yhzeb94.cn/POST/961981698.Shtml +
+www.blog.yhzeb94.cn/POST/919860820.Shtml +
+www.blog.yhzeb94.cn/POST/708653215.Shtml +
+www.blog.yhzeb94.cn/POST/864975436.Shtml +
+www.blog.yhzeb94.cn/POST/537759864.Shtml +
+www.blog.yhzeb94.cn/POST/504765531.Shtml +
+www.blog.yhzeb94.cn/POST/319810971.Shtml +
+www.blog.yhzeb94.cn/POST/708659769.Shtml +
+www.blog.yhzeb94.cn/POST/026986582.Shtml +
+www.blog.yhzeb94.cn/POST/636250825.Shtml +
+www.blog.yhzeb94.cn/POST/109225926.Shtml +
+www.blog.yhzeb94.cn/POST/808158470.Shtml +
+www.blog.yhzeb94.cn/POST/753398648.Shtml +
+www.blog.yhzeb94.cn/POST/864310971.Shtml +
+www.blog.yhzeb94.cn/POST/247147640.Shtml +
+www.blog.yhzeb94.cn/POST/036987258.Shtml +
+www.blog.yhzeb94.cn/POST/975876587.Shtml +
+www.blog.yhzeb94.cn/POST/147765810.Shtml +
+www.blog.yhzeb94.cn/POST/853216593.Shtml +
+www.blog.yhzeb94.cn/POST/411487554.Shtml +
+www.blog.yhzeb94.cn/POST/086158659.Shtml +
+www.blog.yhzeb94.cn/POST/319265043.Shtml +
+www.blog.yhzeb94.cn/POST/864365364.Shtml +
+www.blog.yhzeb94.cn/POST/284488404.Shtml +
+www.blog.yhzeb94.cn/POST/243431597.Shtml +
+www.blog.yhzeb94.cn/POST/759719870.Shtml +
+www.blog.yhzeb94.cn/POST/460322087.Shtml +
+www.blog.yhzeb94.cn/POST/912513330.Shtml +
+www.blog.yhzeb94.cn/POST/131094360.Shtml +
+www.blog.yhzeb94.cn/POST/420875931.Shtml +
+www.blog.yhzeb94.cn/POST/426982103.Shtml +
+www.blog.yhzeb94.cn/POST/809317988.Shtml +
+www.blog.yhzeb94.cn/POST/994876333.Shtml +
+www.blog.yhzeb94.cn/POST/092158466.Shtml +
+www.blog.yhzeb94.cn/POST/164604600.Shtml +
+www.blog.yhzeb94.cn/POST/518418582.Shtml +
+www.blog.yhzeb94.cn/POST/665803020.Shtml +
+www.blog.yhzeb94.cn/POST/170975366.Shtml +
+www.blog.yhzeb94.cn/POST/052862539.Shtml +
+www.blog.yhzeb94.cn/POST/858192697.Shtml +
+www.blog.yhzeb94.cn/POST/171008198.Shtml +
+www.blog.yhzeb94.cn/POST/413697581.Shtml +
+www.blog.yhzeb94.cn/POST/413202692.Shtml +
+www.blog.yhzeb94.cn/POST/858664258.Shtml +
+www.blog.yhzeb94.cn/POST/747531198.Shtml +
+www.blog.yhzeb94.cn/POST/575252520.Shtml +
+www.blog.yhzeb94.cn/POST/782474130.Shtml +
+www.blog.yhzeb94.cn/POST/613562891.Shtml +
+www.blog.yhzeb94.cn/POST/413153207.Shtml +
+www.blog.yhzeb94.cn/POST/448406839.Shtml +
+www.blog.yhzeb94.cn/POST/885512113.Shtml +
+www.blog.yhzeb94.cn/POST/414720824.Shtml +
+www.blog.yhzeb94.cn/POST/392586425.Shtml +
+www.blog.yhzeb94.cn/POST/747314264.Shtml +
+www.blog.yhzeb94.cn/POST/469753699.Shtml +
+www.blog.yhzeb94.cn/POST/858358147.Shtml +
+www.blog.yhzeb94.cn/POST/903214257.Shtml +
+www.blog.yhzeb94.cn/POST/293769224.Shtml +
+www.blog.yhzeb94.cn/POST/892864753.Shtml +
+www.blog.yhzeb94.cn/POST/857646275.Shtml +
+www.blog.yhzeb94.cn/POST/758312208.Shtml +
+www.blog.yhzeb94.cn/POST/377880855.Shtml +
+www.blog.yhzeb94.cn/POST/285323130.Shtml +
+www.blog.yhzeb94.cn/POST/829203103.Shtml +
+www.blog.yhzeb94.cn/POST/071475314.Shtml +
+www.blog.yhzeb94.cn/POST/181427553.Shtml +
+www.blog.yhzeb94.cn/POST/136419919.Shtml +
+www.blog.yhzeb94.cn/POST/525036586.Shtml +
+www.blog.yhzeb94.cn/POST/244177738.Shtml +
+www.blog.yhzeb94.cn/POST/725816943.Shtml +
+www.blog.yhzeb94.cn/POST/855975881.Shtml +
+www.blog.yhzeb94.cn/POST/175382713.Shtml +
+www.blog.yhzeb94.cn/POST/079592031.Shtml +
+www.blog.yhzeb94.cn/POST/181977697.Shtml +
+www.blog.yhzeb94.cn/POST/003192036.Shtml +
+www.blog.yhzeb94.cn/POST/747992005.Shtml +
+www.blog.yhzeb94.cn/POST/292086647.Shtml +
+www.blog.yhzeb94.cn/POST/077530970.Shtml +
+www.blog.yhzeb94.cn/POST/186486420.Shtml +
+www.blog.yhzeb94.cn/POST/794658186.Shtml +
+www.blog.yhzeb94.cn/POST/525314243.Shtml +
+www.blog.yhzeb94.cn/POST/296031587.Shtml +
+www.blog.yhzeb94.cn/POST/854860873.Shtml +
+www.blog.yhzeb94.cn/POST/532019861.Shtml +
+www.blog.yhzeb94.cn/POST/022000431.Shtml +
+www.blog.yhzeb94.cn/POST/242198426.Shtml +
+www.blog.yhzeb94.cn/POST/247104700.Shtml +
+www.blog.yhzeb94.cn/POST/858105476.Shtml +
+www.blog.yhzeb94.cn/POST/886996477.Shtml +
+www.blog.yhzeb94.cn/POST/186582693.Shtml +
+www.blog.yhzeb94.cn/POST/792481032.Shtml +
+www.blog.yhzeb94.cn/POST/753209719.Shtml +
+www.blog.yhzeb94.cn/POST/208105714.Shtml +
+www.blog.yhzeb94.cn/POST/258121432.Shtml +
+www.blog.yhzeb94.cn/POST/186092158.Shtml +
+www.blog.yhzeb94.cn/POST/703654769.Shtml +
+www.blog.yhzeb94.cn/POST/242108727.Shtml +
+www.blog.yhzeb94.cn/POST/188209269.Shtml +
+www.blog.yhzeb94.cn/POST/350971497.Shtml +
+www.blog.yhzeb94.cn/POST/708876981.Shtml +
+www.blog.yhzeb94.cn/POST/197590320.Shtml +
+www.blog.yhzeb94.cn/POST/525420193.Shtml +
+www.blog.yhzeb94.cn/POST/289302674.Shtml +
+www.blog.yhzeb94.cn/POST/975436537.Shtml +
+www.blog.yhzeb94.cn/POST/136094781.Shtml +
+www.blog.yhzeb94.cn/POST/208654365.Shtml +
+www.blog.yhzeb94.cn/POST/526437098.Shtml +
+www.blog.yhzeb94.cn/POST/131547125.Shtml +
+www.blog.yhzeb94.cn/POST/910874810.Shtml +
+www.blog.yhzeb94.cn/POST/965875921.Shtml +
+www.blog.yhzeb94.cn/POST/572087008.Shtml +
+www.blog.yhzeb94.cn/POST/319538208.Shtml +
+www.blog.yhzeb94.cn/POST/571459810.Shtml +
+www.blog.yhzeb94.cn/POST/919705587.Shtml +
+www.blog.yhzeb94.cn/POST/964342148.Shtml +
+www.blog.yhzeb94.cn/POST/793432592.Shtml +
+www.blog.yhzeb94.cn/POST/121064915.Shtml +
+www.blog.yhzeb94.cn/POST/975321082.Shtml +
+www.blog.yhzeb94.cn/POST/137514360.Shtml +
+www.blog.yhzeb94.cn/POST/576547098.Shtml +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日14时55分08秒
