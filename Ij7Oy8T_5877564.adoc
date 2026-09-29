@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.wleboa.asia/blog/292580815.sHTML +
+wap.wleboa.asia/blog/484078139.sHTML +
+wap.wleboa.asia/blog/086153154.sHTML +
+wap.wleboa.asia/blog/153608722.sHTML +
+wap.wleboa.asia/blog/916478208.sHTML +
+wap.wleboa.asia/blog/570582104.sHTML +
+wap.wleboa.asia/blog/070947037.sHTML +
+wap.wleboa.asia/blog/709281032.sHTML +
+wap.wleboa.asia/blog/914820479.sHTML +
+wap.wleboa.asia/blog/197053704.sHTML +
+wap.wleboa.asia/blog/804704714.sHTML +
+wap.wleboa.asia/blog/467542635.sHTML +
+wap.wleboa.asia/blog/220932547.sHTML +
+wap.wleboa.asia/blog/218265444.sHTML +
+wap.wleboa.asia/blog/433114870.sHTML +
+wap.wleboa.asia/blog/204777538.sHTML +
+wap.wleboa.asia/blog/648927703.sHTML +
+wap.wleboa.asia/blog/303732148.sHTML +
+wap.wleboa.asia/blog/869344254.sHTML +
+wap.wleboa.asia/blog/637597277.sHTML +
+wap.wleboa.asia/blog/536047049.sHTML +
+wap.wleboa.asia/blog/079666644.sHTML +
+wap.wleboa.asia/blog/521362958.sHTML +
+wap.wleboa.asia/blog/253231034.sHTML +
+wap.wleboa.asia/blog/420936036.sHTML +
+wap.wleboa.asia/blog/203265371.sHTML +
+wap.wleboa.asia/blog/775154482.sHTML +
+wap.wleboa.asia/blog/773178278.sHTML +
+wap.wleboa.asia/blog/814321264.sHTML +
+wap.wleboa.asia/blog/548269327.sHTML +
+wap.wleboa.asia/blog/952073406.sHTML +
+wap.wleboa.asia/blog/638865959.sHTML +
+wap.wleboa.asia/blog/314876665.sHTML +
+wap.wleboa.asia/blog/590771844.sHTML +
+wap.wleboa.asia/blog/925153766.sHTML +
+wap.wleboa.asia/blog/182043260.sHTML +
+wap.wleboa.asia/blog/150041362.sHTML +
+wap.wleboa.asia/blog/377198737.sHTML +
+wap.wleboa.asia/blog/816232045.sHTML +
+wap.wleboa.asia/blog/950939705.sHTML +
+wap.wleboa.asia/blog/681980864.sHTML +
+wap.wleboa.asia/blog/494298464.sHTML +
+wap.wleboa.asia/blog/241058147.sHTML +
+wap.wleboa.asia/blog/834327293.sHTML +
+wap.wleboa.asia/blog/912900359.sHTML +
+wap.wleboa.asia/blog/461436060.sHTML +
+wap.wleboa.asia/blog/346146471.sHTML +
+wap.wleboa.asia/blog/316133823.sHTML +
+wap.wleboa.asia/blog/617929048.sHTML +
+wap.wleboa.asia/blog/858047642.sHTML +
+wap.wleboa.asia/blog/527198431.sHTML +
+wap.wleboa.asia/blog/071458333.sHTML +
+wap.wleboa.asia/blog/024499839.sHTML +
+wap.wleboa.asia/blog/810111011.sHTML +
+wap.wleboa.asia/blog/522789488.sHTML +
+wap.wleboa.asia/blog/023838382.sHTML +
+wap.wleboa.asia/blog/261615768.sHTML +
+wap.wleboa.asia/blog/157490679.sHTML +
+wap.wleboa.asia/blog/864376040.sHTML +
+wap.wleboa.asia/blog/293387476.sHTML +
+wap.wleboa.asia/blog/946424355.sHTML +
+wap.wleboa.asia/blog/180375756.sHTML +
+wap.wleboa.asia/blog/911983315.sHTML +
+wap.wleboa.asia/blog/735036330.sHTML +
+wap.wleboa.asia/blog/686011999.sHTML +
+wap.wleboa.asia/blog/142060927.sHTML +
+wap.wleboa.asia/blog/447637188.sHTML +
+wap.wleboa.asia/blog/516429963.sHTML +
+wap.wleboa.asia/blog/455810472.sHTML +
+wap.wleboa.asia/blog/686258214.sHTML +
+wap.wleboa.asia/blog/113480707.sHTML +
+wap.wleboa.asia/blog/821158692.sHTML +
+wap.wleboa.asia/blog/965819381.sHTML +
+wap.wleboa.asia/blog/469200820.sHTML +
+wap.wleboa.asia/blog/300370586.sHTML +
+wap.wleboa.asia/blog/613456357.sHTML +
+wap.wleboa.asia/blog/098964690.sHTML +
+wap.wleboa.asia/blog/570348208.sHTML +
+wap.wleboa.asia/blog/914870864.sHTML +
+wap.wleboa.asia/blog/413324369.sHTML +
+wap.wleboa.asia/blog/804208248.sHTML +
+wap.wleboa.asia/blog/358608147.sHTML +
+wap.wleboa.asia/blog/599487531.sHTML +
+wap.wleboa.asia/blog/079870508.sHTML +
+wap.wleboa.asia/blog/303220386.sHTML +
+wap.wleboa.asia/blog/889286239.sHTML +
+wap.wleboa.asia/blog/419694353.sHTML +
+wap.wleboa.asia/blog/035370819.sHTML +
+wap.wleboa.asia/blog/357147586.sHTML +
+wap.wleboa.asia/blog/747580925.sHTML +
+wap.wleboa.asia/blog/969880979.sHTML +
+wap.wleboa.asia/blog/273990229.sHTML +
+wap.wleboa.asia/blog/008911316.sHTML +
+wap.wleboa.asia/blog/513126623.sHTML +
+wap.wleboa.asia/blog/037057647.sHTML +
+wap.wleboa.asia/blog/525435031.sHTML +
+wap.wleboa.asia/blog/236497608.sHTML +
+wap.wleboa.asia/blog/964208147.sHTML +
+wap.wleboa.asia/blog/303693331.sHTML +
+wap.wleboa.asia/blog/747536475.sHTML +
+wap.wleboa.asia/blog/185316964.sHTML +
+wap.wleboa.asia/blog/714675910.sHTML +
+wap.wleboa.asia/blog/858670863.sHTML +
+wap.wleboa.asia/blog/188669475.sHTML +
+wap.wleboa.asia/blog/318574170.sHTML +
+wap.wleboa.asia/blog/287599763.sHTML +
+wap.wleboa.asia/blog/028394651.sHTML +
+wap.wleboa.asia/blog/202553196.sHTML +
+wap.wleboa.asia/blog/842082207.sHTML +
+wap.wleboa.asia/blog/636920836.sHTML +
+wap.wleboa.asia/blog/741193364.sHTML +
+wap.wleboa.asia/blog/136197576.sHTML +
+wap.wleboa.asia/blog/636947086.sHTML +
+wap.wleboa.asia/blog/739703192.sHTML +
+wap.wleboa.asia/blog/125314290.sHTML +
+wap.wleboa.asia/blog/866588193.sHTML +
+wap.wleboa.asia/blog/843797869.sHTML +
+wap.wleboa.asia/blog/247198997.sHTML +
+wap.wleboa.asia/blog/369421921.sHTML +
+wap.wleboa.asia/blog/975576454.sHTML +
+wap.wleboa.asia/blog/131547603.sHTML +
+wap.wleboa.asia/blog/922147476.sHTML +
+wap.wleboa.asia/blog/243153769.sHTML +
+wap.wleboa.asia/blog/293754382.sHTML +
+wap.wleboa.asia/blog/243655870.sHTML +
+wap.wleboa.asia/blog/915892193.sHTML +
+wap.wleboa.asia/blog/359760926.sHTML +
+wap.wleboa.asia/blog/353092259.sHTML +
+wap.wleboa.asia/blog/021647608.sHTML +
+wap.wleboa.asia/blog/581403205.sHTML +
+wap.wleboa.asia/blog/359810428.sHTML +
+wap.wleboa.asia/blog/763667602.sHTML +
+wap.wleboa.asia/blog/292097095.sHTML +
+wap.wleboa.asia/blog/747199763.sHTML +
+wap.wleboa.asia/blog/075870976.sHTML +
+wap.wleboa.asia/blog/571486547.sHTML +
+wap.wleboa.asia/blog/052725253.sHTML +
+wap.wleboa.asia/blog/410325973.sHTML +
+wap.wleboa.asia/blog/431448698.sHTML +
+wap.wleboa.asia/blog/742653726.sHTML +
+wap.wleboa.asia/blog/642037642.sHTML +
+wap.wleboa.asia/blog/410547669.sHTML +
+wap.wleboa.asia/blog/008659719.sHTML +
+wap.wleboa.asia/blog/686542195.sHTML +
+wap.wleboa.asia/blog/964360043.sHTML +
+wap.wleboa.asia/blog/792068214.sHTML +
+wap.wleboa.asia/blog/958917959.sHTML +
+wap.wleboa.asia/blog/440254361.sHTML +
+wap.wleboa.asia/blog/855976982.sHTML +
+wap.wleboa.asia/blog/419877119.sHTML +
+wap.wleboa.asia/blog/420482008.sHTML +
+wap.wleboa.asia/blog/142093609.sHTML +
+wap.wleboa.asia/blog/576655310.sHTML +
+wap.wleboa.asia/blog/603103815.sHTML +
+wap.wleboa.asia/blog/864325569.sHTML +
+wap.wleboa.asia/blog/124023391.sHTML +
+wap.wleboa.asia/blog/444103636.sHTML +
+wap.wleboa.asia/blog/026933616.sHTML +
+wap.wleboa.asia/blog/571483199.sHTML +
+wap.wleboa.asia/blog/521981047.sHTML +
+wap.wleboa.asia/blog/308764381.sHTML +
+wap.wleboa.asia/blog/421011048.sHTML +
+wap.wleboa.asia/blog/414322876.sHTML +
+wap.wleboa.asia/blog/301598759.sHTML +
+wap.wleboa.asia/blog/792761671.sHTML +
+wap.wleboa.asia/blog/637604150.sHTML +
+wap.wleboa.asia/blog/284796384.sHTML +
+wap.wleboa.asia/blog/168587480.sHTML +
+wap.wleboa.asia/blog/519957564.sHTML +
+wap.wleboa.asia/blog/728680796.sHTML +
+wap.wleboa.asia/blog/606738495.sHTML +
+wap.wleboa.asia/blog/274861677.sHTML +
+wap.wleboa.asia/blog/101273997.sHTML +
+wap.wleboa.asia/blog/599512891.sHTML +
+wap.wleboa.asia/blog/128331003.sHTML +
+wap.wleboa.asia/blog/871765093.sHTML +
+wap.wleboa.asia/blog/699650438.sHTML +
+wap.wleboa.asia/blog/710454933.sHTML +
+wap.wleboa.asia/blog/154498832.sHTML +
+wap.wleboa.asia/blog/694893274.sHTML +
+wap.wleboa.asia/blog/715954983.sHTML +
+wap.wleboa.asia/blog/432821104.sHTML +
+wap.wleboa.asia/blog/366050985.sHTML +
+wap.wleboa.asia/blog/537721837.sHTML +
+wap.wleboa.asia/blog/482610548.sHTML +
+wap.wleboa.asia/blog/937161105.sHTML +
+wap.wleboa.asia/blog/265050405.sHTML +
+wap.wleboa.asia/blog/082761551.sHTML +
+wap.wleboa.asia/blog/048876160.sHTML +
+wap.wleboa.asia/blog/582998872.sHTML +
+wap.wleboa.asia/blog/712667155.sHTML +
+wap.wleboa.asia/blog/598777156.sHTML +
+wap.wleboa.asia/blog/159605044.sHTML +
+wap.wleboa.asia/blog/526137266.sHTML +
+wap.wleboa.asia/blog/981535297.sHTML +
+wap.wleboa.asia/blog/311010504.sHTML +
+wap.wleboa.asia/blog/104393887.sHTML +
+wap.wleboa.asia/blog/104854943.sHTML +
+wap.wleboa.asia/blog/087621665.sHTML +
+wap.wleboa.asia/blog/273505884.sHTML +
+wap.wleboa.asia/blog/088776665.sHTML +
+wap.wleboa.asia/blog/827651995.sHTML +
+wap.wleboa.asia/blog/609837622.sHTML +
+wap.wleboa.asia/blog/765286100.sHTML +
+wap.wleboa.asia/blog/042666000.sHTML +
+wap.wleboa.asia/blog/362654448.sHTML +
+wap.wleboa.asia/blog/020548260.sHTML +
+wap.wleboa.asia/blog/531047193.sHTML +
+wap.wleboa.asia/blog/025431047.sHTML +
+wap.wleboa.asia/blog/447201794.sHTML +
+wap.wleboa.asia/blog/136603119.sHTML +
+wap.wleboa.asia/blog/804325971.sHTML +
+wap.wleboa.asia/blog/572538648.sHTML +
+wap.wleboa.asia/blog/197215371.sHTML +
+wap.wleboa.asia/blog/200325926.sHTML +
+wap.wleboa.asia/blog/926032709.sHTML +
+wap.wleboa.asia/blog/875492158.sHTML +
+wap.wleboa.asia/blog/521982047.sHTML +
+wap.wleboa.asia/blog/358648864.sHTML +
+wap.wleboa.asia/blog/971126594.sHTML +
+wap.wleboa.asia/blog/792569765.sHTML +
+wap.wleboa.asia/blog/290825436.sHTML +
+wap.wleboa.asia/blog/290857512.sHTML +
+wap.wleboa.asia/blog/091791412.sHTML +
+wap.wleboa.asia/blog/131648704.sHTML +
+wap.wleboa.asia/blog/599121957.sHTML +
+wap.wleboa.asia/blog/174611100.sHTML +
+wap.wleboa.asia/blog/642093315.sHTML +
+wap.wleboa.asia/blog/374311931.sHTML +
+wap.wleboa.asia/blog/308266532.sHTML +
+wap.wleboa.asia/blog/500349238.sHTML +
+wap.wleboa.asia/blog/888073418.sHTML +
+wap.wleboa.asia/blog/496958655.sHTML +
+wap.wleboa.asia/blog/915376986.sHTML +
+wap.wleboa.asia/blog/532093158.sHTML +
+wap.wleboa.asia/blog/520366492.sHTML +
+wap.wleboa.asia/blog/686909819.sHTML +
+wap.wleboa.asia/blog/230645125.sHTML +
+wap.wleboa.asia/blog/502410936.sHTML +
+wap.wleboa.asia/blog/293196258.sHTML +
+wap.wleboa.asia/blog/227401040.sHTML +
+wap.wleboa.asia/blog/593697597.sHTML +
+wap.wleboa.asia/blog/744333197.sHTML +
+wap.wleboa.asia/blog/636925814.sHTML +
+wap.wleboa.asia/blog/446346936.sHTML +
+wap.wleboa.asia/blog/843192081.sHTML +
+wap.wleboa.asia/blog/370920314.sHTML +
+wap.wleboa.asia/blog/966113647.sHTML +
+wap.wleboa.asia/blog/414420531.sHTML +
+wap.wleboa.asia/blog/017508203.sHTML +
+wap.wleboa.asia/blog/070369369.sHTML +
+wap.wleboa.asia/blog/915081081.sHTML +
+wap.wleboa.asia/blog/907352929.sHTML +
+wap.wleboa.asia/blog/860808647.sHTML +
+wap.wleboa.asia/blog/636425365.sHTML +
+wap.wleboa.asia/blog/408719208.sHTML +
+wap.wleboa.asia/blog/742081910.sHTML +
+wap.wleboa.asia/blog/748103196.sHTML +
+wap.wleboa.asia/blog/418319427.sHTML +
+wap.wleboa.asia/blog/636253692.sHTML +
+wap.wleboa.asia/blog/746531258.sHTML +
+wap.wleboa.asia/blog/785122315.sHTML +
+wap.wleboa.asia/blog/857053092.sHTML +
+wap.wleboa.asia/blog/042081953.sHTML +
+wap.wleboa.asia/blog/803197147.sHTML +
+wap.wleboa.asia/blog/631976996.sHTML +
+wap.wleboa.asia/blog/815005284.sHTML +
+wap.wleboa.asia/blog/704665094.sHTML +
+wap.wleboa.asia/blog/098500592.sHTML +
+wap.wleboa.asia/blog/382285125.sHTML +
+wap.wleboa.asia/blog/198258775.sHTML +
+wap.wleboa.asia/blog/525482715.sHTML +
+wap.wleboa.asia/blog/853815420.sHTML +
+wap.wleboa.asia/blog/793104320.sHTML +
+wap.wleboa.asia/blog/448302899.sHTML +
+wap.wleboa.asia/blog/741920319.sHTML +
+wap.wleboa.asia/blog/449634743.sHTML +
+wap.wleboa.asia/blog/186475885.sHTML +
+wap.wleboa.asia/blog/303198698.sHTML +
+wap.wleboa.asia/blog/696081641.sHTML +
+wap.wleboa.asia/blog/087754758.sHTML +
+wap.wleboa.asia/blog/747531097.sHTML +
+wap.wleboa.asia/blog/292208752.sHTML +
+wap.wleboa.asia/blog/299758755.sHTML +
+wap.wleboa.asia/blog/028986452.sHTML +
+wap.wleboa.asia/blog/354246346.sHTML +
+wap.wleboa.asia/blog/692164447.sHTML +
+wap.wleboa.asia/blog/247153764.sHTML +
+wap.wleboa.asia/blog/581084315.sHTML +
+wap.wleboa.asia/blog/438699758.sHTML +
+wap.wleboa.asia/blog/302554811.sHTML +
+wap.wleboa.asia/blog/850364314.sHTML +
+wap.wleboa.asia/blog/069758742.sHTML +
+wap.wleboa.asia/blog/314657036.sHTML +
+wap.wleboa.asia/blog/181424703.sHTML +
+wap.wleboa.asia/blog/200975487.sHTML +
+wap.wleboa.asia/blog/748204470.sHTML +
+wap.wleboa.asia/blog/989943999.sHTML +
+wap.wleboa.asia/blog/754264325.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时51分51秒
