@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+pdf.maiano.asia/blog/210869142.sHTML +
+pdf.maiano.asia/blog/060331925.sHTML +
+pdf.maiano.asia/blog/303192086.sHTML +
+pdf.maiano.asia/blog/993808961.sHTML +
+pdf.maiano.asia/blog/521422160.sHTML +
+pdf.maiano.asia/blog/575114769.sHTML +
+pdf.maiano.asia/blog/136083815.sHTML +
+pdf.maiano.asia/blog/919935770.sHTML +
+pdf.maiano.asia/blog/319365926.sHTML +
+pdf.maiano.asia/blog/169870925.sHTML +
+pdf.maiano.asia/blog/398108269.sHTML +
+pdf.maiano.asia/blog/919886937.sHTML +
+pdf.maiano.asia/blog/577082093.sHTML +
+pdf.maiano.asia/blog/859482099.sHTML +
+pdf.maiano.asia/blog/637103512.sHTML +
+pdf.maiano.asia/blog/469325476.sHTML +
+pdf.maiano.asia/blog/914372609.sHTML +
+pdf.maiano.asia/blog/314853654.sHTML +
+pdf.maiano.asia/blog/869376587.sHTML +
+pdf.maiano.asia/blog/642548736.sHTML +
+pdf.maiano.asia/blog/910327548.sHTML +
+pdf.maiano.asia/blog/020426497.sHTML +
+pdf.maiano.asia/blog/182087099.sHTML +
+pdf.maiano.asia/blog/689769327.sHTML +
+pdf.maiano.asia/blog/808204826.sHTML +
+pdf.maiano.asia/blog/919827693.sHTML +
+pdf.maiano.asia/blog/464325494.sHTML +
+pdf.maiano.asia/blog/075986039.sHTML +
+pdf.maiano.asia/blog/797609260.sHTML +
+pdf.maiano.asia/blog/802603754.sHTML +
+pdf.maiano.asia/blog/481532559.sHTML +
+pdf.maiano.asia/blog/311192104.sHTML +
+pdf.maiano.asia/blog/137053986.sHTML +
+pdf.maiano.asia/blog/352260865.sHTML +
+pdf.maiano.asia/blog/681432293.sHTML +
+pdf.maiano.asia/blog/442153718.sHTML +
+pdf.maiano.asia/blog/621147144.sHTML +
+pdf.maiano.asia/blog/419092198.sHTML +
+pdf.maiano.asia/blog/419212588.sHTML +
+pdf.maiano.asia/blog/577537643.sHTML +
+pdf.maiano.asia/blog/631097695.sHTML +
+pdf.maiano.asia/blog/354214376.sHTML +
+pdf.maiano.asia/blog/819760820.sHTML +
+pdf.maiano.asia/blog/419381448.sHTML +
+pdf.maiano.asia/blog/297064810.sHTML +
+pdf.maiano.asia/blog/804769821.sHTML +
+pdf.maiano.asia/blog/193654881.sHTML +
+pdf.maiano.asia/blog/744754721.sHTML +
+pdf.maiano.asia/blog/914325586.sHTML +
+pdf.maiano.asia/blog/254486593.sHTML +
+pdf.maiano.asia/blog/297658704.sHTML +
+pdf.maiano.asia/blog/642193214.sHTML +
+pdf.maiano.asia/blog/026137037.sHTML +
+pdf.maiano.asia/blog/477543608.sHTML +
+pdf.maiano.asia/blog/305888019.sHTML +
+pdf.maiano.asia/blog/264231425.sHTML +
+pdf.maiano.asia/blog/965825921.sHTML +
+pdf.maiano.asia/blog/642654875.sHTML +
+pdf.maiano.asia/blog/526486099.sHTML +
+pdf.maiano.asia/blog/297653365.sHTML +
+pdf.maiano.asia/blog/748769031.sHTML +
+pdf.maiano.asia/blog/420931587.sHTML +
+pdf.maiano.asia/blog/915538760.sHTML +
+pdf.maiano.asia/blog/575592104.sHTML +
+pdf.maiano.asia/blog/654090446.sHTML +
+pdf.maiano.asia/blog/248382160.sHTML +
+pdf.maiano.asia/blog/642159760.sHTML +
+pdf.maiano.asia/blog/258104214.sHTML +
+pdf.maiano.asia/blog/977587214.sHTML +
+pdf.maiano.asia/blog/531989331.sHTML +
+pdf.maiano.asia/blog/720633336.sHTML +
+pdf.maiano.asia/blog/298620815.sHTML +
+pdf.maiano.asia/blog/803104260.sHTML +
+pdf.maiano.asia/blog/413203142.sHTML +
+pdf.maiano.asia/blog/181420347.sHTML +
+pdf.maiano.asia/blog/308086536.sHTML +
+pdf.maiano.asia/blog/075970860.sHTML +
+pdf.maiano.asia/blog/764203153.sHTML +
+pdf.maiano.asia/blog/394079679.sHTML +
+pdf.maiano.asia/blog/651383480.sHTML +
+pdf.maiano.asia/blog/862270608.sHTML +
+pdf.maiano.asia/blog/694525363.sHTML +
+pdf.maiano.asia/blog/856990794.sHTML +
+pdf.maiano.asia/blog/486547153.sHTML +
+pdf.maiano.asia/blog/931432547.sHTML +
+pdf.maiano.asia/blog/088532284.sHTML +
+pdf.maiano.asia/blog/185596425.sHTML +
+pdf.maiano.asia/blog/505071541.sHTML +
+pdf.maiano.asia/blog/074925319.sHTML +
+pdf.maiano.asia/blog/612899961.sHTML +
+pdf.maiano.asia/blog/526425354.sHTML +
+pdf.maiano.asia/blog/734150437.sHTML +
+pdf.maiano.asia/blog/747086970.sHTML +
+pdf.maiano.asia/blog/181944253.sHTML +
+pdf.maiano.asia/blog/124179779.sHTML +
+pdf.maiano.asia/blog/125311835.sHTML +
+pdf.maiano.asia/blog/777398396.sHTML +
+pdf.maiano.asia/blog/181425146.sHTML +
+pdf.maiano.asia/blog/752161470.sHTML +
+pdf.maiano.asia/blog/854754754.sHTML +
+pdf.maiano.asia/blog/108098192.sHTML +
+pdf.maiano.asia/blog/203102031.sHTML +
+pdf.maiano.asia/blog/307531588.sHTML +
+pdf.maiano.asia/blog/747030131.sHTML +
+pdf.maiano.asia/blog/525324358.sHTML +
+pdf.maiano.asia/blog/635370864.sHTML +
+pdf.maiano.asia/blog/881974757.sHTML +
+pdf.maiano.asia/blog/400230420.sHTML +
+pdf.maiano.asia/blog/075364257.sHTML +
+pdf.maiano.asia/blog/670319214.sHTML +
+pdf.maiano.asia/blog/419753699.sHTML +
+pdf.maiano.asia/blog/414615700.sHTML +
+pdf.maiano.asia/blog/019029364.sHTML +
+pdf.maiano.asia/blog/942417699.sHTML +
+pdf.maiano.asia/blog/297531475.sHTML +
+pdf.maiano.asia/blog/028070276.sHTML +
+pdf.maiano.asia/blog/075314487.sHTML +
+pdf.maiano.asia/blog/958642253.sHTML +
+pdf.maiano.asia/blog/542531875.sHTML +
+pdf.maiano.asia/blog/062853539.sHTML +
+pdf.maiano.asia/blog/214207586.sHTML +
+pdf.maiano.asia/blog/229641157.sHTML +
+pdf.maiano.asia/blog/414253082.sHTML +
+pdf.maiano.asia/blog/174461025.sHTML +
+pdf.maiano.asia/blog/292588668.sHTML +
+pdf.maiano.asia/blog/186470871.sHTML +
+pdf.maiano.asia/blog/741431920.sHTML +
+pdf.maiano.asia/blog/408664708.sHTML +
+pdf.maiano.asia/blog/969200353.sHTML +
+pdf.maiano.asia/blog/075360925.sHTML +
+pdf.maiano.asia/blog/414042270.sHTML +
+pdf.maiano.asia/blog/071932097.sHTML +
+pdf.maiano.asia/blog/857646031.sHTML +
+pdf.maiano.asia/blog/175361970.sHTML +
+pdf.maiano.asia/blog/418643194.sHTML +
+pdf.maiano.asia/blog/511970421.sHTML +
+pdf.maiano.asia/blog/292425825.sHTML +
+pdf.maiano.asia/blog/081642537.sHTML +
+pdf.maiano.asia/blog/803252215.sHTML +
+pdf.maiano.asia/blog/852053193.sHTML +
+pdf.maiano.asia/blog/281932142.sHTML +
+pdf.maiano.asia/blog/170865720.sHTML +
+pdf.maiano.asia/blog/181942037.sHTML +
+pdf.maiano.asia/blog/747009208.sHTML +
+pdf.maiano.asia/blog/418642764.sHTML +
+pdf.maiano.asia/blog/718319308.sHTML +
+pdf.maiano.asia/blog/969319753.sHTML +
+pdf.maiano.asia/blog/070272098.sHTML +
+pdf.maiano.asia/blog/525331536.sHTML +
+pdf.maiano.asia/blog/637976819.sHTML +
+pdf.maiano.asia/blog/292753669.sHTML +
+pdf.maiano.asia/blog/789105806.sHTML +
+pdf.maiano.asia/blog/575475035.sHTML +
+pdf.maiano.asia/blog/397087976.sHTML +
+pdf.maiano.asia/blog/339996461.sHTML +
+pdf.maiano.asia/blog/445048328.sHTML +
+pdf.maiano.asia/blog/131975879.sHTML +
+pdf.maiano.asia/blog/965319297.sHTML +
+pdf.maiano.asia/blog/855319753.sHTML +
+pdf.maiano.asia/blog/707258192.sHTML +
+pdf.maiano.asia/blog/792082970.sHTML +
+pdf.maiano.asia/blog/270699970.sHTML +
+pdf.maiano.asia/blog/914817082.sHTML +
+pdf.maiano.asia/blog/082593376.sHTML +
+pdf.maiano.asia/blog/814870470.sHTML +
+pdf.maiano.asia/blog/751783120.sHTML +
+pdf.maiano.asia/blog/165492325.sHTML +
+pdf.maiano.asia/blog/309375882.sHTML +
+pdf.maiano.asia/blog/692719325.sHTML +
+pdf.maiano.asia/blog/304436934.sHTML +
+pdf.maiano.asia/blog/636447826.sHTML +
+pdf.maiano.asia/blog/631048143.sHTML +
+pdf.maiano.asia/blog/482542698.sHTML +
+pdf.maiano.asia/blog/922567147.sHTML +
+pdf.maiano.asia/blog/106569831.sHTML +
+pdf.maiano.asia/blog/809815820.sHTML +
+pdf.maiano.asia/blog/465315870.sHTML +
+pdf.maiano.asia/blog/476432420.sHTML +
+pdf.maiano.asia/blog/901523634.sHTML +
+pdf.maiano.asia/blog/136543659.sHTML +
+pdf.maiano.asia/blog/709810981.sHTML +
+pdf.maiano.asia/blog/220476087.sHTML +
+pdf.maiano.asia/blog/858160235.sHTML +
+pdf.maiano.asia/blog/362071077.sHTML +
+pdf.maiano.asia/blog/026592654.sHTML +
+pdf.maiano.asia/blog/797608709.sHTML +
+pdf.maiano.asia/blog/524253697.sHTML +
+pdf.maiano.asia/blog/162394055.sHTML +
+pdf.maiano.asia/blog/106829519.sHTML +
+pdf.maiano.asia/blog/096987586.sHTML +
+pdf.maiano.asia/blog/185376475.sHTML +
+pdf.maiano.asia/blog/181882036.sHTML +
+pdf.maiano.asia/blog/480975825.sHTML +
+pdf.maiano.asia/blog/647977692.sHTML +
+pdf.maiano.asia/blog/742582058.sHTML +
+pdf.maiano.asia/blog/803548364.sHTML +
+pdf.maiano.asia/blog/385240962.sHTML +
+pdf.maiano.asia/blog/241194580.sHTML +
+pdf.maiano.asia/blog/408664253.sHTML +
+pdf.maiano.asia/blog/166346833.sHTML +
+pdf.maiano.asia/blog/291980864.sHTML +
+pdf.maiano.asia/blog/858048692.sHTML +
+pdf.maiano.asia/blog/074208644.sHTML +
+pdf.maiano.asia/blog/620869759.sHTML +
+pdf.maiano.asia/blog/076536475.sHTML +
+pdf.maiano.asia/blog/620869804.sHTML +
+pdf.maiano.asia/blog/668912049.sHTML +
+pdf.maiano.asia/blog/406857972.sHTML +
+pdf.maiano.asia/blog/602053258.sHTML +
+pdf.maiano.asia/blog/682175875.sHTML +
+pdf.maiano.asia/blog/486921532.sHTML +
+pdf.maiano.asia/blog/419571082.sHTML +
+pdf.maiano.asia/blog/864315642.sHTML +
+pdf.maiano.asia/blog/578709215.sHTML +
+pdf.maiano.asia/blog/118404002.sHTML +
+pdf.maiano.asia/blog/586982149.sHTML +
+pdf.maiano.asia/blog/639209360.sHTML +
+pdf.maiano.asia/blog/853108225.sHTML +
+pdf.maiano.asia/blog/589395116.sHTML +
+pdf.maiano.asia/blog/070931475.sHTML +
+pdf.maiano.asia/blog/853192086.sHTML +
+pdf.maiano.asia/blog/741030915.sHTML +
+pdf.maiano.asia/blog/751223903.sHTML +
+pdf.maiano.asia/blog/118033614.sHTML +
+pdf.maiano.asia/blog/858647586.sHTML +
+pdf.maiano.asia/blog/330456798.sHTML +
+pdf.maiano.asia/blog/912692153.sHTML +
+pdf.maiano.asia/blog/864782547.sHTML +
+pdf.maiano.asia/blog/353754862.sHTML +
+pdf.maiano.asia/blog/646639566.sHTML +
+pdf.maiano.asia/blog/503597901.sHTML +
+pdf.maiano.asia/blog/145980416.sHTML +
+pdf.maiano.asia/blog/509203042.sHTML +
+pdf.maiano.asia/blog/887902284.sHTML +
+pdf.maiano.asia/blog/969864753.sHTML +
+pdf.maiano.asia/blog/075315936.sHTML +
+pdf.maiano.asia/blog/736925819.sHTML +
+pdf.maiano.asia/blog/050170518.sHTML +
+pdf.maiano.asia/blog/502652423.sHTML +
+pdf.maiano.asia/blog/289445851.sHTML +
+pdf.maiano.asia/blog/852086431.sHTML +
+pdf.maiano.asia/blog/309758819.sHTML +
+pdf.maiano.asia/blog/637675764.sHTML +
+pdf.maiano.asia/blog/323559162.sHTML +
+pdf.maiano.asia/blog/964203144.sHTML +
+pdf.maiano.asia/blog/524758647.sHTML +
+pdf.maiano.asia/blog/136531425.sHTML +
+pdf.maiano.asia/blog/525318204.sHTML +
+pdf.maiano.asia/blog/142891209.sHTML +
+pdf.maiano.asia/blog/292596425.sHTML +
+pdf.maiano.asia/blog/840789785.sHTML +
+pdf.maiano.asia/blog/347593324.sHTML +
+pdf.maiano.asia/blog/374055668.sHTML +
+pdf.maiano.asia/blog/724065890.sHTML +
+pdf.maiano.asia/blog/682648659.sHTML +
+pdf.maiano.asia/blog/571982093.sHTML +
+pdf.maiano.asia/blog/410325598.sHTML +
+pdf.maiano.asia/blog/460370933.sHTML +
+pdf.maiano.asia/blog/385241307.sHTML +
+pdf.maiano.asia/blog/758714365.sHTML +
+pdf.maiano.asia/blog/362988331.sHTML +
+pdf.maiano.asia/blog/248143369.sHTML +
+pdf.maiano.asia/blog/634760432.sHTML +
+pdf.maiano.asia/blog/354315320.sHTML +
+pdf.maiano.asia/blog/809367093.sHTML +
+pdf.maiano.asia/blog/292193254.sHTML +
+pdf.maiano.asia/blog/797648360.sHTML +
+pdf.maiano.asia/blog/470337693.sHTML +
+pdf.maiano.asia/blog/920536597.sHTML +
+pdf.maiano.asia/blog/248315370.sHTML +
+pdf.maiano.asia/blog/020985470.sHTML +
+pdf.maiano.asia/blog/025976586.sHTML +
+pdf.maiano.asia/blog/186087043.sHTML +
+pdf.maiano.asia/blog/358665423.sHTML +
+pdf.maiano.asia/blog/026938758.sHTML +
+pdf.maiano.asia/blog/970936697.sHTML +
+pdf.maiano.asia/blog/020402087.sHTML +
+pdf.maiano.asia/blog/292049865.sHTML +
+pdf.maiano.asia/blog/420370331.sHTML +
+pdf.maiano.asia/blog/036987658.sHTML +
+pdf.maiano.asia/blog/636503658.sHTML +
+pdf.maiano.asia/blog/519325871.sHTML +
+pdf.maiano.asia/blog/709995655.sHTML +
+pdf.maiano.asia/blog/037722765.sHTML +
+pdf.maiano.asia/blog/254387276.sHTML +
+pdf.maiano.asia/blog/648834824.sHTML +
+pdf.maiano.asia/blog/759498599.sHTML +
+pdf.maiano.asia/blog/759309433.sHTML +
+pdf.maiano.asia/blog/715552717.sHTML +
+pdf.maiano.asia/blog/482660948.sHTML +
+pdf.maiano.asia/blog/827150091.sHTML +
+pdf.maiano.asia/blog/663908058.sHTML +
+pdf.maiano.asia/blog/082771559.sHTML +
+pdf.maiano.asia/blog/471610911.sHTML +
+pdf.maiano.asia/blog/704594328.sHTML +
+pdf.maiano.asia/blog/095383685.sHTML +
+pdf.maiano.asia/blog/471610765.sHTML +
+pdf.maiano.asia/blog/365044388.sHTML +
+pdf.maiano.asia/blog/209387600.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时48分23秒
