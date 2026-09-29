@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+pdf.edpffa.asia/blog/101252463.sHTML +
+pdf.edpffa.asia/blog/063181313.sHTML +
+pdf.edpffa.asia/blog/928589181.sHTML +
+pdf.edpffa.asia/blog/563524796.sHTML +
+pdf.edpffa.asia/blog/195204686.sHTML +
+pdf.edpffa.asia/blog/767351203.sHTML +
+pdf.edpffa.asia/blog/610467029.sHTML +
+pdf.edpffa.asia/blog/624757079.sHTML +
+pdf.edpffa.asia/blog/922795001.sHTML +
+pdf.edpffa.asia/blog/583283333.sHTML +
+pdf.edpffa.asia/blog/636197031.sHTML +
+pdf.edpffa.asia/blog/529208142.sHTML +
+pdf.edpffa.asia/blog/852091208.sHTML +
+pdf.edpffa.asia/blog/650263142.sHTML +
+pdf.edpffa.asia/blog/182154203.sHTML +
+pdf.edpffa.asia/blog/796619703.sHTML +
+pdf.edpffa.asia/blog/637508765.sHTML +
+pdf.edpffa.asia/blog/415970863.sHTML +
+pdf.edpffa.asia/blog/070265369.sHTML +
+pdf.edpffa.asia/blog/358703814.sHTML +
+pdf.edpffa.asia/blog/850975875.sHTML +
+pdf.edpffa.asia/blog/525481925.sHTML +
+pdf.edpffa.asia/blog/264225319.sHTML +
+pdf.edpffa.asia/blog/586487436.sHTML +
+pdf.edpffa.asia/blog/965314853.sHTML +
+pdf.edpffa.asia/blog/747531920.sHTML +
+pdf.edpffa.asia/blog/707531492.sHTML +
+pdf.edpffa.asia/blog/674969855.sHTML +
+pdf.edpffa.asia/blog/632081681.sHTML +
+pdf.edpffa.asia/blog/075491996.sHTML +
+pdf.edpffa.asia/blog/653648751.sHTML +
+pdf.edpffa.asia/blog/092719229.sHTML +
+pdf.edpffa.asia/blog/181470364.sHTML +
+pdf.edpffa.asia/blog/635425336.sHTML +
+pdf.edpffa.asia/blog/378456665.sHTML +
+pdf.edpffa.asia/blog/277077017.sHTML +
+pdf.edpffa.asia/blog/670331948.sHTML +
+pdf.edpffa.asia/blog/288191258.sHTML +
+pdf.edpffa.asia/blog/729246029.sHTML +
+pdf.edpffa.asia/blog/969758653.sHTML +
+pdf.edpffa.asia/blog/353104709.sHTML +
+pdf.edpffa.asia/blog/414758658.sHTML +
+pdf.edpffa.asia/blog/372581441.sHTML +
+pdf.edpffa.asia/blog/186977536.sHTML +
+pdf.edpffa.asia/blog/089050033.sHTML +
+pdf.edpffa.asia/blog/136642664.sHTML +
+pdf.edpffa.asia/blog/304325431.sHTML +
+pdf.edpffa.asia/blog/692053704.sHTML +
+pdf.edpffa.asia/blog/217969972.sHTML +
+pdf.edpffa.asia/blog/390622993.sHTML +
+pdf.edpffa.asia/blog/044013672.sHTML +
+pdf.edpffa.asia/blog/410997149.sHTML +
+pdf.edpffa.asia/blog/419431099.sHTML +
+pdf.edpffa.asia/blog/687819378.sHTML +
+pdf.edpffa.asia/blog/521433658.sHTML +
+pdf.edpffa.asia/blog/570421977.sHTML +
+pdf.edpffa.asia/blog/025821033.sHTML +
+pdf.edpffa.asia/blog/642058254.sHTML +
+pdf.edpffa.asia/blog/570931708.sHTML +
+pdf.edpffa.asia/blog/115459194.sHTML +
+pdf.edpffa.asia/blog/086987259.sHTML +
+pdf.edpffa.asia/blog/552259873.sHTML +
+pdf.edpffa.asia/blog/131032039.sHTML +
+pdf.edpffa.asia/blog/182142659.sHTML +
+pdf.edpffa.asia/blog/525426437.sHTML +
+pdf.edpffa.asia/blog/136408158.sHTML +
+pdf.edpffa.asia/blog/075431547.sHTML +
+pdf.edpffa.asia/blog/549269275.sHTML +
+pdf.edpffa.asia/blog/410842500.sHTML +
+pdf.edpffa.asia/blog/614776981.sHTML +
+pdf.edpffa.asia/blog/470971032.sHTML +
+pdf.edpffa.asia/blog/686592198.sHTML +
+pdf.edpffa.asia/blog/353269360.sHTML +
+pdf.edpffa.asia/blog/304220860.sHTML +
+pdf.edpffa.asia/blog/031588120.sHTML +
+pdf.edpffa.asia/blog/774763418.sHTML +
+pdf.edpffa.asia/blog/197543610.sHTML +
+pdf.edpffa.asia/blog/976477664.sHTML +
+pdf.edpffa.asia/blog/208970982.sHTML +
+pdf.edpffa.asia/blog/420827604.sHTML +
+pdf.edpffa.asia/blog/042726081.sHTML +
+pdf.edpffa.asia/blog/075438692.sHTML +
+pdf.edpffa.asia/blog/003840217.sHTML +
+pdf.edpffa.asia/blog/303169037.sHTML +
+pdf.edpffa.asia/blog/960321436.sHTML +
+pdf.edpffa.asia/blog/683144582.sHTML +
+pdf.edpffa.asia/blog/806936547.sHTML +
+pdf.edpffa.asia/blog/414976982.sHTML +
+pdf.edpffa.asia/blog/410325471.sHTML +
+pdf.edpffa.asia/blog/075986082.sHTML +
+pdf.edpffa.asia/blog/013158204.sHTML +
+pdf.edpffa.asia/blog/026049064.sHTML +
+pdf.edpffa.asia/blog/308875058.sHTML +
+pdf.edpffa.asia/blog/914325958.sHTML +
+pdf.edpffa.asia/blog/469311998.sHTML +
+pdf.edpffa.asia/blog/631099774.sHTML +
+pdf.edpffa.asia/blog/975875197.sHTML +
+pdf.edpffa.asia/blog/964860388.sHTML +
+pdf.edpffa.asia/blog/325876982.sHTML +
+pdf.edpffa.asia/blog/495831471.sHTML +
+pdf.edpffa.asia/blog/460336592.sHTML +
+pdf.edpffa.asia/blog/147659232.sHTML +
+pdf.edpffa.asia/blog/475320420.sHTML +
+pdf.edpffa.asia/blog/574413480.sHTML +
+pdf.edpffa.asia/blog/188164269.sHTML +
+pdf.edpffa.asia/blog/464820370.sHTML +
+pdf.edpffa.asia/blog/526692608.sHTML +
+pdf.edpffa.asia/blog/570531160.sHTML +
+pdf.edpffa.asia/blog/522620471.sHTML +
+pdf.edpffa.asia/blog/464326981.sHTML +
+pdf.edpffa.asia/blog/617587791.sHTML +
+pdf.edpffa.asia/blog/758269860.sHTML +
+pdf.edpffa.asia/blog/582644370.sHTML +
+pdf.edpffa.asia/blog/603282900.sHTML +
+pdf.edpffa.asia/blog/990150527.sHTML +
+pdf.edpffa.asia/blog/194888943.sHTML +
+pdf.edpffa.asia/blog/102415136.sHTML +
+pdf.edpffa.asia/blog/181421975.sHTML +
+pdf.edpffa.asia/blog/781970585.sHTML +
+pdf.edpffa.asia/blog/581970811.sHTML +
+pdf.edpffa.asia/blog/215715368.sHTML +
+pdf.edpffa.asia/blog/636091936.sHTML +
+pdf.edpffa.asia/blog/858724981.sHTML +
+pdf.edpffa.asia/blog/548603211.sHTML +
+pdf.edpffa.asia/blog/520982193.sHTML +
+pdf.edpffa.asia/blog/631197113.sHTML +
+pdf.edpffa.asia/blog/075471053.sHTML +
+pdf.edpffa.asia/blog/824810990.sHTML +
+pdf.edpffa.asia/blog/638693559.sHTML +
+pdf.edpffa.asia/blog/919870436.sHTML +
+pdf.edpffa.asia/blog/976104449.sHTML +
+pdf.edpffa.asia/blog/319422253.sHTML +
+pdf.edpffa.asia/blog/919308359.sHTML +
+pdf.edpffa.asia/blog/308361938.sHTML +
+pdf.edpffa.asia/blog/686697097.sHTML +
+pdf.edpffa.asia/blog/493037434.sHTML +
+pdf.edpffa.asia/blog/036492153.sHTML +
+pdf.edpffa.asia/blog/920421664.sHTML +
+pdf.edpffa.asia/blog/536486438.sHTML +
+pdf.edpffa.asia/blog/464327143.sHTML +
+pdf.edpffa.asia/blog/552143259.sHTML +
+pdf.edpffa.asia/blog/756155948.sHTML +
+pdf.edpffa.asia/blog/713721161.sHTML +
+pdf.edpffa.asia/blog/821162052.sHTML +
+pdf.edpffa.asia/blog/311527115.sHTML +
+pdf.edpffa.asia/blog/817114925.sHTML +
+pdf.edpffa.asia/blog/809347379.sHTML +
+pdf.edpffa.asia/blog/648518216.sHTML +
+pdf.edpffa.asia/blog/593214365.sHTML +
+pdf.edpffa.asia/blog/305752057.sHTML +
+pdf.edpffa.asia/blog/353582614.sHTML +
+pdf.edpffa.asia/blog/875646356.sHTML +
+pdf.edpffa.asia/blog/455797496.sHTML +
+pdf.edpffa.asia/blog/025315368.sHTML +
+pdf.edpffa.asia/blog/225158959.sHTML +
+pdf.edpffa.asia/blog/736970364.sHTML +
+pdf.edpffa.asia/blog/125596475.sHTML +
+pdf.edpffa.asia/blog/522435673.sHTML +
+pdf.edpffa.asia/blog/096192092.sHTML +
+pdf.edpffa.asia/blog/398048797.sHTML +
+pdf.edpffa.asia/blog/175369771.sHTML +
+pdf.edpffa.asia/blog/414203207.sHTML +
+pdf.edpffa.asia/blog/181093147.sHTML +
+pdf.edpffa.asia/blog/665740057.sHTML +
+pdf.edpffa.asia/blog/525471982.sHTML +
+pdf.edpffa.asia/blog/026531532.sHTML +
+pdf.edpffa.asia/blog/243109219.sHTML +
+pdf.edpffa.asia/blog/112752589.sHTML +
+pdf.edpffa.asia/blog/575500876.sHTML +
+pdf.edpffa.asia/blog/752963627.sHTML +
+pdf.edpffa.asia/blog/848719532.sHTML +
+pdf.edpffa.asia/blog/009588697.sHTML +
+pdf.edpffa.asia/blog/190624977.sHTML +
+pdf.edpffa.asia/blog/185320813.sHTML +
+pdf.edpffa.asia/blog/405819753.sHTML +
+pdf.edpffa.asia/blog/642532193.sHTML +
+pdf.edpffa.asia/blog/513090024.sHTML +
+pdf.edpffa.asia/blog/420838703.sHTML +
+pdf.edpffa.asia/blog/076982558.sHTML +
+pdf.edpffa.asia/blog/420087254.sHTML +
+pdf.edpffa.asia/blog/032190982.sHTML +
+pdf.edpffa.asia/blog/103716932.sHTML +
+pdf.edpffa.asia/blog/358215815.sHTML +
+pdf.edpffa.asia/blog/575424353.sHTML +
+pdf.edpffa.asia/blog/229067344.sHTML +
+pdf.edpffa.asia/blog/968658184.sHTML +
+pdf.edpffa.asia/blog/181479871.sHTML +
+pdf.edpffa.asia/blog/525324264.sHTML +
+pdf.edpffa.asia/blog/347642798.sHTML +
+pdf.edpffa.asia/blog/590646756.sHTML +
+pdf.edpffa.asia/blog/520225991.sHTML +
+pdf.edpffa.asia/blog/741869708.sHTML +
+pdf.edpffa.asia/blog/842032036.sHTML +
+pdf.edpffa.asia/blog/075310814.sHTML +
+pdf.edpffa.asia/blog/302047921.sHTML +
+pdf.edpffa.asia/blog/131587470.sHTML +
+pdf.edpffa.asia/blog/304864214.sHTML +
+pdf.edpffa.asia/blog/741536198.sHTML +
+pdf.edpffa.asia/blog/525366132.sHTML +
+pdf.edpffa.asia/blog/176420970.sHTML +
+pdf.edpffa.asia/blog/070942081.sHTML +
+pdf.edpffa.asia/blog/390012073.sHTML +
+pdf.edpffa.asia/blog/747081421.sHTML +
+pdf.edpffa.asia/blog/968157319.sHTML +
+pdf.edpffa.asia/blog/547541425.sHTML +
+pdf.edpffa.asia/blog/654714243.sHTML +
+pdf.edpffa.asia/blog/072087508.sHTML +
+pdf.edpffa.asia/blog/525927914.sHTML +
+pdf.edpffa.asia/blog/104475751.sHTML +
+pdf.edpffa.asia/blog/630465870.sHTML +
+pdf.edpffa.asia/blog/919864865.sHTML +
+pdf.edpffa.asia/blog/147581869.sHTML +
+pdf.edpffa.asia/blog/185531487.sHTML +
+pdf.edpffa.asia/blog/458720886.sHTML +
+pdf.edpffa.asia/blog/750666610.sHTML +
+pdf.edpffa.asia/blog/925081647.sHTML +
+pdf.edpffa.asia/blog/540272312.sHTML +
+pdf.edpffa.asia/blog/570836475.sHTML +
+pdf.edpffa.asia/blog/746536697.sHTML +
+pdf.edpffa.asia/blog/414753647.sHTML +
+pdf.edpffa.asia/blog/136852678.sHTML +
+pdf.edpffa.asia/blog/181475308.sHTML +
+pdf.edpffa.asia/blog/024260925.sHTML +
+pdf.edpffa.asia/blog/414204207.sHTML +
+pdf.edpffa.asia/blog/625319769.sHTML +
+pdf.edpffa.asia/blog/854295556.sHTML +
+pdf.edpffa.asia/blog/632008519.sHTML +
+pdf.edpffa.asia/blog/520813646.sHTML +
+pdf.edpffa.asia/blog/969208819.sHTML +
+pdf.edpffa.asia/blog/739577403.sHTML +
+pdf.edpffa.asia/blog/141947536.sHTML +
+pdf.edpffa.asia/blog/407417945.sHTML +
+pdf.edpffa.asia/blog/961109483.sHTML +
+pdf.edpffa.asia/blog/959455022.sHTML +
+pdf.edpffa.asia/blog/549009382.sHTML +
+pdf.edpffa.asia/blog/377355062.sHTML +
+pdf.edpffa.asia/blog/915918032.sHTML +
+pdf.edpffa.asia/blog/139945173.sHTML +
+pdf.edpffa.asia/blog/748619207.sHTML +
+pdf.edpffa.asia/blog/525314204.sHTML +
+pdf.edpffa.asia/blog/637715738.sHTML +
+pdf.edpffa.asia/blog/339687845.sHTML +
+pdf.edpffa.asia/blog/245820202.sHTML +
+pdf.edpffa.asia/blog/075735791.sHTML +
+pdf.edpffa.asia/blog/345846024.sHTML +
+pdf.edpffa.asia/blog/636420316.sHTML +
+pdf.edpffa.asia/blog/778855994.sHTML +
+pdf.edpffa.asia/blog/771302468.sHTML +
+pdf.edpffa.asia/blog/526435319.sHTML +
+pdf.edpffa.asia/blog/792768758.sHTML +
+pdf.edpffa.asia/blog/853192478.sHTML +
+pdf.edpffa.asia/blog/036420925.sHTML +
+pdf.edpffa.asia/blog/302031697.sHTML +
+pdf.edpffa.asia/blog/781692203.sHTML +
+pdf.edpffa.asia/blog/575314257.sHTML +
+pdf.edpffa.asia/blog/241649258.sHTML +
+pdf.edpffa.asia/blog/152753136.sHTML +
+pdf.edpffa.asia/blog/747096697.sHTML +
+pdf.edpffa.asia/blog/680921020.sHTML +
+pdf.edpffa.asia/blog/303869758.sHTML +
+pdf.edpffa.asia/blog/340740847.sHTML +
+pdf.edpffa.asia/blog/302591943.sHTML +
+pdf.edpffa.asia/blog/192536420.sHTML +
+pdf.edpffa.asia/blog/181970797.sHTML +
+pdf.edpffa.asia/blog/747536924.sHTML +
+pdf.edpffa.asia/blog/292208647.sHTML +
+pdf.edpffa.asia/blog/286925863.sHTML +
+pdf.edpffa.asia/blog/036420314.sHTML +
+pdf.edpffa.asia/blog/788022790.sHTML +
+pdf.edpffa.asia/blog/077345216.sHTML +
+pdf.edpffa.asia/blog/847086641.sHTML +
+pdf.edpffa.asia/blog/170864714.sHTML +
+pdf.edpffa.asia/blog/418620430.sHTML +
+pdf.edpffa.asia/blog/968753146.sHTML +
+pdf.edpffa.asia/blog/746997186.sHTML +
+pdf.edpffa.asia/blog/075336414.sHTML +
+pdf.edpffa.asia/blog/302143531.sHTML +
+pdf.edpffa.asia/blog/427837627.sHTML +
+pdf.edpffa.asia/blog/308876659.sHTML +
+pdf.edpffa.asia/blog/477110650.sHTML +
+pdf.edpffa.asia/blog/437581042.sHTML +
+pdf.edpffa.asia/blog/858669147.sHTML +
+pdf.edpffa.asia/blog/418197086.sHTML +
+pdf.edpffa.asia/blog/903192792.sHTML +
+pdf.edpffa.asia/blog/747086497.sHTML +
+pdf.edpffa.asia/blog/358764259.sHTML +
+pdf.edpffa.asia/blog/354764714.sHTML +
+pdf.edpffa.asia/blog/792204319.sHTML +
+pdf.edpffa.asia/blog/200594401.sHTML +
+pdf.edpffa.asia/blog/464486970.sHTML +
+pdf.edpffa.asia/blog/647164420.sHTML +
+pdf.edpffa.asia/blog/853981037.sHTML +
+pdf.edpffa.asia/blog/460431115.sHTML +
+pdf.edpffa.asia/blog/028119815.sHTML +
+pdf.edpffa.asia/blog/664219764.sHTML +
+pdf.edpffa.asia/blog/494434435.sHTML +
+pdf.edpffa.asia/blog/109443937.sHTML +
+pdf.edpffa.asia/blog/894744784.sHTML +
+pdf.edpffa.asia/blog/865509934.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日20时05分09秒
