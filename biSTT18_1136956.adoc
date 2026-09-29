@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.pfcskso.cn/blog/853768619.sHTML +
+wap.pfcskso.cn/blog/779446789.sHTML +
+wap.pfcskso.cn/blog/414209803.sHTML +
+wap.pfcskso.cn/blog/513512124.sHTML +
+wap.pfcskso.cn/blog/956418029.sHTML +
+wap.pfcskso.cn/blog/840452273.sHTML +
+wap.pfcskso.cn/blog/171970369.sHTML +
+wap.pfcskso.cn/blog/986931924.sHTML +
+wap.pfcskso.cn/blog/180757464.sHTML +
+wap.pfcskso.cn/blog/506629017.sHTML +
+wap.pfcskso.cn/blog/913547802.sHTML +
+wap.pfcskso.cn/blog/747023302.sHTML +
+wap.pfcskso.cn/blog/747980321.sHTML +
+wap.pfcskso.cn/blog/627536427.sHTML +
+wap.pfcskso.cn/blog/065314243.sHTML +
+wap.pfcskso.cn/blog/255752875.sHTML +
+wap.pfcskso.cn/blog/469108536.sHTML +
+wap.pfcskso.cn/blog/418142203.sHTML +
+wap.pfcskso.cn/blog/850864708.sHTML +
+wap.pfcskso.cn/blog/852046752.sHTML +
+wap.pfcskso.cn/blog/525864814.sHTML +
+wap.pfcskso.cn/blog/631470814.sHTML +
+wap.pfcskso.cn/blog/246575870.sHTML +
+wap.pfcskso.cn/blog/400369708.sHTML +
+wap.pfcskso.cn/blog/170586931.sHTML +
+wap.pfcskso.cn/blog/357451977.sHTML +
+wap.pfcskso.cn/blog/681435814.sHTML +
+wap.pfcskso.cn/blog/519865919.sHTML +
+wap.pfcskso.cn/blog/620869729.sHTML +
+wap.pfcskso.cn/blog/025972530.sHTML +
+wap.pfcskso.cn/blog/858153220.sHTML +
+wap.pfcskso.cn/blog/677536081.sHTML +
+wap.pfcskso.cn/blog/525581975.sHTML +
+wap.pfcskso.cn/blog/293193642.sHTML +
+wap.pfcskso.cn/blog/226928002.sHTML +
+wap.pfcskso.cn/blog/769203636.sHTML +
+wap.pfcskso.cn/blog/963109708.sHTML +
+wap.pfcskso.cn/blog/258312403.sHTML +
+wap.pfcskso.cn/blog/854335814.sHTML +
+wap.pfcskso.cn/blog/303647920.sHTML +
+wap.pfcskso.cn/blog/292586920.sHTML +
+wap.pfcskso.cn/blog/287082356.sHTML +
+wap.pfcskso.cn/blog/636970869.sHTML +
+wap.pfcskso.cn/blog/181970132.sHTML +
+wap.pfcskso.cn/blog/620360803.sHTML +
+wap.pfcskso.cn/blog/303554369.sHTML +
+wap.pfcskso.cn/blog/319211976.sHTML +
+wap.pfcskso.cn/blog/419837603.sHTML +
+wap.pfcskso.cn/blog/476972592.sHTML +
+wap.pfcskso.cn/blog/293697535.sHTML +
+wap.pfcskso.cn/blog/531433226.sHTML +
+wap.pfcskso.cn/blog/816987758.sHTML +
+wap.pfcskso.cn/blog/086599754.sHTML +
+wap.pfcskso.cn/blog/757519360.sHTML +
+wap.pfcskso.cn/blog/501623091.sHTML +
+wap.pfcskso.cn/blog/808710042.sHTML +
+wap.pfcskso.cn/blog/124042411.sHTML +
+wap.pfcskso.cn/blog/369714920.sHTML +
+wap.pfcskso.cn/blog/921926703.sHTML +
+wap.pfcskso.cn/blog/415836032.sHTML +
+wap.pfcskso.cn/blog/170652531.sHTML +
+wap.pfcskso.cn/blog/244603108.sHTML +
+wap.pfcskso.cn/blog/537344496.sHTML +
+wap.pfcskso.cn/blog/072086410.sHTML +
+wap.pfcskso.cn/blog/331586801.sHTML +
+wap.pfcskso.cn/blog/854674573.sHTML +
+wap.pfcskso.cn/blog/292582652.sHTML +
+wap.pfcskso.cn/blog/423647580.sHTML +
+wap.pfcskso.cn/blog/218118268.sHTML +
+wap.pfcskso.cn/blog/811975819.sHTML +
+wap.pfcskso.cn/blog/435461079.sHTML +
+wap.pfcskso.cn/blog/181975814.sHTML +
+wap.pfcskso.cn/blog/742923586.sHTML +
+wap.pfcskso.cn/blog/284621724.sHTML +
+wap.pfcskso.cn/blog/170314474.sHTML +
+wap.pfcskso.cn/blog/419765704.sHTML +
+wap.pfcskso.cn/blog/438844116.sHTML +
+wap.pfcskso.cn/blog/556753587.sHTML +
+wap.pfcskso.cn/blog/858647531.sHTML +
+wap.pfcskso.cn/blog/955171036.sHTML +
+wap.pfcskso.cn/blog/852191047.sHTML +
+wap.pfcskso.cn/blog/855421364.sHTML +
+wap.pfcskso.cn/blog/556397042.sHTML +
+wap.pfcskso.cn/blog/771487043.sHTML +
+wap.pfcskso.cn/blog/242087975.sHTML +
+wap.pfcskso.cn/blog/441263471.sHTML +
+wap.pfcskso.cn/blog/025319203.sHTML +
+wap.pfcskso.cn/blog/304203036.sHTML +
+wap.pfcskso.cn/blog/902985615.sHTML +
+wap.pfcskso.cn/blog/784519185.sHTML +
+wap.pfcskso.cn/blog/813225316.sHTML +
+wap.pfcskso.cn/blog/525326914.sHTML +
+wap.pfcskso.cn/blog/282033997.sHTML +
+wap.pfcskso.cn/blog/852208164.sHTML +
+wap.pfcskso.cn/blog/296597633.sHTML +
+wap.pfcskso.cn/blog/406839083.sHTML +
+wap.pfcskso.cn/blog/464297600.sHTML +
+wap.pfcskso.cn/blog/631535436.sHTML +
+wap.pfcskso.cn/blog/006898706.sHTML +
+wap.pfcskso.cn/blog/006796575.sHTML +
+wap.pfcskso.cn/blog/574219919.sHTML +
+wap.pfcskso.cn/blog/525364203.sHTML +
+wap.pfcskso.cn/blog/294705331.sHTML +
+wap.pfcskso.cn/blog/631975819.sHTML +
+wap.pfcskso.cn/blog/631970864.sHTML +
+wap.pfcskso.cn/blog/523812663.sHTML +
+wap.pfcskso.cn/blog/049708257.sHTML +
+wap.pfcskso.cn/blog/741979193.sHTML +
+wap.pfcskso.cn/blog/524426581.sHTML +
+wap.pfcskso.cn/blog/983692075.sHTML +
+wap.pfcskso.cn/blog/797083225.sHTML +
+wap.pfcskso.cn/blog/411970475.sHTML +
+wap.pfcskso.cn/blog/991008853.sHTML +
+wap.pfcskso.cn/blog/303546280.sHTML +
+wap.pfcskso.cn/blog/074203818.sHTML +
+wap.pfcskso.cn/blog/071080131.sHTML +
+wap.pfcskso.cn/blog/474325314.sHTML +
+wap.pfcskso.cn/blog/240030197.sHTML +
+wap.pfcskso.cn/blog/353769859.sHTML +
+wap.pfcskso.cn/blog/521993176.sHTML +
+wap.pfcskso.cn/blog/766973218.sHTML +
+wap.pfcskso.cn/blog/537598734.sHTML +
+wap.pfcskso.cn/blog/319768603.sHTML +
+wap.pfcskso.cn/blog/359870532.sHTML +
+wap.pfcskso.cn/blog/791293029.sHTML +
+wap.pfcskso.cn/blog/719026232.sHTML +
+wap.pfcskso.cn/blog/346367527.sHTML +
+wap.pfcskso.cn/blog/491363021.sHTML +
+wap.pfcskso.cn/blog/063637089.sHTML +
+wap.pfcskso.cn/blog/983187215.sHTML +
+wap.pfcskso.cn/blog/285707918.sHTML +
+wap.pfcskso.cn/blog/807464786.sHTML +
+wap.pfcskso.cn/blog/726368070.sHTML +
+wap.pfcskso.cn/blog/155944079.sHTML +
+wap.pfcskso.cn/blog/794389372.sHTML +
+wap.pfcskso.cn/blog/091259470.sHTML +
+wap.pfcskso.cn/blog/487222882.sHTML +
+wap.pfcskso.cn/blog/054943559.sHTML +
+wap.pfcskso.cn/blog/697543608.sHTML +
+wap.pfcskso.cn/blog/920326032.sHTML +
+wap.pfcskso.cn/blog/128632399.sHTML +
+wap.pfcskso.cn/blog/221953966.sHTML +
+wap.pfcskso.cn/blog/088103214.sHTML +
+wap.pfcskso.cn/blog/925872699.sHTML +
+wap.pfcskso.cn/blog/747546942.sHTML +
+wap.pfcskso.cn/blog/198147198.sHTML +
+wap.pfcskso.cn/blog/372854020.sHTML +
+wap.pfcskso.cn/blog/079420531.sHTML +
+wap.pfcskso.cn/blog/858197703.sHTML +
+wap.pfcskso.cn/blog/462965892.sHTML +
+wap.pfcskso.cn/blog/568075516.sHTML +
+wap.pfcskso.cn/blog/426009887.sHTML +
+wap.pfcskso.cn/blog/593657150.sHTML +
+wap.pfcskso.cn/blog/144384326.sHTML +
+wap.pfcskso.cn/blog/698382731.sHTML +
+wap.pfcskso.cn/blog/532165059.sHTML +
+wap.pfcskso.cn/blog/764311040.sHTML +
+wap.pfcskso.cn/blog/653939650.sHTML +
+wap.pfcskso.cn/blog/464763153.sHTML +
+wap.pfcskso.cn/blog/014765921.sHTML +
+wap.pfcskso.cn/blog/197103264.sHTML +
+wap.pfcskso.cn/blog/414714031.sHTML +
+wap.pfcskso.cn/blog/631092148.sHTML +
+wap.pfcskso.cn/blog/177614771.sHTML +
+wap.pfcskso.cn/blog/521470814.sHTML +
+wap.pfcskso.cn/blog/636922071.sHTML +
+wap.pfcskso.cn/blog/753205970.sHTML +
+wap.pfcskso.cn/blog/903333174.sHTML +
+wap.pfcskso.cn/blog/394758653.sHTML +
+wap.pfcskso.cn/blog/731970354.sHTML +
+wap.pfcskso.cn/blog/632169875.sHTML +
+wap.pfcskso.cn/blog/033104269.sHTML +
+wap.pfcskso.cn/blog/803719225.sHTML +
+wap.pfcskso.cn/blog/149705325.sHTML +
+wap.pfcskso.cn/blog/356588019.sHTML +
+wap.pfcskso.cn/blog/248100537.sHTML +
+wap.pfcskso.cn/blog/865493328.sHTML +
+wap.pfcskso.cn/blog/742032271.sHTML +
+wap.pfcskso.cn/blog/290834452.sHTML +
+wap.pfcskso.cn/blog/482537844.sHTML +
+wap.pfcskso.cn/blog/426506761.sHTML +
+wap.pfcskso.cn/blog/631532660.sHTML +
+wap.pfcskso.cn/blog/687537592.sHTML +
+wap.pfcskso.cn/blog/197547664.sHTML +
+wap.pfcskso.cn/blog/025976425.sHTML +
+wap.pfcskso.cn/blog/187104360.sHTML +
+wap.pfcskso.cn/blog/136937093.sHTML +
+wap.pfcskso.cn/blog/203150582.sHTML +
+wap.pfcskso.cn/blog/466148158.sHTML +
+wap.pfcskso.cn/blog/570442081.sHTML +
+wap.pfcskso.cn/blog/636431586.sHTML +
+wap.pfcskso.cn/blog/136087703.sHTML +
+wap.pfcskso.cn/blog/434143157.sHTML +
+wap.pfcskso.cn/blog/678326307.sHTML +
+wap.pfcskso.cn/blog/642547104.sHTML +
+wap.pfcskso.cn/blog/464315698.sHTML +
+wap.pfcskso.cn/blog/071986047.sHTML +
+wap.pfcskso.cn/blog/804761922.sHTML +
+wap.pfcskso.cn/blog/420476983.sHTML +
+wap.pfcskso.cn/blog/425971486.sHTML +
+wap.pfcskso.cn/blog/182092543.sHTML +
+wap.pfcskso.cn/blog/183603081.sHTML +
+wap.pfcskso.cn/blog/808704764.sHTML +
+wap.pfcskso.cn/blog/906120360.sHTML +
+wap.pfcskso.cn/blog/540302596.sHTML +
+wap.pfcskso.cn/blog/300866974.sHTML +
+wap.pfcskso.cn/blog/451813956.sHTML +
+wap.pfcskso.cn/blog/635320235.sHTML +
+wap.pfcskso.cn/blog/525229497.sHTML +
+wap.pfcskso.cn/blog/368017465.sHTML +
+wap.pfcskso.cn/blog/181103542.sHTML +
+wap.pfcskso.cn/blog/575319308.sHTML +
+wap.pfcskso.cn/blog/858147092.sHTML +
+wap.pfcskso.cn/blog/292036964.sHTML +
+wap.pfcskso.cn/blog/303692697.sHTML +
+wap.pfcskso.cn/blog/408143542.sHTML +
+wap.pfcskso.cn/blog/568451089.sHTML +
+wap.pfcskso.cn/blog/075096766.sHTML +
+wap.pfcskso.cn/blog/529754247.sHTML +
+wap.pfcskso.cn/blog/076535499.sHTML +
+wap.pfcskso.cn/blog/953204792.sHTML +
+wap.pfcskso.cn/blog/512031036.sHTML +
+wap.pfcskso.cn/blog/741420314.sHTML +
+wap.pfcskso.cn/blog/502851345.sHTML +
+wap.pfcskso.cn/blog/529758192.sHTML +
+wap.pfcskso.cn/blog/792325369.sHTML +
+wap.pfcskso.cn/blog/304709792.sHTML +
+wap.pfcskso.cn/blog/013581369.sHTML +
+wap.pfcskso.cn/blog/274892841.sHTML +
+wap.pfcskso.cn/blog/526435369.sHTML +
+wap.pfcskso.cn/blog/167661685.sHTML +
+wap.pfcskso.cn/blog/636425331.sHTML +
+wap.pfcskso.cn/blog/688708642.sHTML +
+wap.pfcskso.cn/blog/122133153.sHTML +
+wap.pfcskso.cn/blog/969768810.sHTML +
+wap.pfcskso.cn/blog/964275253.sHTML +
+wap.pfcskso.cn/blog/303694960.sHTML +
+wap.pfcskso.cn/blog/854759692.sHTML +
+wap.pfcskso.cn/blog/969258692.sHTML +
+wap.pfcskso.cn/blog/874209192.sHTML +
+wap.pfcskso.cn/blog/808821925.sHTML +
+wap.pfcskso.cn/blog/070819475.sHTML +
+wap.pfcskso.cn/blog/970829716.sHTML +
+wap.pfcskso.cn/blog/858642186.sHTML +
+wap.pfcskso.cn/blog/741080319.sHTML +
+wap.pfcskso.cn/blog/681375744.sHTML +
+wap.pfcskso.cn/blog/408181920.sHTML +
+wap.pfcskso.cn/blog/242008642.sHTML +
+wap.pfcskso.cn/blog/079326814.sHTML +
+wap.pfcskso.cn/blog/252682406.sHTML +
+wap.pfcskso.cn/blog/302586324.sHTML +
+wap.pfcskso.cn/blog/125310886.sHTML +
+wap.pfcskso.cn/blog/131970924.sHTML +
+wap.pfcskso.cn/blog/181424364.sHTML +
+wap.pfcskso.cn/blog/415341742.sHTML +
+wap.pfcskso.cn/blog/307532703.sHTML +
+wap.pfcskso.cn/blog/631970475.sHTML +
+wap.pfcskso.cn/blog/859792025.sHTML +
+wap.pfcskso.cn/blog/586642032.sHTML +
+wap.pfcskso.cn/blog/607319063.sHTML +
+wap.pfcskso.cn/blog/747083581.sHTML +
+wap.pfcskso.cn/blog/858647691.sHTML +
+wap.pfcskso.cn/blog/636975392.sHTML +
+wap.pfcskso.cn/blog/414250822.sHTML +
+wap.pfcskso.cn/blog/632531975.sHTML +
+wap.pfcskso.cn/blog/414753149.sHTML +
+wap.pfcskso.cn/blog/419758208.sHTML +
+wap.pfcskso.cn/blog/645043852.sHTML +
+wap.pfcskso.cn/blog/050280651.sHTML +
+wap.pfcskso.cn/blog/812154412.sHTML +
+wap.pfcskso.cn/blog/082298338.sHTML +
+wap.pfcskso.cn/blog/681427086.sHTML +
+wap.pfcskso.cn/blog/593753197.sHTML +
+wap.pfcskso.cn/blog/181046430.sHTML +
+wap.pfcskso.cn/blog/961386470.sHTML +
+wap.pfcskso.cn/blog/460252963.sHTML +
+wap.pfcskso.cn/blog/588402345.sHTML +
+wap.pfcskso.cn/blog/327856505.sHTML +
+wap.pfcskso.cn/blog/925782122.sHTML +
+wap.pfcskso.cn/blog/349294900.sHTML +
+wap.pfcskso.cn/blog/197890513.sHTML +
+wap.pfcskso.cn/blog/654432159.sHTML +
+wap.pfcskso.cn/blog/861660011.sHTML +
+wap.pfcskso.cn/blog/422795616.sHTML +
+wap.pfcskso.cn/blog/082605448.sHTML +
+wap.pfcskso.cn/blog/958692119.sHTML +
+wap.pfcskso.cn/blog/070822541.sHTML +
+wap.pfcskso.cn/blog/239010028.sHTML +
+wap.pfcskso.cn/blog/858853103.sHTML +
+wap.pfcskso.cn/blog/026003754.sHTML +
+wap.pfcskso.cn/blog/639481746.sHTML +
+wap.pfcskso.cn/blog/070489265.sHTML +
+wap.pfcskso.cn/blog/884616093.sHTML +
+wap.pfcskso.cn/blog/531059319.sHTML +
+wap.pfcskso.cn/blog/358765810.sHTML +
+wap.pfcskso.cn/blog/381537590.sHTML +
+wap.pfcskso.cn/blog/511641773.sHTML +
+wap.pfcskso.cn/blog/291097699.sHTML +
+wap.pfcskso.cn/blog/910175184.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日20时04分24秒
