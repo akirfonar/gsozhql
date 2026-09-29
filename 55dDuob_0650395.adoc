@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.pjnejh.asia/blog/902135296.sHTML +
+wap.pjnejh.asia/blog/280363024.sHTML +
+wap.pjnejh.asia/blog/695294675.sHTML +
+wap.pjnejh.asia/blog/951133135.sHTML +
+wap.pjnejh.asia/blog/502469680.sHTML +
+wap.pjnejh.asia/blog/868575857.sHTML +
+wap.pjnejh.asia/blog/060293179.sHTML +
+wap.pjnejh.asia/blog/739152913.sHTML +
+wap.pjnejh.asia/blog/552965731.sHTML +
+wap.pjnejh.asia/blog/694666945.sHTML +
+wap.pjnejh.asia/blog/691162788.sHTML +
+wap.pjnejh.asia/blog/235871547.sHTML +
+wap.pjnejh.asia/blog/833984070.sHTML +
+wap.pjnejh.asia/blog/849937087.sHTML +
+wap.pjnejh.asia/blog/849038642.sHTML +
+wap.pjnejh.asia/blog/228543468.sHTML +
+wap.pjnejh.asia/blog/028575741.sHTML +
+wap.pjnejh.asia/blog/517574639.sHTML +
+wap.pjnejh.asia/blog/679146174.sHTML +
+wap.pjnejh.asia/blog/726752959.sHTML +
+wap.pjnejh.asia/blog/618041846.sHTML +
+wap.pjnejh.asia/blog/963440793.sHTML +
+wap.pjnejh.asia/blog/274656842.sHTML +
+wap.pjnejh.asia/blog/330293514.sHTML +
+wap.pjnejh.asia/blog/846856846.sHTML +
+wap.pjnejh.asia/blog/496851374.sHTML +
+wap.pjnejh.asia/blog/906485757.sHTML +
+wap.pjnejh.asia/blog/253203680.sHTML +
+wap.pjnejh.asia/blog/011206275.sHTML +
+wap.pjnejh.asia/blog/908759117.sHTML +
+wap.pjnejh.asia/blog/371425920.sHTML +
+wap.pjnejh.asia/blog/075476470.sHTML +
+wap.pjnejh.asia/blog/574531155.sHTML +
+wap.pjnejh.asia/blog/234120854.sHTML +
+wap.pjnejh.asia/blog/446828180.sHTML +
+wap.pjnejh.asia/blog/335723129.sHTML +
+wap.pjnejh.asia/blog/118570248.sHTML +
+wap.pjnejh.asia/blog/418975740.sHTML +
+wap.pjnejh.asia/blog/837913679.sHTML +
+wap.pjnejh.asia/blog/224453468.sHTML +
+wap.pjnejh.asia/blog/518596919.sHTML +
+wap.pjnejh.asia/blog/847317563.sHTML +
+wap.pjnejh.asia/blog/160240245.sHTML +
+wap.pjnejh.asia/blog/226079792.sHTML +
+wap.pjnejh.asia/blog/113079139.sHTML +
+wap.pjnejh.asia/blog/507413108.sHTML +
+wap.pjnejh.asia/blog/451074674.sHTML +
+wap.pjnejh.asia/blog/661807291.sHTML +
+wap.pjnejh.asia/blog/268015136.sHTML +
+wap.pjnejh.asia/blog/352990246.sHTML +
+wap.pjnejh.asia/blog/618572418.sHTML +
+wap.pjnejh.asia/blog/302464179.sHTML +
+wap.pjnejh.asia/blog/180190257.sHTML +
+wap.pjnejh.asia/blog/019079185.sHTML +
+wap.pjnejh.asia/blog/613386721.sHTML +
+wap.pjnejh.asia/blog/392532844.sHTML +
+wap.pjnejh.asia/blog/007980731.sHTML +
+wap.pjnejh.asia/blog/197453967.sHTML +
+wap.pjnejh.asia/blog/162680281.sHTML +
+wap.pjnejh.asia/blog/013091579.sHTML +
+wap.pjnejh.asia/blog/312463524.sHTML +
+wap.pjnejh.asia/blog/135740735.sHTML +
+wap.pjnejh.asia/blog/002463014.sHTML +
+wap.pjnejh.asia/blog/784635453.sHTML +
+wap.pjnejh.asia/blog/607969147.sHTML +
+wap.pjnejh.asia/blog/335788457.sHTML +
+wap.pjnejh.asia/blog/001302357.sHTML +
+wap.pjnejh.asia/blog/395968024.sHTML +
+wap.pjnejh.asia/blog/495118567.sHTML +
+wap.pjnejh.asia/blog/779241249.sHTML +
+wap.pjnejh.asia/blog/012418531.sHTML +
+wap.pjnejh.asia/blog/253079304.sHTML +
+wap.pjnejh.asia/blog/396807953.sHTML +
+wap.pjnejh.asia/blog/380763518.sHTML +
+wap.pjnejh.asia/blog/163574306.sHTML +
+wap.pjnejh.asia/blog/502913185.sHTML +
+wap.pjnejh.asia/blog/409993376.sHTML +
+wap.pjnejh.asia/blog/021105992.sHTML +
+wap.pjnejh.asia/blog/354775175.sHTML +
+wap.pjnejh.asia/blog/526159443.sHTML +
+wap.pjnejh.asia/blog/747939443.sHTML +
+wap.pjnejh.asia/blog/676436532.sHTML +
+wap.pjnejh.asia/blog/069810870.sHTML +
+wap.pjnejh.asia/blog/066032083.sHTML +
+wap.pjnejh.asia/blog/951013563.sHTML +
+wap.pjnejh.asia/blog/442418680.sHTML +
+wap.pjnejh.asia/blog/228079135.sHTML +
+wap.pjnejh.asia/blog/002468462.sHTML +
+wap.pjnejh.asia/blog/947864131.sHTML +
+wap.pjnejh.asia/blog/111397060.sHTML +
+wap.pjnejh.asia/blog/335267968.sHTML +
+wap.pjnejh.asia/blog/177511327.sHTML +
+wap.pjnejh.asia/blog/913429842.sHTML +
+wap.pjnejh.asia/blog/062471357.sHTML +
+wap.pjnejh.asia/blog/058079180.sHTML +
+wap.pjnejh.asia/blog/720379185.sHTML +
+wap.pjnejh.asia/blog/628680296.sHTML +
+wap.pjnejh.asia/blog/984954112.sHTML +
+wap.pjnejh.asia/blog/927111688.sHTML +
+wap.pjnejh.asia/blog/235491295.sHTML +
+wap.pjnejh.asia/blog/162463563.sHTML +
+wap.pjnejh.asia/blog/502919696.sHTML +
+wap.pjnejh.asia/blog/892691035.sHTML +
+wap.pjnejh.asia/blog/774639746.sHTML +
+wap.pjnejh.asia/blog/406857534.sHTML +
+wap.pjnejh.asia/blog/771296885.sHTML +
+wap.pjnejh.asia/blog/457480157.sHTML +
+wap.pjnejh.asia/blog/149639135.sHTML +
+wap.pjnejh.asia/blog/517968024.sHTML +
+wap.pjnejh.asia/blog/284190863.sHTML +
+wap.pjnejh.asia/blog/573529350.sHTML +
+wap.pjnejh.asia/blog/889450984.sHTML +
+wap.pjnejh.asia/blog/973828678.sHTML +
+wap.pjnejh.asia/blog/065309446.sHTML +
+wap.pjnejh.asia/blog/597667759.sHTML +
+wap.pjnejh.asia/blog/351551059.sHTML +
+wap.pjnejh.asia/blog/938842078.sHTML +
+wap.pjnejh.asia/blog/552089730.sHTML +
+wap.pjnejh.asia/blog/364630014.sHTML +
+wap.pjnejh.asia/blog/008584290.sHTML +
+wap.pjnejh.asia/blog/007486307.sHTML +
+wap.pjnejh.asia/blog/622951780.sHTML +
+wap.pjnejh.asia/blog/118196529.sHTML +
+wap.pjnejh.asia/blog/160463097.sHTML +
+wap.pjnejh.asia/blog/252429645.sHTML +
+wap.pjnejh.asia/blog/563071364.sHTML +
+wap.pjnejh.asia/blog/957929685.sHTML +
+wap.pjnejh.asia/blog/959141308.sHTML +
+wap.pjnejh.asia/blog/678075997.sHTML +
+wap.pjnejh.asia/blog/845795353.sHTML +
+wap.pjnejh.asia/blog/490638128.sHTML +
+wap.pjnejh.asia/blog/780807418.sHTML +
+wap.pjnejh.asia/blog/402524230.sHTML +
+wap.pjnejh.asia/blog/671373130.sHTML +
+wap.pjnejh.asia/blog/289781076.sHTML +
+wap.pjnejh.asia/blog/813691803.sHTML +
+wap.pjnejh.asia/blog/789796530.sHTML +
+wap.pjnejh.asia/blog/129293070.sHTML +
+wap.pjnejh.asia/blog/686302074.sHTML +
+wap.pjnejh.asia/blog/513680829.sHTML +
+wap.pjnejh.asia/blog/337696857.sHTML +
+wap.pjnejh.asia/blog/230713680.sHTML +
+wap.pjnejh.asia/blog/048299573.sHTML +
+wap.pjnejh.asia/blog/235793167.sHTML +
+wap.pjnejh.asia/blog/713165862.sHTML +
+wap.pjnejh.asia/blog/220693657.sHTML +
+wap.pjnejh.asia/blog/406843951.sHTML +
+wap.pjnejh.asia/blog/826239182.sHTML +
+wap.pjnejh.asia/blog/633497302.sHTML +
+wap.pjnejh.asia/blog/867995803.sHTML +
+wap.pjnejh.asia/blog/580747407.sHTML +
+wap.pjnejh.asia/blog/380751457.sHTML +
+wap.pjnejh.asia/blog/128530746.sHTML +
+wap.pjnejh.asia/blog/002141357.sHTML +
+wap.pjnejh.asia/blog/857074180.sHTML +
+wap.pjnejh.asia/blog/336858697.sHTML +
+wap.pjnejh.asia/blog/226368741.sHTML +
+wap.pjnejh.asia/blog/564740190.sHTML +
+wap.pjnejh.asia/blog/780730291.sHTML +
+wap.pjnejh.asia/blog/052748579.sHTML +
+wap.pjnejh.asia/blog/788579120.sHTML +
+wap.pjnejh.asia/blog/312076419.sHTML +
+wap.pjnejh.asia/blog/502918071.sHTML +
+wap.pjnejh.asia/blog/786968413.sHTML +
+wap.pjnejh.asia/blog/845074596.sHTML +
+wap.pjnejh.asia/blog/068180746.sHTML +
+wap.pjnejh.asia/blog/776307135.sHTML +
+wap.pjnejh.asia/blog/884630913.sHTML +
+wap.pjnejh.asia/blog/511444659.sHTML +
+wap.pjnejh.asia/blog/546269891.sHTML +
+wap.pjnejh.asia/blog/195435461.sHTML +
+wap.pjnejh.asia/blog/495249311.sHTML +
+wap.pjnejh.asia/blog/538493848.sHTML +
+wap.pjnejh.asia/blog/335172142.sHTML +
+wap.pjnejh.asia/blog/226266605.sHTML +
+wap.pjnejh.asia/blog/375470250.sHTML +
+wap.pjnejh.asia/blog/622543987.sHTML +
+wap.pjnejh.asia/blog/172777652.sHTML +
+wap.pjnejh.asia/blog/380757468.sHTML +
+wap.pjnejh.asia/blog/624074656.sHTML +
+wap.pjnejh.asia/blog/340796452.sHTML +
+wap.pjnejh.asia/blog/720757827.sHTML +
+wap.pjnejh.asia/blog/274746357.sHTML +
+wap.pjnejh.asia/blog/069745791.sHTML +
+wap.pjnejh.asia/blog/996331806.sHTML +
+wap.pjnejh.asia/blog/384217968.sHTML +
+wap.pjnejh.asia/blog/696278612.sHTML +
+wap.pjnejh.asia/blog/381592525.sHTML +
+wap.pjnejh.asia/blog/720814797.sHTML +
+wap.pjnejh.asia/blog/087737327.sHTML +
+wap.pjnejh.asia/blog/955532526.sHTML +
+wap.pjnejh.asia/blog/223074686.sHTML +
+wap.pjnejh.asia/blog/517963413.sHTML +
+wap.pjnejh.asia/blog/968468413.sHTML +
+wap.pjnejh.asia/blog/160306452.sHTML +
+wap.pjnejh.asia/blog/543130280.sHTML +
+wap.pjnejh.asia/blog/057957917.sHTML +
+wap.pjnejh.asia/blog/067568096.sHTML +
+wap.pjnejh.asia/blog/619181756.sHTML +
+wap.pjnejh.asia/blog/062918852.sHTML +
+wap.pjnejh.asia/blog/880747930.sHTML +
+wap.pjnejh.asia/blog/382964130.sHTML +
+wap.pjnejh.asia/blog/788150819.sHTML +
+wap.pjnejh.asia/blog/189054449.sHTML +
+wap.pjnejh.asia/blog/192365314.sHTML +
+wap.pjnejh.asia/blog/156728888.sHTML +
+wap.pjnejh.asia/blog/717486032.sHTML +
+wap.pjnejh.asia/blog/915542814.sHTML +
+wap.pjnejh.asia/blog/517799985.sHTML +
+wap.pjnejh.asia/blog/507969191.sHTML +
+wap.pjnejh.asia/blog/406846241.sHTML +
+wap.pjnejh.asia/blog/395218040.sHTML +
+wap.pjnejh.asia/blog/946070857.sHTML +
+wap.pjnejh.asia/blog/882686302.sHTML +
+wap.pjnejh.asia/blog/051084630.sHTML +
+wap.pjnejh.asia/blog/501863791.sHTML +
+wap.pjnejh.asia/blog/062463791.sHTML +
+wap.pjnejh.asia/blog/946324635.sHTML +
+wap.pjnejh.asia/blog/940792917.sHTML +
+wap.pjnejh.asia/blog/057963621.sHTML +
+wap.pjnejh.asia/blog/779184843.sHTML +
+wap.pjnejh.asia/blog/857863301.sHTML +
+wap.pjnejh.asia/blog/062609185.sHTML +
+wap.pjnejh.asia/blog/775956400.sHTML +
+wap.pjnejh.asia/blog/181971097.sHTML +
+wap.pjnejh.asia/blog/747025381.sHTML +
+wap.pjnejh.asia/blog/834987149.sHTML +
+wap.pjnejh.asia/blog/519225420.sHTML +
+wap.pjnejh.asia/blog/999061505.sHTML +
+wap.pjnejh.asia/blog/392281033.sHTML +
+wap.pjnejh.asia/blog/217003858.sHTML +
+wap.pjnejh.asia/blog/124358257.sHTML +
+wap.pjnejh.asia/blog/380206302.sHTML +
+wap.pjnejh.asia/blog/673546563.sHTML +
+wap.pjnejh.asia/blog/617480240.sHTML +
+wap.pjnejh.asia/blog/663087362.sHTML +
+wap.pjnejh.asia/blog/390295842.sHTML +
+wap.pjnejh.asia/blog/445346790.sHTML +
+wap.pjnejh.asia/blog/129680207.sHTML +
+wap.pjnejh.asia/blog/545709241.sHTML +
+wap.pjnejh.asia/blog/918444024.sHTML +
+wap.pjnejh.asia/blog/906615057.sHTML +
+wap.pjnejh.asia/blog/229609680.sHTML +
+wap.pjnejh.asia/blog/995297967.sHTML +
+wap.pjnejh.asia/blog/256357829.sHTML +
+wap.pjnejh.asia/blog/234685702.sHTML +
+wap.pjnejh.asia/blog/482302396.sHTML +
+wap.pjnejh.asia/blog/069285117.sHTML +
+wap.pjnejh.asia/blog/514124243.sHTML +
+wap.pjnejh.asia/blog/768496512.sHTML +
+wap.pjnejh.asia/blog/270245235.sHTML +
+wap.pjnejh.asia/blog/919184296.sHTML +
+wap.pjnejh.asia/blog/180807306.sHTML +
+wap.pjnejh.asia/blog/334685391.sHTML +
+wap.pjnejh.asia/blog/663530730.sHTML +
+wap.pjnejh.asia/blog/613591780.sHTML +
+wap.pjnejh.asia/blog/875484718.sHTML +
+wap.pjnejh.asia/blog/465989005.sHTML +
+wap.pjnejh.asia/blog/246101282.sHTML +
+wap.pjnejh.asia/blog/324241741.sHTML +
+wap.pjnejh.asia/blog/844450061.sHTML +
+wap.pjnejh.asia/blog/007907537.sHTML +
+wap.pjnejh.asia/blog/074630130.sHTML +
+wap.pjnejh.asia/blog/445740735.sHTML +
+wap.pjnejh.asia/blog/745291463.sHTML +
+wap.pjnejh.asia/blog/834682963.sHTML +
+wap.pjnejh.asia/blog/366636380.sHTML +
+wap.pjnejh.asia/blog/620995009.sHTML +
+wap.pjnejh.asia/blog/888855617.sHTML +
+wap.pjnejh.asia/blog/670505102.sHTML +
+wap.pjnejh.asia/blog/836869590.sHTML +
+wap.pjnejh.asia/blog/006357409.sHTML +
+wap.pjnejh.asia/blog/336352874.sHTML +
+wap.pjnejh.asia/blog/045796207.sHTML +
+wap.pjnejh.asia/blog/739357306.sHTML +
+wap.pjnejh.asia/blog/330639179.sHTML +
+wap.pjnejh.asia/blog/725790230.sHTML +
+wap.pjnejh.asia/blog/163780391.sHTML +
+wap.pjnejh.asia/blog/279185135.sHTML +
+wap.pjnejh.asia/blog/505583400.sHTML +
+wap.pjnejh.asia/blog/645277444.sHTML +
+wap.pjnejh.asia/blog/410166949.sHTML +
+wap.pjnejh.asia/blog/976555499.sHTML +
+wap.pjnejh.asia/blog/498335862.sHTML +
+wap.pjnejh.asia/blog/760666052.sHTML +
+wap.pjnejh.asia/blog/093882683.sHTML +
+wap.pjnejh.asia/blog/478838743.sHTML +
+wap.pjnejh.asia/blog/688744052.sHTML +
+wap.pjnejh.asia/blog/889906627.sHTML +
+wap.pjnejh.asia/blog/760165161.sHTML +
+wap.pjnejh.asia/blog/538122660.sHTML +
+wap.pjnejh.asia/blog/612463031.sHTML +
+wap.pjnejh.asia/blog/901896028.sHTML +
+wap.pjnejh.asia/blog/996896396.sHTML +
+wap.pjnejh.asia/blog/878986724.sHTML +
+wap.pjnejh.asia/blog/641089475.sHTML +
+wap.pjnejh.asia/blog/149172622.sHTML +
+wap.pjnejh.asia/blog/441340757.sHTML +
+wap.pjnejh.asia/blog/947251997.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日20时03分23秒
