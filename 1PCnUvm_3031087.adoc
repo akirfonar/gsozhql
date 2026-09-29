@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.ejhogy.asia/blog/524708825.sHTML +
+wap.ejhogy.asia/blog/302208192.sHTML +
+wap.ejhogy.asia/blog/858642592.sHTML +
+wap.ejhogy.asia/blog/419319869.sHTML +
+wap.ejhogy.asia/blog/478585852.sHTML +
+wap.ejhogy.asia/blog/742531975.sHTML +
+wap.ejhogy.asia/blog/520816431.sHTML +
+wap.ejhogy.asia/blog/175480919.sHTML +
+wap.ejhogy.asia/blog/340869414.sHTML +
+wap.ejhogy.asia/blog/075319208.sHTML +
+wap.ejhogy.asia/blog/183864792.sHTML +
+wap.ejhogy.asia/blog/841441363.sHTML +
+wap.ejhogy.asia/blog/524861475.sHTML +
+wap.ejhogy.asia/blog/419750864.sHTML +
+wap.ejhogy.asia/blog/444856674.sHTML +
+wap.ejhogy.asia/blog/687297053.sHTML +
+wap.ejhogy.asia/blog/625365480.sHTML +
+wap.ejhogy.asia/blog/029319703.sHTML +
+wap.ejhogy.asia/blog/906388518.sHTML +
+wap.ejhogy.asia/blog/682083169.sHTML +
+wap.ejhogy.asia/blog/530823401.sHTML +
+wap.ejhogy.asia/blog/747036914.sHTML +
+wap.ejhogy.asia/blog/389765246.sHTML +
+wap.ejhogy.asia/blog/747143708.sHTML +
+wap.ejhogy.asia/blog/414654219.sHTML +
+wap.ejhogy.asia/blog/969753197.sHTML +
+wap.ejhogy.asia/blog/959750814.sHTML +
+wap.ejhogy.asia/blog/468814758.sHTML +
+wap.ejhogy.asia/blog/858194965.sHTML +
+wap.ejhogy.asia/blog/631977583.sHTML +
+wap.ejhogy.asia/blog/335998012.sHTML +
+wap.ejhogy.asia/blog/742083142.sHTML +
+wap.ejhogy.asia/blog/936892672.sHTML +
+wap.ejhogy.asia/blog/847532470.sHTML +
+wap.ejhogy.asia/blog/969779208.sHTML +
+wap.ejhogy.asia/blog/991803901.sHTML +
+wap.ejhogy.asia/blog/414975369.sHTML +
+wap.ejhogy.asia/blog/854992035.sHTML +
+wap.ejhogy.asia/blog/070869974.sHTML +
+wap.ejhogy.asia/blog/637086470.sHTML +
+wap.ejhogy.asia/blog/744869792.sHTML +
+wap.ejhogy.asia/blog/353209742.sHTML +
+wap.ejhogy.asia/blog/297514219.sHTML +
+wap.ejhogy.asia/blog/961857856.sHTML +
+wap.ejhogy.asia/blog/748607370.sHTML +
+wap.ejhogy.asia/blog/969753142.sHTML +
+wap.ejhogy.asia/blog/853192087.sHTML +
+wap.ejhogy.asia/blog/571149707.sHTML +
+wap.ejhogy.asia/blog/463186425.sHTML +
+wap.ejhogy.asia/blog/092858529.sHTML +
+wap.ejhogy.asia/blog/340291489.sHTML +
+wap.ejhogy.asia/blog/252097692.sHTML +
+wap.ejhogy.asia/blog/635861085.sHTML +
+wap.ejhogy.asia/blog/525319143.sHTML +
+wap.ejhogy.asia/blog/940179610.sHTML +
+wap.ejhogy.asia/blog/551747897.sHTML +
+wap.ejhogy.asia/blog/224147388.sHTML +
+wap.ejhogy.asia/blog/495286275.sHTML +
+wap.ejhogy.asia/blog/863199754.sHTML +
+wap.ejhogy.asia/blog/579216094.sHTML +
+wap.ejhogy.asia/blog/336353820.sHTML +
+wap.ejhogy.asia/blog/781997503.sHTML +
+wap.ejhogy.asia/blog/297936681.sHTML +
+wap.ejhogy.asia/blog/292530875.sHTML +
+wap.ejhogy.asia/blog/730784172.sHTML +
+wap.ejhogy.asia/blog/903696535.sHTML +
+wap.ejhogy.asia/blog/747542081.sHTML +
+wap.ejhogy.asia/blog/660174024.sHTML +
+wap.ejhogy.asia/blog/384670357.sHTML +
+wap.ejhogy.asia/blog/070364703.sHTML +
+wap.ejhogy.asia/blog/968192024.sHTML +
+wap.ejhogy.asia/blog/306672451.sHTML +
+wap.ejhogy.asia/blog/733918904.sHTML +
+wap.ejhogy.asia/blog/747586997.sHTML +
+wap.ejhogy.asia/blog/238293579.sHTML +
+wap.ejhogy.asia/blog/596531470.sHTML +
+wap.ejhogy.asia/blog/631472425.sHTML +
+wap.ejhogy.asia/blog/336042467.sHTML +
+wap.ejhogy.asia/blog/415081981.sHTML +
+wap.ejhogy.asia/blog/355836476.sHTML +
+wap.ejhogy.asia/blog/068318093.sHTML +
+wap.ejhogy.asia/blog/706667934.sHTML +
+wap.ejhogy.asia/blog/236470819.sHTML +
+wap.ejhogy.asia/blog/392974513.sHTML +
+wap.ejhogy.asia/blog/854220325.sHTML +
+wap.ejhogy.asia/blog/969708697.sHTML +
+wap.ejhogy.asia/blog/181957097.sHTML +
+wap.ejhogy.asia/blog/746535314.sHTML +
+wap.ejhogy.asia/blog/937891483.sHTML +
+wap.ejhogy.asia/blog/297531631.sHTML +
+wap.ejhogy.asia/blog/671947047.sHTML +
+wap.ejhogy.asia/blog/808603147.sHTML +
+wap.ejhogy.asia/blog/299758186.sHTML +
+wap.ejhogy.asia/blog/520447581.sHTML +
+wap.ejhogy.asia/blog/958643458.sHTML +
+wap.ejhogy.asia/blog/392591533.sHTML +
+wap.ejhogy.asia/blog/900079283.sHTML +
+wap.ejhogy.asia/blog/181479208.sHTML +
+wap.ejhogy.asia/blog/521447531.sHTML +
+wap.ejhogy.asia/blog/079764361.sHTML +
+wap.ejhogy.asia/blog/525820853.sHTML +
+wap.ejhogy.asia/blog/635319708.sHTML +
+wap.ejhogy.asia/blog/525425364.sHTML +
+wap.ejhogy.asia/blog/512868573.sHTML +
+wap.ejhogy.asia/blog/825508642.sHTML +
+wap.ejhogy.asia/blog/181910314.sHTML +
+wap.ejhogy.asia/blog/469864253.sHTML +
+wap.ejhogy.asia/blog/320740598.sHTML +
+wap.ejhogy.asia/blog/609799563.sHTML +
+wap.ejhogy.asia/blog/030869753.sHTML +
+wap.ejhogy.asia/blog/747536465.sHTML +
+wap.ejhogy.asia/blog/468757614.sHTML +
+wap.ejhogy.asia/blog/949467465.sHTML +
+wap.ejhogy.asia/blog/756111624.sHTML +
+wap.ejhogy.asia/blog/442933023.sHTML +
+wap.ejhogy.asia/blog/224074025.sHTML +
+wap.ejhogy.asia/blog/130863642.sHTML +
+wap.ejhogy.asia/blog/924259697.sHTML +
+wap.ejhogy.asia/blog/859864921.sHTML +
+wap.ejhogy.asia/blog/186930497.sHTML +
+wap.ejhogy.asia/blog/292081920.sHTML +
+wap.ejhogy.asia/blog/292086425.sHTML +
+wap.ejhogy.asia/blog/186421477.sHTML +
+wap.ejhogy.asia/blog/901130693.sHTML +
+wap.ejhogy.asia/blog/855703147.sHTML +
+wap.ejhogy.asia/blog/084968998.sHTML +
+wap.ejhogy.asia/blog/087337627.sHTML +
+wap.ejhogy.asia/blog/070881553.sHTML +
+wap.ejhogy.asia/blog/031325745.sHTML +
+wap.ejhogy.asia/blog/025364758.sHTML +
+wap.ejhogy.asia/blog/858648697.sHTML +
+wap.ejhogy.asia/blog/392263758.sHTML +
+wap.ejhogy.asia/blog/525372147.sHTML +
+wap.ejhogy.asia/blog/524020208.sHTML +
+wap.ejhogy.asia/blog/914755819.sHTML +
+wap.ejhogy.asia/blog/466524151.sHTML +
+wap.ejhogy.asia/blog/525536425.sHTML +
+wap.ejhogy.asia/blog/181975329.sHTML +
+wap.ejhogy.asia/blog/720485112.sHTML +
+wap.ejhogy.asia/blog/292038358.sHTML +
+wap.ejhogy.asia/blog/982100984.sHTML +
+wap.ejhogy.asia/blog/918643759.sHTML +
+wap.ejhogy.asia/blog/183149208.sHTML +
+wap.ejhogy.asia/blog/352008860.sHTML +
+wap.ejhogy.asia/blog/858253681.sHTML +
+wap.ejhogy.asia/blog/286703147.sHTML +
+wap.ejhogy.asia/blog/751924253.sHTML +
+wap.ejhogy.asia/blog/164335094.sHTML +
+wap.ejhogy.asia/blog/186970314.sHTML +
+wap.ejhogy.asia/blog/964265753.sHTML +
+wap.ejhogy.asia/blog/786970864.sHTML +
+wap.ejhogy.asia/blog/069250869.sHTML +
+wap.ejhogy.asia/blog/186403132.sHTML +
+wap.ejhogy.asia/blog/180361053.sHTML +
+wap.ejhogy.asia/blog/031054377.sHTML +
+wap.ejhogy.asia/blog/883285508.sHTML +
+wap.ejhogy.asia/blog/811364453.sHTML +
+wap.ejhogy.asia/blog/733737760.sHTML +
+wap.ejhogy.asia/blog/632534929.sHTML +
+wap.ejhogy.asia/blog/659448898.sHTML +
+wap.ejhogy.asia/blog/699957159.sHTML +
+wap.ejhogy.asia/blog/793121032.sHTML +
+wap.ejhogy.asia/blog/333064535.sHTML +
+wap.ejhogy.asia/blog/536987698.sHTML +
+wap.ejhogy.asia/blog/487097053.sHTML +
+wap.ejhogy.asia/blog/658714365.sHTML +
+wap.ejhogy.asia/blog/393909208.sHTML +
+wap.ejhogy.asia/blog/520986158.sHTML +
+wap.ejhogy.asia/blog/136608209.sHTML +
+wap.ejhogy.asia/blog/003204981.sHTML +
+wap.ejhogy.asia/blog/208159864.sHTML +
+wap.ejhogy.asia/blog/864886581.sHTML +
+wap.ejhogy.asia/blog/759932266.sHTML +
+wap.ejhogy.asia/blog/640517705.sHTML +
+wap.ejhogy.asia/blog/056513845.sHTML +
+wap.ejhogy.asia/blog/014029581.sHTML +
+wap.ejhogy.asia/blog/406798073.sHTML +
+wap.ejhogy.asia/blog/889124344.sHTML +
+wap.ejhogy.asia/blog/897424935.sHTML +
+wap.ejhogy.asia/blog/748642586.sHTML +
+wap.ejhogy.asia/blog/415820870.sHTML +
+wap.ejhogy.asia/blog/747666881.sHTML +
+wap.ejhogy.asia/blog/319208692.sHTML +
+wap.ejhogy.asia/blog/344758330.sHTML +
+wap.ejhogy.asia/blog/308270470.sHTML +
+wap.ejhogy.asia/blog/018977288.sHTML +
+wap.ejhogy.asia/blog/529833118.sHTML +
+wap.ejhogy.asia/blog/526081108.sHTML +
+wap.ejhogy.asia/blog/186032507.sHTML +
+wap.ejhogy.asia/blog/858197647.sHTML +
+wap.ejhogy.asia/blog/413132470.sHTML +
+wap.ejhogy.asia/blog/692083318.sHTML +
+wap.ejhogy.asia/blog/687864253.sHTML +
+wap.ejhogy.asia/blog/307505553.sHTML +
+wap.ejhogy.asia/blog/308649768.sHTML +
+wap.ejhogy.asia/blog/864258647.sHTML +
+wap.ejhogy.asia/blog/347537576.sHTML +
+wap.ejhogy.asia/blog/858196581.sHTML +
+wap.ejhogy.asia/blog/242425386.sHTML +
+wap.ejhogy.asia/blog/742010819.sHTML +
+wap.ejhogy.asia/blog/313602031.sHTML +
+wap.ejhogy.asia/blog/913202147.sHTML +
+wap.ejhogy.asia/blog/482650508.sHTML +
+wap.ejhogy.asia/blog/938230617.sHTML +
+wap.ejhogy.asia/blog/297536472.sHTML +
+wap.ejhogy.asia/blog/521608091.sHTML +
+wap.ejhogy.asia/blog/074703619.sHTML +
+wap.ejhogy.asia/blog/302642536.sHTML +
+wap.ejhogy.asia/blog/296437575.sHTML +
+wap.ejhogy.asia/blog/742582058.sHTML +
+wap.ejhogy.asia/blog/104516159.sHTML +
+wap.ejhogy.asia/blog/733192086.sHTML +
+wap.ejhogy.asia/blog/414963639.sHTML +
+wap.ejhogy.asia/blog/524487586.sHTML +
+wap.ejhogy.asia/blog/363197258.sHTML +
+wap.ejhogy.asia/blog/069755364.sHTML +
+wap.ejhogy.asia/blog/635824722.sHTML +
+wap.ejhogy.asia/blog/418757702.sHTML +
+wap.ejhogy.asia/blog/359910747.sHTML +
+wap.ejhogy.asia/blog/294203142.sHTML +
+wap.ejhogy.asia/blog/662782351.sHTML +
+wap.ejhogy.asia/blog/294203207.sHTML +
+wap.ejhogy.asia/blog/149070778.sHTML +
+wap.ejhogy.asia/blog/515574717.sHTML +
+wap.ejhogy.asia/blog/615798438.sHTML +
+wap.ejhogy.asia/blog/659337721.sHTML +
+wap.ejhogy.asia/blog/112385285.sHTML +
+wap.ejhogy.asia/blog/496852791.sHTML +
+wap.ejhogy.asia/blog/926671165.sHTML +
+wap.ejhogy.asia/blog/195509459.sHTML +
+wap.ejhogy.asia/blog/432272881.sHTML +
+wap.ejhogy.asia/blog/584754983.sHTML +
+wap.ejhogy.asia/blog/044993544.sHTML +
+wap.ejhogy.asia/blog/699950515.sHTML +
+wap.ejhogy.asia/blog/448559399.sHTML +
+wap.ejhogy.asia/blog/598832233.sHTML +
+wap.ejhogy.asia/blog/311110599.sHTML +
+wap.ejhogy.asia/blog/994051876.sHTML +
+wap.ejhogy.asia/blog/824999505.sHTML +
+wap.ejhogy.asia/blog/876032761.sHTML +
+wap.ejhogy.asia/blog/109940685.sHTML +
+wap.ejhogy.asia/blog/737776842.sHTML +
+wap.ejhogy.asia/blog/474560445.sHTML +
+wap.ejhogy.asia/blog/360519438.sHTML +
+wap.ejhogy.asia/blog/494449410.sHTML +
+wap.ejhogy.asia/blog/167333943.sHTML +
+wap.ejhogy.asia/blog/971122338.sHTML +
+wap.ejhogy.asia/blog/111372275.sHTML +
+wap.ejhogy.asia/blog/921598349.sHTML +
+wap.ejhogy.asia/blog/173079527.sHTML +
+wap.ejhogy.asia/blog/304422305.sHTML +
+wap.ejhogy.asia/blog/145460055.sHTML +
+wap.ejhogy.asia/blog/361952662.sHTML +
+wap.ejhogy.asia/blog/422273899.sHTML +
+wap.ejhogy.asia/blog/659899999.sHTML +
+wap.ejhogy.asia/blog/103278771.sHTML +
+wap.ejhogy.asia/blog/695166100.sHTML +
+wap.ejhogy.asia/blog/402836488.sHTML +
+wap.ejhogy.asia/blog/093495544.sHTML +
+wap.ejhogy.asia/blog/822726509.sHTML +
+wap.ejhogy.asia/blog/862722105.sHTML +
+wap.ejhogy.asia/blog/937761732.sHTML +
+wap.ejhogy.asia/blog/082221044.sHTML +
+wap.ejhogy.asia/blog/810062661.sHTML +
+wap.ejhogy.asia/blog/867115100.sHTML +
+wap.ejhogy.asia/blog/371771351.sHTML +
+wap.ejhogy.asia/blog/715050660.sHTML +
+wap.ejhogy.asia/blog/076173277.sHTML +
+wap.ejhogy.asia/blog/549495776.sHTML +
+wap.ejhogy.asia/blog/327171184.sHTML +
+wap.ejhogy.asia/blog/599450162.sHTML +
+wap.ejhogy.asia/blog/267509484.sHTML +
+wap.ejhogy.asia/blog/561391823.sHTML +
+wap.ejhogy.asia/blog/717926377.sHTML +
+wap.ejhogy.asia/blog/289498899.sHTML +
+wap.ejhogy.asia/blog/105635211.sHTML +
+wap.ejhogy.asia/blog/096762301.sHTML +
+wap.ejhogy.asia/blog/251893877.sHTML +
+wap.ejhogy.asia/blog/407271312.sHTML +
+wap.ejhogy.asia/blog/756773435.sHTML +
+wap.ejhogy.asia/blog/917616638.sHTML +
+wap.ejhogy.asia/blog/276217971.sHTML +
+wap.ejhogy.asia/blog/422112840.sHTML +
+wap.ejhogy.asia/blog/371772894.sHTML +
+wap.ejhogy.asia/blog/250999545.sHTML +
+wap.ejhogy.asia/blog/966833499.sHTML +
+wap.ejhogy.asia/blog/082377331.sHTML +
+wap.ejhogy.asia/blog/540062466.sHTML +
+wap.ejhogy.asia/blog/444001448.sHTML +
+wap.ejhogy.asia/blog/266144111.sHTML +
+wap.ejhogy.asia/blog/532881894.sHTML +
+wap.ejhogy.asia/blog/272494737.sHTML +
+wap.ejhogy.asia/blog/555056506.sHTML +
+wap.ejhogy.asia/blog/645799622.sHTML +
+wap.ejhogy.asia/blog/659401610.sHTML +
+wap.ejhogy.asia/blog/488524008.sHTML +
+wap.ejhogy.asia/blog/814038883.sHTML +
+wap.ejhogy.asia/blog/378005099.sHTML +
+wap.ejhogy.asia/blog/989554501.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时51分48秒
