@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+pdf.japbno.asia/blog/857586085.sHTML +
+pdf.japbno.asia/blog/997211178.sHTML +
+pdf.japbno.asia/blog/258697036.sHTML +
+pdf.japbno.asia/blog/858692549.sHTML +
+pdf.japbno.asia/blog/830683353.sHTML +
+pdf.japbno.asia/blog/136449147.sHTML +
+pdf.japbno.asia/blog/858647272.sHTML +
+pdf.japbno.asia/blog/304704661.sHTML +
+pdf.japbno.asia/blog/108314298.sHTML +
+pdf.japbno.asia/blog/960430369.sHTML +
+pdf.japbno.asia/blog/620865324.sHTML +
+pdf.japbno.asia/blog/403647531.sHTML +
+pdf.japbno.asia/blog/670864829.sHTML +
+pdf.japbno.asia/blog/370818692.sHTML +
+pdf.japbno.asia/blog/091140241.sHTML +
+pdf.japbno.asia/blog/094448327.sHTML +
+pdf.japbno.asia/blog/084350117.sHTML +
+pdf.japbno.asia/blog/858753659.sHTML +
+pdf.japbno.asia/blog/181985381.sHTML +
+pdf.japbno.asia/blog/372395282.sHTML +
+pdf.japbno.asia/blog/569753149.sHTML +
+pdf.japbno.asia/blog/891913091.sHTML +
+pdf.japbno.asia/blog/019241800.sHTML +
+pdf.japbno.asia/blog/646697986.sHTML +
+pdf.japbno.asia/blog/097086536.sHTML +
+pdf.japbno.asia/blog/293779703.sHTML +
+pdf.japbno.asia/blog/181324259.sHTML +
+pdf.japbno.asia/blog/527530814.sHTML +
+pdf.japbno.asia/blog/630031975.sHTML +
+pdf.japbno.asia/blog/049968330.sHTML +
+pdf.japbno.asia/blog/419319753.sHTML +
+pdf.japbno.asia/blog/292081991.sHTML +
+pdf.japbno.asia/blog/292208147.sHTML +
+pdf.japbno.asia/blog/303194320.sHTML +
+pdf.japbno.asia/blog/414700853.sHTML +
+pdf.japbno.asia/blog/481372580.sHTML +
+pdf.japbno.asia/blog/847032619.sHTML +
+pdf.japbno.asia/blog/747081536.sHTML +
+pdf.japbno.asia/blog/299865580.sHTML +
+pdf.japbno.asia/blog/180379708.sHTML +
+pdf.japbno.asia/blog/307532697.sHTML +
+pdf.japbno.asia/blog/570781431.sHTML +
+pdf.japbno.asia/blog/304225925.sHTML +
+pdf.japbno.asia/blog/870369257.sHTML +
+pdf.japbno.asia/blog/418653192.sHTML +
+pdf.japbno.asia/blog/303102157.sHTML +
+pdf.japbno.asia/blog/403642247.sHTML +
+pdf.japbno.asia/blog/185944243.sHTML +
+pdf.japbno.asia/blog/374679959.sHTML +
+pdf.japbno.asia/blog/853098889.sHTML +
+pdf.japbno.asia/blog/403192031.sHTML +
+pdf.japbno.asia/blog/214869710.sHTML +
+pdf.japbno.asia/blog/635425369.sHTML +
+pdf.japbno.asia/blog/132192086.sHTML +
+pdf.japbno.asia/blog/408114208.sHTML +
+pdf.japbno.asia/blog/792081470.sHTML +
+pdf.japbno.asia/blog/871925814.sHTML +
+pdf.japbno.asia/blog/969720254.sHTML +
+pdf.japbno.asia/blog/296407581.sHTML +
+pdf.japbno.asia/blog/292708147.sHTML +
+pdf.japbno.asia/blog/747970810.sHTML +
+pdf.japbno.asia/blog/529868794.sHTML +
+pdf.japbno.asia/blog/403369868.sHTML +
+pdf.japbno.asia/blog/603192036.sHTML +
+pdf.japbno.asia/blog/769866436.sHTML +
+pdf.japbno.asia/blog/802708132.sHTML +
+pdf.japbno.asia/blog/414208182.sHTML +
+pdf.japbno.asia/blog/574203147.sHTML +
+pdf.japbno.asia/blog/070972502.sHTML +
+pdf.japbno.asia/blog/858619243.sHTML +
+pdf.japbno.asia/blog/189720420.sHTML +
+pdf.japbno.asia/blog/636536979.sHTML +
+pdf.japbno.asia/blog/125314370.sHTML +
+pdf.japbno.asia/blog/492081925.sHTML +
+pdf.japbno.asia/blog/303152581.sHTML +
+pdf.japbno.asia/blog/102193653.sHTML +
+pdf.japbno.asia/blog/636197045.sHTML +
+pdf.japbno.asia/blog/181492798.sHTML +
+pdf.japbno.asia/blog/292086425.sHTML +
+pdf.japbno.asia/blog/548642531.sHTML +
+pdf.japbno.asia/blog/403754253.sHTML +
+pdf.japbno.asia/blog/419258143.sHTML +
+pdf.japbno.asia/blog/291994708.sHTML +
+pdf.japbno.asia/blog/292045085.sHTML +
+pdf.japbno.asia/blog/765975369.sHTML +
+pdf.japbno.asia/blog/186472530.sHTML +
+pdf.japbno.asia/blog/309331758.sHTML +
+pdf.japbno.asia/blog/754225431.sHTML +
+pdf.japbno.asia/blog/692119860.sHTML +
+pdf.japbno.asia/blog/643109337.sHTML +
+pdf.japbno.asia/blog/981114811.sHTML +
+pdf.japbno.asia/blog/853332208.sHTML +
+pdf.japbno.asia/blog/419315426.sHTML +
+pdf.japbno.asia/blog/415448103.sHTML +
+pdf.japbno.asia/blog/753214925.sHTML +
+pdf.japbno.asia/blog/308214365.sHTML +
+pdf.japbno.asia/blog/462770437.sHTML +
+pdf.japbno.asia/blog/682826548.sHTML +
+pdf.japbno.asia/blog/140482690.sHTML +
+pdf.japbno.asia/blog/062622784.sHTML +
+pdf.japbno.asia/blog/711280122.sHTML +
+pdf.japbno.asia/blog/846368079.sHTML +
+pdf.japbno.asia/blog/835253685.sHTML +
+pdf.japbno.asia/blog/349130795.sHTML +
+pdf.japbno.asia/blog/946469697.sHTML +
+pdf.japbno.asia/blog/946180742.sHTML +
+pdf.japbno.asia/blog/835753025.sHTML +
+pdf.japbno.asia/blog/371155593.sHTML +
+pdf.japbno.asia/blog/533204882.sHTML +
+pdf.japbno.asia/blog/717261665.sHTML +
+pdf.japbno.asia/blog/950852858.sHTML +
+pdf.japbno.asia/blog/444485734.sHTML +
+pdf.japbno.asia/blog/272564638.sHTML +
+pdf.japbno.asia/blog/803582654.sHTML +
+pdf.japbno.asia/blog/037376165.sHTML +
+pdf.japbno.asia/blog/376505610.sHTML +
+pdf.japbno.asia/blog/209155948.sHTML +
+pdf.japbno.asia/blog/366559548.sHTML +
+pdf.japbno.asia/blog/755549998.sHTML +
+pdf.japbno.asia/blog/598333893.sHTML +
+pdf.japbno.asia/blog/326050905.sHTML +
+pdf.japbno.asia/blog/575659426.sHTML +
+pdf.japbno.asia/blog/653219315.sHTML +
+pdf.japbno.asia/blog/053211920.sHTML +
+pdf.japbno.asia/blog/325413703.sHTML +
+pdf.japbno.asia/blog/570921082.sHTML +
+pdf.japbno.asia/blog/420881547.sHTML +
+pdf.japbno.asia/blog/597042114.sHTML +
+pdf.japbno.asia/blog/631083160.sHTML +
+pdf.japbno.asia/blog/525718703.sHTML +
+pdf.japbno.asia/blog/292203758.sHTML +
+pdf.japbno.asia/blog/857681691.sHTML +
+pdf.japbno.asia/blog/292031964.sHTML +
+pdf.japbno.asia/blog/858364752.sHTML +
+pdf.japbno.asia/blog/181970319.sHTML +
+pdf.japbno.asia/blog/359210421.sHTML +
+pdf.japbno.asia/blog/642545875.sHTML +
+pdf.japbno.asia/blog/886437593.sHTML +
+pdf.japbno.asia/blog/531082569.sHTML +
+pdf.japbno.asia/blog/350825476.sHTML +
+pdf.japbno.asia/blog/475760815.sHTML +
+pdf.japbno.asia/blog/963697036.sHTML +
+pdf.japbno.asia/blog/303102225.sHTML +
+pdf.japbno.asia/blog/636921920.sHTML +
+pdf.japbno.asia/blog/575814221.sHTML +
+pdf.japbno.asia/blog/858154708.sHTML +
+pdf.japbno.asia/blog/302793553.sHTML +
+pdf.japbno.asia/blog/638945018.sHTML +
+pdf.japbno.asia/blog/810090556.sHTML +
+pdf.japbno.asia/blog/169276754.sHTML +
+pdf.japbno.asia/blog/576541501.sHTML +
+pdf.japbno.asia/blog/363577394.sHTML +
+pdf.japbno.asia/blog/219948777.sHTML +
+pdf.japbno.asia/blog/748699313.sHTML +
+pdf.japbno.asia/blog/983999094.sHTML +
+pdf.japbno.asia/blog/842086420.sHTML +
+pdf.japbno.asia/blog/765000110.sHTML +
+pdf.japbno.asia/blog/813272151.sHTML +
+pdf.japbno.asia/blog/111799721.sHTML +
+pdf.japbno.asia/blog/612299572.sHTML +
+pdf.japbno.asia/blog/774353079.sHTML +
+pdf.japbno.asia/blog/469624735.sHTML +
+pdf.japbno.asia/blog/882257872.sHTML +
+pdf.japbno.asia/blog/829525392.sHTML +
+pdf.japbno.asia/blog/040170125.sHTML +
+pdf.japbno.asia/blog/337778839.sHTML +
+pdf.japbno.asia/blog/762295995.sHTML +
+pdf.japbno.asia/blog/070869725.sHTML +
+pdf.japbno.asia/blog/852086475.sHTML +
+pdf.japbno.asia/blog/414247586.sHTML +
+pdf.japbno.asia/blog/953203964.sHTML +
+pdf.japbno.asia/blog/846485172.sHTML +
+pdf.japbno.asia/blog/625320814.sHTML +
+pdf.japbno.asia/blog/747869742.sHTML +
+pdf.japbno.asia/blog/186975036.sHTML +
+pdf.japbno.asia/blog/798869758.sHTML +
+pdf.japbno.asia/blog/497928496.sHTML +
+pdf.japbno.asia/blog/964869420.sHTML +
+pdf.japbno.asia/blog/575931386.sHTML +
+pdf.japbno.asia/blog/269221369.sHTML +
+pdf.japbno.asia/blog/971180105.sHTML +
+pdf.japbno.asia/blog/446051794.sHTML +
+pdf.japbno.asia/blog/747989220.sHTML +
+pdf.japbno.asia/blog/214220314.sHTML +
+pdf.japbno.asia/blog/758694799.sHTML +
+pdf.japbno.asia/blog/074713876.sHTML +
+pdf.japbno.asia/blog/392868753.sHTML +
+pdf.japbno.asia/blog/194735329.sHTML +
+pdf.japbno.asia/blog/170310816.sHTML +
+pdf.japbno.asia/blog/414314720.sHTML +
+pdf.japbno.asia/blog/741081925.sHTML +
+pdf.japbno.asia/blog/969209758.sHTML +
+pdf.japbno.asia/blog/129661722.sHTML +
+pdf.japbno.asia/blog/521475912.sHTML +
+pdf.japbno.asia/blog/630935848.sHTML +
+pdf.japbno.asia/blog/882316517.sHTML +
+pdf.japbno.asia/blog/537547105.sHTML +
+pdf.japbno.asia/blog/536088701.sHTML +
+pdf.japbno.asia/blog/131099870.sHTML +
+pdf.japbno.asia/blog/753604769.sHTML +
+pdf.japbno.asia/blog/305555516.sHTML +
+pdf.japbno.asia/blog/401425448.sHTML +
+pdf.japbno.asia/blog/983272273.sHTML +
+pdf.japbno.asia/blog/149061594.sHTML +
+pdf.japbno.asia/blog/730822601.sHTML +
+pdf.japbno.asia/blog/412160524.sHTML +
+pdf.japbno.asia/blog/223198154.sHTML +
+pdf.japbno.asia/blog/977233272.sHTML +
+pdf.japbno.asia/blog/715540998.sHTML +
+pdf.japbno.asia/blog/961921037.sHTML +
+pdf.japbno.asia/blog/592598104.sHTML +
+pdf.japbno.asia/blog/743158261.sHTML +
+pdf.japbno.asia/blog/480188489.sHTML +
+pdf.japbno.asia/blog/849475333.sHTML +
+pdf.japbno.asia/blog/198328733.sHTML +
+pdf.japbno.asia/blog/876432553.sHTML +
+pdf.japbno.asia/blog/264764370.sHTML +
+pdf.japbno.asia/blog/681581547.sHTML +
+pdf.japbno.asia/blog/311484864.sHTML +
+pdf.japbno.asia/blog/962087119.sHTML +
+pdf.japbno.asia/blog/960093119.sHTML +
+pdf.japbno.asia/blog/797651926.sHTML +
+pdf.japbno.asia/blog/793698432.sHTML +
+pdf.japbno.asia/blog/307147609.sHTML +
+pdf.japbno.asia/blog/094042697.sHTML +
+pdf.japbno.asia/blog/685975369.sHTML +
+pdf.japbno.asia/blog/247932042.sHTML +
+pdf.japbno.asia/blog/410819243.sHTML +
+pdf.japbno.asia/blog/961972031.sHTML +
+pdf.japbno.asia/blog/766039530.sHTML +
+pdf.japbno.asia/blog/253897725.sHTML +
+pdf.japbno.asia/blog/557287781.sHTML +
+pdf.japbno.asia/blog/329071316.sHTML +
+pdf.japbno.asia/blog/881263808.sHTML +
+pdf.japbno.asia/blog/936285885.sHTML +
+pdf.japbno.asia/blog/163014858.sHTML +
+pdf.japbno.asia/blog/653680718.sHTML +
+pdf.japbno.asia/blog/115289527.sHTML +
+pdf.japbno.asia/blog/725205717.sHTML +
+pdf.japbno.asia/blog/187326064.sHTML +
+pdf.japbno.asia/blog/830487259.sHTML +
+pdf.japbno.asia/blog/927127605.sHTML +
+pdf.japbno.asia/blog/854903861.sHTML +
+pdf.japbno.asia/blog/202996964.sHTML +
+pdf.japbno.asia/blog/452749247.sHTML +
+pdf.japbno.asia/blog/064479758.sHTML +
+pdf.japbno.asia/blog/897305252.sHTML +
+pdf.japbno.asia/blog/285757747.sHTML +
+pdf.japbno.asia/blog/964319742.sHTML +
+pdf.japbno.asia/blog/241316803.sHTML +
+pdf.japbno.asia/blog/386860303.sHTML +
+pdf.japbno.asia/blog/060914264.sHTML +
+pdf.japbno.asia/blog/891915230.sHTML +
+pdf.japbno.asia/blog/207858518.sHTML +
+pdf.japbno.asia/blog/902976042.sHTML +
+pdf.japbno.asia/blog/809742092.sHTML +
+pdf.japbno.asia/blog/624915852.sHTML +
+pdf.japbno.asia/blog/575858025.sHTML +
+pdf.japbno.asia/blog/467757135.sHTML +
+pdf.japbno.asia/blog/303587581.sHTML +
+pdf.japbno.asia/blog/968277033.sHTML +
+pdf.japbno.asia/blog/949698624.sHTML +
+pdf.japbno.asia/blog/570531469.sHTML +
+pdf.japbno.asia/blog/292197087.sHTML +
+pdf.japbno.asia/blog/413864758.sHTML +
+pdf.japbno.asia/blog/305869203.sHTML +
+pdf.japbno.asia/blog/964205319.sHTML +
+pdf.japbno.asia/blog/722823630.sHTML +
+pdf.japbno.asia/blog/748614214.sHTML +
+pdf.japbno.asia/blog/294607108.sHTML +
+pdf.japbno.asia/blog/731443647.sHTML +
+pdf.japbno.asia/blog/852191047.sHTML +
+pdf.japbno.asia/blog/632582086.sHTML +
+pdf.japbno.asia/blog/239000988.sHTML +
+pdf.japbno.asia/blog/761277726.sHTML +
+pdf.japbno.asia/blog/816105555.sHTML +
+pdf.japbno.asia/blog/822762359.sHTML +
+pdf.japbno.asia/blog/074607586.sHTML +
+pdf.japbno.asia/blog/075420986.sHTML +
+pdf.japbno.asia/blog/969258580.sHTML +
+pdf.japbno.asia/blog/525536924.sHTML +
+pdf.japbno.asia/blog/963608744.sHTML +
+pdf.japbno.asia/blog/747976420.sHTML +
+pdf.japbno.asia/blog/636865520.sHTML +
+pdf.japbno.asia/blog/606005300.sHTML +
+pdf.japbno.asia/blog/966492798.sHTML +
+pdf.japbno.asia/blog/674497112.sHTML +
+pdf.japbno.asia/blog/871142581.sHTML +
+pdf.japbno.asia/blog/960319258.sHTML +
+pdf.japbno.asia/blog/414370368.sHTML +
+pdf.japbno.asia/blog/418368103.sHTML +
+pdf.japbno.asia/blog/741042581.sHTML +
+pdf.japbno.asia/blog/853758164.sHTML +
+pdf.japbno.asia/blog/171081977.sHTML +
+pdf.japbno.asia/blog/366425769.sHTML +
+pdf.japbno.asia/blog/404208770.sHTML +
+pdf.japbno.asia/blog/632013742.sHTML +
+pdf.japbno.asia/blog/620881646.sHTML +
+pdf.japbno.asia/blog/302550369.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日20时01分03秒
