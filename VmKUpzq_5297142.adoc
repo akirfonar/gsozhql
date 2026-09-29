@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.idjvit.asia/blog/323993784.sHTML +
+wap.idjvit.asia/blog/748064208.sHTML +
+wap.idjvit.asia/blog/181970431.sHTML +
+wap.idjvit.asia/blog/418376865.sHTML +
+wap.idjvit.asia/blog/056468501.sHTML +
+wap.idjvit.asia/blog/485420358.sHTML +
+wap.idjvit.asia/blog/030971420.sHTML +
+wap.idjvit.asia/blog/858757254.sHTML +
+wap.idjvit.asia/blog/064427521.sHTML +
+wap.idjvit.asia/blog/637581925.sHTML +
+wap.idjvit.asia/blog/090732261.sHTML +
+wap.idjvit.asia/blog/536881475.sHTML +
+wap.idjvit.asia/blog/309753647.sHTML +
+wap.idjvit.asia/blog/083614204.sHTML +
+wap.idjvit.asia/blog/969108689.sHTML +
+wap.idjvit.asia/blog/581497079.sHTML +
+wap.idjvit.asia/blog/902536525.sHTML +
+wap.idjvit.asia/blog/175314358.sHTML +
+wap.idjvit.asia/blog/747033541.sHTML +
+wap.idjvit.asia/blog/625314208.sHTML +
+wap.idjvit.asia/blog/746531536.sHTML +
+wap.idjvit.asia/blog/542042598.sHTML +
+wap.idjvit.asia/blog/855721425.sHTML +
+wap.idjvit.asia/blog/125314274.sHTML +
+wap.idjvit.asia/blog/747087253.sHTML +
+wap.idjvit.asia/blog/908681470.sHTML +
+wap.idjvit.asia/blog/029887531.sHTML +
+wap.idjvit.asia/blog/625789006.sHTML +
+wap.idjvit.asia/blog/319868797.sHTML +
+wap.idjvit.asia/blog/298147588.sHTML +
+wap.idjvit.asia/blog/363158208.sHTML +
+wap.idjvit.asia/blog/520821916.sHTML +
+wap.idjvit.asia/blog/586487758.sHTML +
+wap.idjvit.asia/blog/003935561.sHTML +
+wap.idjvit.asia/blog/403198653.sHTML +
+wap.idjvit.asia/blog/519754203.sHTML +
+wap.idjvit.asia/blog/525314920.sHTML +
+wap.idjvit.asia/blog/070358692.sHTML +
+wap.idjvit.asia/blog/524713147.sHTML +
+wap.idjvit.asia/blog/292586420.sHTML +
+wap.idjvit.asia/blog/731975470.sHTML +
+wap.idjvit.asia/blog/969203142.sHTML +
+wap.idjvit.asia/blog/658197081.sHTML +
+wap.idjvit.asia/blog/963192036.sHTML +
+wap.idjvit.asia/blog/520081920.sHTML +
+wap.idjvit.asia/blog/413603147.sHTML +
+wap.idjvit.asia/blog/741971974.sHTML +
+wap.idjvit.asia/blog/302138642.sHTML +
+wap.idjvit.asia/blog/353146975.sHTML +
+wap.idjvit.asia/blog/741970086.sHTML +
+wap.idjvit.asia/blog/181970586.sHTML +
+wap.idjvit.asia/blog/741497532.sHTML +
+wap.idjvit.asia/blog/071324208.sHTML +
+wap.idjvit.asia/blog/419753187.sHTML +
+wap.idjvit.asia/blog/858195870.sHTML +
+wap.idjvit.asia/blog/421479703.sHTML +
+wap.idjvit.asia/blog/419275813.sHTML +
+wap.idjvit.asia/blog/969703275.sHTML +
+wap.idjvit.asia/blog/302319742.sHTML +
+wap.idjvit.asia/blog/410865322.sHTML +
+wap.idjvit.asia/blog/531486697.sHTML +
+wap.idjvit.asia/blog/291369703.sHTML +
+wap.idjvit.asia/blog/403692032.sHTML +
+wap.idjvit.asia/blog/180531642.sHTML +
+wap.idjvit.asia/blog/414718614.sHTML +
+wap.idjvit.asia/blog/087412739.sHTML +
+wap.idjvit.asia/blog/630429886.sHTML +
+wap.idjvit.asia/blog/747581365.sHTML +
+wap.idjvit.asia/blog/071975335.sHTML +
+wap.idjvit.asia/blog/529860275.sHTML +
+wap.idjvit.asia/blog/427615493.sHTML +
+wap.idjvit.asia/blog/963205380.sHTML +
+wap.idjvit.asia/blog/236536470.sHTML +
+wap.idjvit.asia/blog/569258192.sHTML +
+wap.idjvit.asia/blog/070319257.sHTML +
+wap.idjvit.asia/blog/435199785.sHTML +
+wap.idjvit.asia/blog/349610616.sHTML +
+wap.idjvit.asia/blog/464704758.sHTML +
+wap.idjvit.asia/blog/303881921.sHTML +
+wap.idjvit.asia/blog/322492092.sHTML +
+wap.idjvit.asia/blog/848697864.sHTML +
+wap.idjvit.asia/blog/796531020.sHTML +
+wap.idjvit.asia/blog/636827521.sHTML +
+wap.idjvit.asia/blog/742003964.sHTML +
+wap.idjvit.asia/blog/042031425.sHTML +
+wap.idjvit.asia/blog/574869798.sHTML +
+wap.idjvit.asia/blog/292700253.sHTML +
+wap.idjvit.asia/blog/308642369.sHTML +
+wap.idjvit.asia/blog/521975570.sHTML +
+wap.idjvit.asia/blog/524758864.sHTML +
+wap.idjvit.asia/blog/353190319.sHTML +
+wap.idjvit.asia/blog/074253197.sHTML +
+wap.idjvit.asia/blog/520864754.sHTML +
+wap.idjvit.asia/blog/424777081.sHTML +
+wap.idjvit.asia/blog/303426910.sHTML +
+wap.idjvit.asia/blog/186425319.sHTML +
+wap.idjvit.asia/blog/964875475.sHTML +
+wap.idjvit.asia/blog/166259912.sHTML +
+wap.idjvit.asia/blog/298192603.sHTML +
+wap.idjvit.asia/blog/297047718.sHTML +
+wap.idjvit.asia/blog/696425367.sHTML +
+wap.idjvit.asia/blog/620586475.sHTML +
+wap.idjvit.asia/blog/291480531.sHTML +
+wap.idjvit.asia/blog/536425809.sHTML +
+wap.idjvit.asia/blog/976420819.sHTML +
+wap.idjvit.asia/blog/762457823.sHTML +
+wap.idjvit.asia/blog/956862304.sHTML +
+wap.idjvit.asia/blog/414370975.sHTML +
+wap.idjvit.asia/blog/303780810.sHTML +
+wap.idjvit.asia/blog/575869770.sHTML +
+wap.idjvit.asia/blog/132707197.sHTML +
+wap.idjvit.asia/blog/637642314.sHTML +
+wap.idjvit.asia/blog/520816097.sHTML +
+wap.idjvit.asia/blog/464708758.sHTML +
+wap.idjvit.asia/blog/303314810.sHTML +
+wap.idjvit.asia/blog/186420368.sHTML +
+wap.idjvit.asia/blog/070869758.sHTML +
+wap.idjvit.asia/blog/855364429.sHTML +
+wap.idjvit.asia/blog/036492036.sHTML +
+wap.idjvit.asia/blog/308653192.sHTML +
+wap.idjvit.asia/blog/379481925.sHTML +
+wap.idjvit.asia/blog/636519702.sHTML +
+wap.idjvit.asia/blog/636976425.sHTML +
+wap.idjvit.asia/blog/865548715.sHTML +
+wap.idjvit.asia/blog/964265970.sHTML +
+wap.idjvit.asia/blog/296658641.sHTML +
+wap.idjvit.asia/blog/630976586.sHTML +
+wap.idjvit.asia/blog/152284890.sHTML +
+wap.idjvit.asia/blog/817885291.sHTML +
+wap.idjvit.asia/blog/072541420.sHTML +
+wap.idjvit.asia/blog/848378690.sHTML +
+wap.idjvit.asia/blog/086542588.sHTML +
+wap.idjvit.asia/blog/975348220.sHTML +
+wap.idjvit.asia/blog/621786431.sHTML +
+wap.idjvit.asia/blog/704281069.sHTML +
+wap.idjvit.asia/blog/041531097.sHTML +
+wap.idjvit.asia/blog/632643658.sHTML +
+wap.idjvit.asia/blog/919219335.sHTML +
+wap.idjvit.asia/blog/853197547.sHTML +
+wap.idjvit.asia/blog/858756992.sHTML +
+wap.idjvit.asia/blog/963708142.sHTML +
+wap.idjvit.asia/blog/070697704.sHTML +
+wap.idjvit.asia/blog/023528493.sHTML +
+wap.idjvit.asia/blog/363573513.sHTML +
+wap.idjvit.asia/blog/495155173.sHTML +
+wap.idjvit.asia/blog/133275093.sHTML +
+wap.idjvit.asia/blog/686532605.sHTML +
+wap.idjvit.asia/blog/914264471.sHTML +
+wap.idjvit.asia/blog/647886903.sHTML +
+wap.idjvit.asia/blog/308256537.sHTML +
+wap.idjvit.asia/blog/197548369.sHTML +
+wap.idjvit.asia/blog/420981592.sHTML +
+wap.idjvit.asia/blog/181486986.sHTML +
+wap.idjvit.asia/blog/303781481.sHTML +
+wap.idjvit.asia/blog/858709142.sHTML +
+wap.idjvit.asia/blog/468609218.sHTML +
+wap.idjvit.asia/blog/631916992.sHTML +
+wap.idjvit.asia/blog/064209821.sHTML +
+wap.idjvit.asia/blog/384178490.sHTML +
+wap.idjvit.asia/blog/858602192.sHTML +
+wap.idjvit.asia/blog/931465203.sHTML +
+wap.idjvit.asia/blog/070380381.sHTML +
+wap.idjvit.asia/blog/907546470.sHTML +
+wap.idjvit.asia/blog/001724016.sHTML +
+wap.idjvit.asia/blog/625831970.sHTML +
+wap.idjvit.asia/blog/742031470.sHTML +
+wap.idjvit.asia/blog/858142096.sHTML +
+wap.idjvit.asia/blog/970583608.sHTML +
+wap.idjvit.asia/blog/969271970.sHTML +
+wap.idjvit.asia/blog/682598642.sHTML +
+wap.idjvit.asia/blog/520319708.sHTML +
+wap.idjvit.asia/blog/419252720.sHTML +
+wap.idjvit.asia/blog/635826479.sHTML +
+wap.idjvit.asia/blog/633114247.sHTML +
+wap.idjvit.asia/blog/564512223.sHTML +
+wap.idjvit.asia/blog/729041202.sHTML +
+wap.idjvit.asia/blog/892558098.sHTML +
+wap.idjvit.asia/blog/829820369.sHTML +
+wap.idjvit.asia/blog/792086570.sHTML +
+wap.idjvit.asia/blog/070319081.sHTML +
+wap.idjvit.asia/blog/925755314.sHTML +
+wap.idjvit.asia/blog/858754632.sHTML +
+wap.idjvit.asia/blog/625088203.sHTML +
+wap.idjvit.asia/blog/051400889.sHTML +
+wap.idjvit.asia/blog/414492586.sHTML +
+wap.idjvit.asia/blog/742192537.sHTML +
+wap.idjvit.asia/blog/808697764.sHTML +
+wap.idjvit.asia/blog/180938697.sHTML +
+wap.idjvit.asia/blog/525314669.sHTML +
+wap.idjvit.asia/blog/292038702.sHTML +
+wap.idjvit.asia/blog/125038131.sHTML +
+wap.idjvit.asia/blog/620319708.sHTML +
+wap.idjvit.asia/blog/995801352.sHTML +
+wap.idjvit.asia/blog/636975479.sHTML +
+wap.idjvit.asia/blog/586476442.sHTML +
+wap.idjvit.asia/blog/936853686.sHTML +
+wap.idjvit.asia/blog/514720813.sHTML +
+wap.idjvit.asia/blog/418829725.sHTML +
+wap.idjvit.asia/blog/199967117.sHTML +
+wap.idjvit.asia/blog/956611836.sHTML +
+wap.idjvit.asia/blog/335661775.sHTML +
+wap.idjvit.asia/blog/804327531.sHTML +
+wap.idjvit.asia/blog/074997803.sHTML +
+wap.idjvit.asia/blog/748147581.sHTML +
+wap.idjvit.asia/blog/170219714.sHTML +
+wap.idjvit.asia/blog/071190080.sHTML +
+wap.idjvit.asia/blog/079203120.sHTML +
+wap.idjvit.asia/blog/625586025.sHTML +
+wap.idjvit.asia/blog/529864259.sHTML +
+wap.idjvit.asia/blog/212782572.sHTML +
+wap.idjvit.asia/blog/747642025.sHTML +
+wap.idjvit.asia/blog/858204925.sHTML +
+wap.idjvit.asia/blog/680970836.sHTML +
+wap.idjvit.asia/blog/632086642.sHTML +
+wap.idjvit.asia/blog/593871711.sHTML +
+wap.idjvit.asia/blog/618197265.sHTML +
+wap.idjvit.asia/blog/207623459.sHTML +
+wap.idjvit.asia/blog/960210914.sHTML +
+wap.idjvit.asia/blog/631420860.sHTML +
+wap.idjvit.asia/blog/852091147.sHTML +
+wap.idjvit.asia/blog/025710853.sHTML +
+wap.idjvit.asia/blog/414264647.sHTML +
+wap.idjvit.asia/blog/074208694.sHTML +
+wap.idjvit.asia/blog/822727235.sHTML +
+wap.idjvit.asia/blog/397558253.sHTML +
+wap.idjvit.asia/blog/635053642.sHTML +
+wap.idjvit.asia/blog/574369742.sHTML +
+wap.idjvit.asia/blog/524972535.sHTML +
+wap.idjvit.asia/blog/469386476.sHTML +
+wap.idjvit.asia/blog/308727081.sHTML +
+wap.idjvit.asia/blog/804215375.sHTML +
+wap.idjvit.asia/blog/208921426.sHTML +
+wap.idjvit.asia/blog/698416863.sHTML +
+wap.idjvit.asia/blog/297158814.sHTML +
+wap.idjvit.asia/blog/308204719.sHTML +
+wap.idjvit.asia/blog/357690036.sHTML +
+wap.idjvit.asia/blog/537020881.sHTML +
+wap.idjvit.asia/blog/804716093.sHTML +
+wap.idjvit.asia/blog/242148603.sHTML +
+wap.idjvit.asia/blog/470926986.sHTML +
+wap.idjvit.asia/blog/742608815.sHTML +
+wap.idjvit.asia/blog/571932108.sHTML +
+wap.idjvit.asia/blog/413767642.sHTML +
+wap.idjvit.asia/blog/402587697.sHTML +
+wap.idjvit.asia/blog/355871932.sHTML +
+wap.idjvit.asia/blog/208104701.sHTML +
+wap.idjvit.asia/blog/131433753.sHTML +
+wap.idjvit.asia/blog/631092698.sHTML +
+wap.idjvit.asia/blog/481664265.sHTML +
+wap.idjvit.asia/blog/470921486.sHTML +
+wap.idjvit.asia/blog/020193603.sHTML +
+wap.idjvit.asia/blog/686631431.sHTML +
+wap.idjvit.asia/blog/077588420.sHTML +
+wap.idjvit.asia/blog/208764367.sHTML +
+wap.idjvit.asia/blog/410921036.sHTML +
+wap.idjvit.asia/blog/707359299.sHTML +
+wap.idjvit.asia/blog/353207598.sHTML +
+wap.idjvit.asia/blog/586704754.sHTML +
+wap.idjvit.asia/blog/075431532.sHTML +
+wap.idjvit.asia/blog/662905171.sHTML +
+wap.idjvit.asia/blog/419314193.sHTML +
+wap.idjvit.asia/blog/075997582.sHTML +
+wap.idjvit.asia/blog/159210921.sHTML +
+wap.idjvit.asia/blog/742119937.sHTML +
+wap.idjvit.asia/blog/853250853.sHTML +
+wap.idjvit.asia/blog/937500865.sHTML +
+wap.idjvit.asia/blog/753143113.sHTML +
+wap.idjvit.asia/blog/242593164.sHTML +
+wap.idjvit.asia/blog/978237642.sHTML +
+wap.idjvit.asia/blog/804336431.sHTML +
+wap.idjvit.asia/blog/690806342.sHTML +
+wap.idjvit.asia/blog/919367698.sHTML +
+wap.idjvit.asia/blog/972504360.sHTML +
+wap.idjvit.asia/blog/187649719.sHTML +
+wap.idjvit.asia/blog/520437199.sHTML +
+wap.idjvit.asia/blog/853759876.sHTML +
+wap.idjvit.asia/blog/208754558.sHTML +
+wap.idjvit.asia/blog/075431097.sHTML +
+wap.idjvit.asia/blog/431537643.sHTML +
+wap.idjvit.asia/blog/854210871.sHTML +
+wap.idjvit.asia/blog/744714360.sHTML +
+wap.idjvit.asia/blog/527532098.sHTML +
+wap.idjvit.asia/blog/353769860.sHTML +
+wap.idjvit.asia/blog/025986269.sHTML +
+wap.idjvit.asia/blog/086588153.sHTML +
+wap.idjvit.asia/blog/208109892.sHTML +
+wap.idjvit.asia/blog/319860971.sHTML +
+wap.idjvit.asia/blog/880947034.sHTML +
+wap.idjvit.asia/blog/520542206.sHTML +
+wap.idjvit.asia/blog/925871937.sHTML +
+wap.idjvit.asia/blog/536810982.sHTML +
+wap.idjvit.asia/blog/753658470.sHTML +
+wap.idjvit.asia/blog/691073016.sHTML +
+wap.idjvit.asia/blog/571937648.sHTML +
+wap.idjvit.asia/blog/027032049.sHTML +
+wap.idjvit.asia/blog/118355235.sHTML +
+wap.idjvit.asia/blog/797658769.sHTML +
+wap.idjvit.asia/blog/859370926.sHTML +
+wap.idjvit.asia/blog/425976692.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时57分48秒
