@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+pdf.aokive.asia/blog/877647081.sHTML +
+pdf.aokive.asia/blog/703532420.sHTML +
+pdf.aokive.asia/blog/749319837.sHTML +
+pdf.aokive.asia/blog/310820899.sHTML +
+pdf.aokive.asia/blog/630866479.sHTML +
+pdf.aokive.asia/blog/419703150.sHTML +
+pdf.aokive.asia/blog/986420368.sHTML +
+pdf.aokive.asia/blog/913901288.sHTML +
+pdf.aokive.asia/blog/000506251.sHTML +
+pdf.aokive.asia/blog/289568841.sHTML +
+pdf.aokive.asia/blog/653157541.sHTML +
+pdf.aokive.asia/blog/186491075.sHTML +
+pdf.aokive.asia/blog/303657586.sHTML +
+pdf.aokive.asia/blog/796705315.sHTML +
+pdf.aokive.asia/blog/803710860.sHTML +
+pdf.aokive.asia/blog/758905432.sHTML +
+pdf.aokive.asia/blog/187715937.sHTML +
+pdf.aokive.asia/blog/854010927.sHTML +
+pdf.aokive.asia/blog/300449432.sHTML +
+pdf.aokive.asia/blog/082106686.sHTML +
+pdf.aokive.asia/blog/984951386.sHTML +
+pdf.aokive.asia/blog/605002733.sHTML +
+pdf.aokive.asia/blog/650177316.sHTML +
+pdf.aokive.asia/blog/266283772.sHTML +
+pdf.aokive.asia/blog/339618862.sHTML +
+pdf.aokive.asia/blog/437111554.sHTML +
+pdf.aokive.asia/blog/693498384.sHTML +
+pdf.aokive.asia/blog/311555948.sHTML +
+pdf.aokive.asia/blog/595049432.sHTML +
+pdf.aokive.asia/blog/418074697.sHTML +
+pdf.aokive.asia/blog/520475975.sHTML +
+pdf.aokive.asia/blog/975336108.sHTML +
+pdf.aokive.asia/blog/537721882.sHTML +
+pdf.aokive.asia/blog/773686383.sHTML +
+pdf.aokive.asia/blog/676866367.sHTML +
+pdf.aokive.asia/blog/663502578.sHTML +
+pdf.aokive.asia/blog/281486586.sHTML +
+pdf.aokive.asia/blog/966481691.sHTML +
+pdf.aokive.asia/blog/586283211.sHTML +
+pdf.aokive.asia/blog/135436581.sHTML +
+pdf.aokive.asia/blog/514258647.sHTML +
+pdf.aokive.asia/blog/953265377.sHTML +
+pdf.aokive.asia/blog/857086420.sHTML +
+pdf.aokive.asia/blog/029754249.sHTML +
+pdf.aokive.asia/blog/635824470.sHTML +
+pdf.aokive.asia/blog/791538698.sHTML +
+pdf.aokive.asia/blog/636920864.sHTML +
+pdf.aokive.asia/blog/292088254.sHTML +
+pdf.aokive.asia/blog/513605745.sHTML +
+pdf.aokive.asia/blog/747053707.sHTML +
+pdf.aokive.asia/blog/472962941.sHTML +
+pdf.aokive.asia/blog/741530864.sHTML +
+pdf.aokive.asia/blog/403192081.sHTML +
+pdf.aokive.asia/blog/180970364.sHTML +
+pdf.aokive.asia/blog/783197319.sHTML +
+pdf.aokive.asia/blog/670864303.sHTML +
+pdf.aokive.asia/blog/304422426.sHTML +
+pdf.aokive.asia/blog/682081479.sHTML +
+pdf.aokive.asia/blog/747208142.sHTML +
+pdf.aokive.asia/blog/291619702.sHTML +
+pdf.aokive.asia/blog/143108984.sHTML +
+pdf.aokive.asia/blog/420987105.sHTML +
+pdf.aokive.asia/blog/194628085.sHTML +
+pdf.aokive.asia/blog/586931932.sHTML +
+pdf.aokive.asia/blog/320926586.sHTML +
+pdf.aokive.asia/blog/351438699.sHTML +
+pdf.aokive.asia/blog/376099378.sHTML +
+pdf.aokive.asia/blog/292845885.sHTML +
+pdf.aokive.asia/blog/419337502.sHTML +
+pdf.aokive.asia/blog/358253776.sHTML +
+pdf.aokive.asia/blog/730176368.sHTML +
+pdf.aokive.asia/blog/464831446.sHTML +
+pdf.aokive.asia/blog/319869330.sHTML +
+pdf.aokive.asia/blog/709849612.sHTML +
+pdf.aokive.asia/blog/163467946.sHTML +
+pdf.aokive.asia/blog/596617833.sHTML +
+pdf.aokive.asia/blog/146999462.sHTML +
+pdf.aokive.asia/blog/581038726.sHTML +
+pdf.aokive.asia/blog/870193254.sHTML +
+pdf.aokive.asia/blog/910825421.sHTML +
+pdf.aokive.asia/blog/488975378.sHTML +
+pdf.aokive.asia/blog/096600185.sHTML +
+pdf.aokive.asia/blog/019476081.sHTML +
+pdf.aokive.asia/blog/470505155.sHTML +
+pdf.aokive.asia/blog/600910345.sHTML +
+pdf.aokive.asia/blog/976738748.sHTML +
+pdf.aokive.asia/blog/644048586.sHTML +
+pdf.aokive.asia/blog/115966941.sHTML +
+pdf.aokive.asia/blog/811838768.sHTML +
+pdf.aokive.asia/blog/824459999.sHTML +
+pdf.aokive.asia/blog/654449113.sHTML +
+pdf.aokive.asia/blog/860946382.sHTML +
+pdf.aokive.asia/blog/391033952.sHTML +
+pdf.aokive.asia/blog/655167116.sHTML +
+pdf.aokive.asia/blog/333300672.sHTML +
+pdf.aokive.asia/blog/895188946.sHTML +
+pdf.aokive.asia/blog/426110055.sHTML +
+pdf.aokive.asia/blog/628116846.sHTML +
+pdf.aokive.asia/blog/131147315.sHTML +
+pdf.aokive.asia/blog/708115037.sHTML +
+pdf.aokive.asia/blog/093723638.sHTML +
+pdf.aokive.asia/blog/421940831.sHTML +
+pdf.aokive.asia/blog/703200843.sHTML +
+pdf.aokive.asia/blog/829870947.sHTML +
+pdf.aokive.asia/blog/029868742.sHTML +
+pdf.aokive.asia/blog/304203147.sHTML +
+pdf.aokive.asia/blog/436425364.sHTML +
+pdf.aokive.asia/blog/219250575.sHTML +
+pdf.aokive.asia/blog/765861597.sHTML +
+pdf.aokive.asia/blog/281536469.sHTML +
+pdf.aokive.asia/blog/660325926.sHTML +
+pdf.aokive.asia/blog/960947543.sHTML +
+pdf.aokive.asia/blog/192703764.sHTML +
+pdf.aokive.asia/blog/208603759.sHTML +
+pdf.aokive.asia/blog/046783345.sHTML +
+pdf.aokive.asia/blog/971115554.sHTML +
+pdf.aokive.asia/blog/376390638.sHTML +
+pdf.aokive.asia/blog/604715082.sHTML +
+pdf.aokive.asia/blog/808759214.sHTML +
+pdf.aokive.asia/blog/718525646.sHTML +
+pdf.aokive.asia/blog/174853780.sHTML +
+pdf.aokive.asia/blog/181982092.sHTML +
+pdf.aokive.asia/blog/242708760.sHTML +
+pdf.aokive.asia/blog/358426969.sHTML +
+pdf.aokive.asia/blog/060077991.sHTML +
+pdf.aokive.asia/blog/264769928.sHTML +
+pdf.aokive.asia/blog/087599762.sHTML +
+pdf.aokive.asia/blog/487304916.sHTML +
+pdf.aokive.asia/blog/203216471.sHTML +
+pdf.aokive.asia/blog/744926082.sHTML +
+pdf.aokive.asia/blog/531920375.sHTML +
+pdf.aokive.asia/blog/246942980.sHTML +
+pdf.aokive.asia/blog/571536470.sHTML +
+pdf.aokive.asia/blog/931586925.sHTML +
+pdf.aokive.asia/blog/681970930.sHTML +
+pdf.aokive.asia/blog/397979473.sHTML +
+pdf.aokive.asia/blog/971650776.sHTML +
+pdf.aokive.asia/blog/476164998.sHTML +
+pdf.aokive.asia/blog/545667802.sHTML +
+pdf.aokive.asia/blog/632809321.sHTML +
+pdf.aokive.asia/blog/086435869.sHTML +
+pdf.aokive.asia/blog/753192042.sHTML +
+pdf.aokive.asia/blog/677862871.sHTML +
+pdf.aokive.asia/blog/872053286.sHTML +
+pdf.aokive.asia/blog/964592193.sHTML +
+pdf.aokive.asia/blog/242275825.sHTML +
+pdf.aokive.asia/blog/519137642.sHTML +
+pdf.aokive.asia/blog/855936587.sHTML +
+pdf.aokive.asia/blog/642276997.sHTML +
+pdf.aokive.asia/blog/325099721.sHTML +
+pdf.aokive.asia/blog/876083820.sHTML +
+pdf.aokive.asia/blog/203270993.sHTML +
+pdf.aokive.asia/blog/525931087.sHTML +
+pdf.aokive.asia/blog/692913955.sHTML +
+pdf.aokive.asia/blog/594761082.sHTML +
+pdf.aokive.asia/blog/859710981.sHTML +
+pdf.aokive.asia/blog/872167824.sHTML +
+pdf.aokive.asia/blog/282780340.sHTML +
+pdf.aokive.asia/blog/293155032.sHTML +
+pdf.aokive.asia/blog/188609948.sHTML +
+pdf.aokive.asia/blog/071493542.sHTML +
+pdf.aokive.asia/blog/026018579.sHTML +
+pdf.aokive.asia/blog/193711932.sHTML +
+pdf.aokive.asia/blog/003688062.sHTML +
+pdf.aokive.asia/blog/605449211.sHTML +
+pdf.aokive.asia/blog/675736867.sHTML +
+pdf.aokive.asia/blog/853209082.sHTML +
+pdf.aokive.asia/blog/742253147.sHTML +
+pdf.aokive.asia/blog/631082098.sHTML +
+pdf.aokive.asia/blog/133692586.sHTML +
+pdf.aokive.asia/blog/914975314.sHTML +
+pdf.aokive.asia/blog/392047191.sHTML +
+pdf.aokive.asia/blog/913258642.sHTML +
+pdf.aokive.asia/blog/843149755.sHTML +
+pdf.aokive.asia/blog/358697132.sHTML +
+pdf.aokive.asia/blog/497122580.sHTML +
+pdf.aokive.asia/blog/064737721.sHTML +
+pdf.aokive.asia/blog/716849249.sHTML +
+pdf.aokive.asia/blog/999499338.sHTML +
+pdf.aokive.asia/blog/698388222.sHTML +
+pdf.aokive.asia/blog/871117160.sHTML +
+pdf.aokive.asia/blog/993339485.sHTML +
+pdf.aokive.asia/blog/302077829.sHTML +
+pdf.aokive.asia/blog/098883727.sHTML +
+pdf.aokive.asia/blog/578102174.sHTML +
+pdf.aokive.asia/blog/587666161.sHTML +
+pdf.aokive.asia/blog/106745345.sHTML +
+pdf.aokive.asia/blog/547210732.sHTML +
+pdf.aokive.asia/blog/572903238.sHTML +
+pdf.aokive.asia/blog/106560470.sHTML +
+pdf.aokive.asia/blog/692618109.sHTML +
+pdf.aokive.asia/blog/413950444.sHTML +
+pdf.aokive.asia/blog/253760871.sHTML +
+pdf.aokive.asia/blog/197604316.sHTML +
+pdf.aokive.asia/blog/743025625.sHTML +
+pdf.aokive.asia/blog/257092426.sHTML +
+pdf.aokive.asia/blog/369582154.sHTML +
+pdf.aokive.asia/blog/477290900.sHTML +
+pdf.aokive.asia/blog/984899505.sHTML +
+pdf.aokive.asia/blog/918326420.sHTML +
+pdf.aokive.asia/blog/819753331.sHTML +
+pdf.aokive.asia/blog/372839465.sHTML +
+pdf.aokive.asia/blog/886036366.sHTML +
+pdf.aokive.asia/blog/142259271.sHTML +
+pdf.aokive.asia/blog/814314311.sHTML +
+pdf.aokive.asia/blog/197246536.sHTML +
+pdf.aokive.asia/blog/182720425.sHTML +
+pdf.aokive.asia/blog/680419475.sHTML +
+pdf.aokive.asia/blog/240886525.sHTML +
+pdf.aokive.asia/blog/805425311.sHTML +
+pdf.aokive.asia/blog/357407806.sHTML +
+pdf.aokive.asia/blog/026986932.sHTML +
+pdf.aokive.asia/blog/654092608.sHTML +
+pdf.aokive.asia/blog/204622412.sHTML +
+pdf.aokive.asia/blog/529259714.sHTML +
+pdf.aokive.asia/blog/631097436.sHTML +
+pdf.aokive.asia/blog/470971036.sHTML +
+pdf.aokive.asia/blog/919337047.sHTML +
+pdf.aokive.asia/blog/659388780.sHTML +
+pdf.aokive.asia/blog/819211436.sHTML +
+pdf.aokive.asia/blog/026981043.sHTML +
+pdf.aokive.asia/blog/114353603.sHTML +
+pdf.aokive.asia/blog/192200437.sHTML +
+pdf.aokive.asia/blog/593721130.sHTML +
+pdf.aokive.asia/blog/971799937.sHTML +
+pdf.aokive.asia/blog/860453715.sHTML +
+pdf.aokive.asia/blog/137219971.sHTML +
+pdf.aokive.asia/blog/364454328.sHTML +
+pdf.aokive.asia/blog/254333493.sHTML +
+pdf.aokive.asia/blog/708271537.sHTML +
+pdf.aokive.asia/blog/548521272.sHTML +
+pdf.aokive.asia/blog/787387228.sHTML +
+pdf.aokive.asia/blog/850918204.sHTML +
+pdf.aokive.asia/blog/876944984.sHTML +
+pdf.aokive.asia/blog/982833388.sHTML +
+pdf.aokive.asia/blog/638676216.sHTML +
+pdf.aokive.asia/blog/378827666.sHTML +
+pdf.aokive.asia/blog/155550500.sHTML +
+pdf.aokive.asia/blog/942604437.sHTML +
+pdf.aokive.asia/blog/581115376.sHTML +
+pdf.aokive.asia/blog/921209371.sHTML +
+pdf.aokive.asia/blog/725443339.sHTML +
+pdf.aokive.asia/blog/137098210.sHTML +
+pdf.aokive.asia/blog/665376093.sHTML +
+pdf.aokive.asia/blog/473727604.sHTML +
+pdf.aokive.asia/blog/970092269.sHTML +
+pdf.aokive.asia/blog/581570477.sHTML +
+pdf.aokive.asia/blog/366087659.sHTML +
+pdf.aokive.asia/blog/147163715.sHTML +
+pdf.aokive.asia/blog/355508276.sHTML +
+pdf.aokive.asia/blog/080846359.sHTML +
+pdf.aokive.asia/blog/769777516.sHTML +
+pdf.aokive.asia/blog/179262470.sHTML +
+pdf.aokive.asia/blog/288196353.sHTML +
+pdf.aokive.asia/blog/917382162.sHTML +
+pdf.aokive.asia/blog/527032075.sHTML +
+pdf.aokive.asia/blog/024369866.sHTML +
+pdf.aokive.asia/blog/397743761.sHTML +
+pdf.aokive.asia/blog/336508669.sHTML +
+pdf.aokive.asia/blog/575321975.sHTML +
+pdf.aokive.asia/blog/809153658.sHTML +
+pdf.aokive.asia/blog/655534818.sHTML +
+pdf.aokive.asia/blog/578458441.sHTML +
+pdf.aokive.asia/blog/698433288.sHTML +
+pdf.aokive.asia/blog/526432193.sHTML +
+pdf.aokive.asia/blog/698236982.sHTML +
+pdf.aokive.asia/blog/466093765.sHTML +
+pdf.aokive.asia/blog/896345807.sHTML +
+pdf.aokive.asia/blog/537136259.sHTML +
+pdf.aokive.asia/blog/435301776.sHTML +
+pdf.aokive.asia/blog/682604043.sHTML +
+pdf.aokive.asia/blog/026437191.sHTML +
+pdf.aokive.asia/blog/148609321.sHTML +
+pdf.aokive.asia/blog/069893109.sHTML +
+pdf.aokive.asia/blog/455095691.sHTML +
+pdf.aokive.asia/blog/154073344.sHTML +
+pdf.aokive.asia/blog/377441773.sHTML +
+pdf.aokive.asia/blog/269326543.sHTML +
+pdf.aokive.asia/blog/692154876.sHTML +
+pdf.aokive.asia/blog/703769343.sHTML +
+pdf.aokive.asia/blog/282150997.sHTML +
+pdf.aokive.asia/blog/526048321.sHTML +
+pdf.aokive.asia/blog/992608216.sHTML +
+pdf.aokive.asia/blog/258642893.sHTML +
+pdf.aokive.asia/blog/770926032.sHTML +
+pdf.aokive.asia/blog/188654310.sHTML +
+pdf.aokive.asia/blog/611592826.sHTML +
+pdf.aokive.asia/blog/081920310.sHTML +
+pdf.aokive.asia/blog/884392190.sHTML +
+pdf.aokive.asia/blog/676579240.sHTML +
+pdf.aokive.asia/blog/742277536.sHTML +
+pdf.aokive.asia/blog/036698669.sHTML +
+pdf.aokive.asia/blog/298143613.sHTML +
+pdf.aokive.asia/blog/410837703.sHTML +
+pdf.aokive.asia/blog/792754269.sHTML +
+pdf.aokive.asia/blog/969721970.sHTML +
+pdf.aokive.asia/blog/968369725.sHTML +
+pdf.aokive.asia/blog/709819970.sHTML +
+pdf.aokive.asia/blog/219329319.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时54分04秒
