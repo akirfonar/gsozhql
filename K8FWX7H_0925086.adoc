@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+wap.neuduf.asia/blog/520471431.sHTML +
+wap.neuduf.asia/blog/753720470.sHTML +
+wap.neuduf.asia/blog/548647522.sHTML +
+wap.neuduf.asia/blog/620540358.sHTML +
+wap.neuduf.asia/blog/858647208.sHTML +
+wap.neuduf.asia/blog/114823917.sHTML +
+wap.neuduf.asia/blog/181972031.sHTML +
+wap.neuduf.asia/blog/870361997.sHTML +
+wap.neuduf.asia/blog/358199203.sHTML +
+wap.neuduf.asia/blog/636420081.sHTML +
+wap.neuduf.asia/blog/030888664.sHTML +
+wap.neuduf.asia/blog/187053641.sHTML +
+wap.neuduf.asia/blog/748608147.sHTML +
+wap.neuduf.asia/blog/281754692.sHTML +
+wap.neuduf.asia/blog/228616094.sHTML +
+wap.neuduf.asia/blog/214879203.sHTML +
+wap.neuduf.asia/blog/394550035.sHTML +
+wap.neuduf.asia/blog/074420314.sHTML +
+wap.neuduf.asia/blog/857086086.sHTML +
+wap.neuduf.asia/blog/818147536.sHTML +
+wap.neuduf.asia/blog/166660521.sHTML +
+wap.neuduf.asia/blog/995271013.sHTML +
+wap.neuduf.asia/blog/136352463.sHTML +
+wap.neuduf.asia/blog/381552879.sHTML +
+wap.neuduf.asia/blog/525314697.sHTML +
+wap.neuduf.asia/blog/418653197.sHTML +
+wap.neuduf.asia/blog/353197608.sHTML +
+wap.neuduf.asia/blog/185314253.sHTML +
+wap.neuduf.asia/blog/303196710.sHTML +
+wap.neuduf.asia/blog/989595661.sHTML +
+wap.neuduf.asia/blog/491468410.sHTML +
+wap.neuduf.asia/blog/011423197.sHTML +
+wap.neuduf.asia/blog/247536814.sHTML +
+wap.neuduf.asia/blog/303199142.sHTML +
+wap.neuduf.asia/blog/292085369.sHTML +
+wap.neuduf.asia/blog/852086036.sHTML +
+wap.neuduf.asia/blog/852586419.sHTML +
+wap.neuduf.asia/blog/847841983.sHTML +
+wap.neuduf.asia/blog/419710864.sHTML +
+wap.neuduf.asia/blog/635869425.sHTML +
+wap.neuduf.asia/blog/911092169.sHTML +
+wap.neuduf.asia/blog/134898161.sHTML +
+wap.neuduf.asia/blog/308264821.sHTML +
+wap.neuduf.asia/blog/522259765.sHTML +
+wap.neuduf.asia/blog/520921037.sHTML +
+wap.neuduf.asia/blog/526302567.sHTML +
+wap.neuduf.asia/blog/681047658.sHTML +
+wap.neuduf.asia/blog/793364548.sHTML +
+wap.neuduf.asia/blog/750582047.sHTML +
+wap.neuduf.asia/blog/465635643.sHTML +
+wap.neuduf.asia/blog/136047671.sHTML +
+wap.neuduf.asia/blog/208754264.sHTML +
+wap.neuduf.asia/blog/919875499.sHTML +
+wap.neuduf.asia/blog/864497719.sHTML +
+wap.neuduf.asia/blog/965325437.sHTML +
+wap.neuduf.asia/blog/603209810.sHTML +
+wap.neuduf.asia/blog/978883383.sHTML +
+wap.neuduf.asia/blog/625581582.sHTML +
+wap.neuduf.asia/blog/086531743.sHTML +
+wap.neuduf.asia/blog/714269337.sHTML +
+wap.neuduf.asia/blog/592643810.sHTML +
+wap.neuduf.asia/blog/369886958.sHTML +
+wap.neuduf.asia/blog/460053153.sHTML +
+wap.neuduf.asia/blog/850698018.sHTML +
+wap.neuduf.asia/blog/208752053.sHTML +
+wap.neuduf.asia/blog/637643283.sHTML +
+wap.neuduf.asia/blog/353720420.sHTML +
+wap.neuduf.asia/blog/369714310.sHTML +
+wap.neuduf.asia/blog/969315856.sHTML +
+wap.neuduf.asia/blog/432648609.sHTML +
+wap.neuduf.asia/blog/728417831.sHTML +
+wap.neuduf.asia/blog/321745852.sHTML +
+wap.neuduf.asia/blog/853759864.sHTML +
+wap.neuduf.asia/blog/548608819.sHTML +
+wap.neuduf.asia/blog/020986693.sHTML +
+wap.neuduf.asia/blog/642193254.sHTML +
+wap.neuduf.asia/blog/428390082.sHTML +
+wap.neuduf.asia/blog/414765826.sHTML +
+wap.neuduf.asia/blog/257096680.sHTML +
+wap.neuduf.asia/blog/921778722.sHTML +
+wap.neuduf.asia/blog/323862852.sHTML +
+wap.neuduf.asia/blog/631587019.sHTML +
+wap.neuduf.asia/blog/197094236.sHTML +
+wap.neuduf.asia/blog/375086614.sHTML +
+wap.neuduf.asia/blog/208364320.sHTML +
+wap.neuduf.asia/blog/230934746.sHTML +
+wap.neuduf.asia/blog/719979425.sHTML +
+wap.neuduf.asia/blog/826665056.sHTML +
+wap.neuduf.asia/blog/159933327.sHTML +
+wap.neuduf.asia/blog/587221615.sHTML +
+wap.neuduf.asia/blog/949743350.sHTML +
+wap.neuduf.asia/blog/654465088.sHTML +
+wap.neuduf.asia/blog/614279110.sHTML +
+wap.neuduf.asia/blog/971432547.sHTML +
+wap.neuduf.asia/blog/960870989.sHTML +
+wap.neuduf.asia/blog/970427009.sHTML +
+wap.neuduf.asia/blog/853214360.sHTML +
+wap.neuduf.asia/blog/528114969.sHTML +
+wap.neuduf.asia/blog/437338377.sHTML +
+wap.neuduf.asia/blog/935990999.sHTML +
+wap.neuduf.asia/blog/337216615.sHTML +
+wap.neuduf.asia/blog/155999994.sHTML +
+wap.neuduf.asia/blog/649909948.sHTML +
+wap.neuduf.asia/blog/105148747.sHTML +
+wap.neuduf.asia/blog/103820205.sHTML +
+wap.neuduf.asia/blog/758782648.sHTML +
+wap.neuduf.asia/blog/075937708.sHTML +
+wap.neuduf.asia/blog/869870114.sHTML +
+wap.neuduf.asia/blog/753765486.sHTML +
+wap.neuduf.asia/blog/642103219.sHTML +
+wap.neuduf.asia/blog/748169871.sHTML +
+wap.neuduf.asia/blog/618466582.sHTML +
+wap.neuduf.asia/blog/400204659.sHTML +
+wap.neuduf.asia/blog/474319025.sHTML +
+wap.neuduf.asia/blog/642603272.sHTML +
+wap.neuduf.asia/blog/747414190.sHTML +
+wap.neuduf.asia/blog/279241302.sHTML +
+wap.neuduf.asia/blog/915922032.sHTML +
+wap.neuduf.asia/blog/332038658.sHTML +
+wap.neuduf.asia/blog/209764448.sHTML +
+wap.neuduf.asia/blog/208759860.sHTML +
+wap.neuduf.asia/blog/131741289.sHTML +
+wap.neuduf.asia/blog/358609119.sHTML +
+wap.neuduf.asia/blog/490687289.sHTML +
+wap.neuduf.asia/blog/185319218.sHTML +
+wap.neuduf.asia/blog/303372142.sHTML +
+wap.neuduf.asia/blog/460877936.sHTML +
+wap.neuduf.asia/blog/433131187.sHTML +
+wap.neuduf.asia/blog/034327277.sHTML +
+wap.neuduf.asia/blog/037623216.sHTML +
+wap.neuduf.asia/blog/285702536.sHTML +
+wap.neuduf.asia/blog/031487192.sHTML +
+wap.neuduf.asia/blog/185553353.sHTML +
+wap.neuduf.asia/blog/854208975.sHTML +
+wap.neuduf.asia/blog/556817417.sHTML +
+wap.neuduf.asia/blog/609944002.sHTML +
+wap.neuduf.asia/blog/654741464.sHTML +
+wap.neuduf.asia/blog/271423400.sHTML +
+wap.neuduf.asia/blog/634555493.sHTML +
+wap.neuduf.asia/blog/310050004.sHTML +
+wap.neuduf.asia/blog/756542769.sHTML +
+wap.neuduf.asia/blog/665302906.sHTML +
+wap.neuduf.asia/blog/020318707.sHTML +
+wap.neuduf.asia/blog/069732009.sHTML +
+wap.neuduf.asia/blog/969935420.sHTML +
+wap.neuduf.asia/blog/632041534.sHTML +
+wap.neuduf.asia/blog/445704161.sHTML +
+wap.neuduf.asia/blog/113299140.sHTML +
+wap.neuduf.asia/blog/303197202.sHTML +
+wap.neuduf.asia/blog/110431327.sHTML +
+wap.neuduf.asia/blog/063118795.sHTML +
+wap.neuduf.asia/blog/117668030.sHTML +
+wap.neuduf.asia/blog/633770364.sHTML +
+wap.neuduf.asia/blog/914203164.sHTML +
+wap.neuduf.asia/blog/570860325.sHTML +
+wap.neuduf.asia/blog/026442640.sHTML +
+wap.neuduf.asia/blog/919208819.sHTML +
+wap.neuduf.asia/blog/969714203.sHTML +
+wap.neuduf.asia/blog/491772147.sHTML +
+wap.neuduf.asia/blog/247199931.sHTML +
+wap.neuduf.asia/blog/469208314.sHTML +
+wap.neuduf.asia/blog/697315420.sHTML +
+wap.neuduf.asia/blog/136975558.sHTML +
+wap.neuduf.asia/blog/128101963.sHTML +
+wap.neuduf.asia/blog/792031647.sHTML +
+wap.neuduf.asia/blog/448413639.sHTML +
+wap.neuduf.asia/blog/637543109.sHTML +
+wap.neuduf.asia/blog/031598701.sHTML +
+wap.neuduf.asia/blog/182210937.sHTML +
+wap.neuduf.asia/blog/419822097.sHTML +
+wap.neuduf.asia/blog/642204886.sHTML +
+wap.neuduf.asia/blog/810923205.sHTML +
+wap.neuduf.asia/blog/869158155.sHTML +
+wap.neuduf.asia/blog/771297701.sHTML +
+wap.neuduf.asia/blog/003264976.sHTML +
+wap.neuduf.asia/blog/121054932.sHTML +
+wap.neuduf.asia/blog/609133355.sHTML +
+wap.neuduf.asia/blog/960487698.sHTML +
+wap.neuduf.asia/blog/099993873.sHTML +
+wap.neuduf.asia/blog/311571501.sHTML +
+wap.neuduf.asia/blog/539055594.sHTML +
+wap.neuduf.asia/blog/988372716.sHTML +
+wap.neuduf.asia/blog/876276116.sHTML +
+wap.neuduf.asia/blog/074444944.sHTML +
+wap.neuduf.asia/blog/093459949.sHTML +
+wap.neuduf.asia/blog/300457271.sHTML +
+wap.neuduf.asia/blog/827222288.sHTML +
+wap.neuduf.asia/blog/327388388.sHTML +
+wap.neuduf.asia/blog/255163332.sHTML +
+wap.neuduf.asia/blog/215566171.sHTML +
+wap.neuduf.asia/blog/212238443.sHTML +
+wap.neuduf.asia/blog/303512522.sHTML +
+wap.neuduf.asia/blog/705994436.sHTML +
+wap.neuduf.asia/blog/125355777.sHTML +
+wap.neuduf.asia/blog/544044877.sHTML +
+wap.neuduf.asia/blog/095124173.sHTML +
+wap.neuduf.asia/blog/443171280.sHTML +
+wap.neuduf.asia/blog/128043359.sHTML +
+wap.neuduf.asia/blog/392023132.sHTML +
+wap.neuduf.asia/blog/019292847.sHTML +
+wap.neuduf.asia/blog/471532158.sHTML +
+wap.neuduf.asia/blog/081099876.sHTML +
+wap.neuduf.asia/blog/039377198.sHTML +
+wap.neuduf.asia/blog/884359435.sHTML +
+wap.neuduf.asia/blog/005628995.sHTML +
+wap.neuduf.asia/blog/368609759.sHTML +
+wap.neuduf.asia/blog/916475370.sHTML +
+wap.neuduf.asia/blog/025360883.sHTML +
+wap.neuduf.asia/blog/131975348.sHTML +
+wap.neuduf.asia/blog/425982114.sHTML +
+wap.neuduf.asia/blog/429765937.sHTML +
+wap.neuduf.asia/blog/599865497.sHTML +
+wap.neuduf.asia/blog/325547108.sHTML +
+wap.neuduf.asia/blog/470597659.sHTML +
+wap.neuduf.asia/blog/148717108.sHTML +
+wap.neuduf.asia/blog/265821193.sHTML +
+wap.neuduf.asia/blog/964082985.sHTML +
+wap.neuduf.asia/blog/642710971.sHTML +
+wap.neuduf.asia/blog/258336537.sHTML +
+wap.neuduf.asia/blog/635310437.sHTML +
+wap.neuduf.asia/blog/496568615.sHTML +
+wap.neuduf.asia/blog/410997869.sHTML +
+wap.neuduf.asia/blog/304047875.sHTML +
+wap.neuduf.asia/blog/258716487.sHTML +
+wap.neuduf.asia/blog/301611926.sHTML +
+wap.neuduf.asia/blog/538108725.sHTML +
+wap.neuduf.asia/blog/037774948.sHTML +
+wap.neuduf.asia/blog/525932042.sHTML +
+wap.neuduf.asia/blog/008214365.sHTML +
+wap.neuduf.asia/blog/329358918.sHTML +
+wap.neuduf.asia/blog/319821666.sHTML +
+wap.neuduf.asia/blog/932501796.sHTML +
+wap.neuduf.asia/blog/011541734.sHTML +
+wap.neuduf.asia/blog/792654216.sHTML +
+wap.neuduf.asia/blog/319768365.sHTML +
+wap.neuduf.asia/blog/744204581.sHTML +
+wap.neuduf.asia/blog/239651259.sHTML +
+wap.neuduf.asia/blog/755587694.sHTML +
+wap.neuduf.asia/blog/319342643.sHTML +
+wap.neuduf.asia/blog/942164432.sHTML +
+wap.neuduf.asia/blog/425947332.sHTML +
+wap.neuduf.asia/blog/380816540.sHTML +
+wap.neuduf.asia/blog/697675542.sHTML +
+wap.neuduf.asia/blog/896505518.sHTML +
+wap.neuduf.asia/blog/400279259.sHTML +
+wap.neuduf.asia/blog/808254365.sHTML +
+wap.neuduf.asia/blog/643158769.sHTML +
+wap.neuduf.asia/blog/195361971.sHTML +
+wap.neuduf.asia/blog/930644636.sHTML +
+wap.neuduf.asia/blog/077108765.sHTML +
+wap.neuduf.asia/blog/297658716.sHTML +
+wap.neuduf.asia/blog/086549470.sHTML +
+wap.neuduf.asia/blog/822300275.sHTML +
+wap.neuduf.asia/blog/093158758.sHTML +
+wap.neuduf.asia/blog/136640375.sHTML +
+wap.neuduf.asia/blog/077582042.sHTML +
+wap.neuduf.asia/blog/369021678.sHTML +
+wap.neuduf.asia/blog/297198769.sHTML +
+wap.neuduf.asia/blog/606087692.sHTML +
+wap.neuduf.asia/blog/753250081.sHTML +
+wap.neuduf.asia/blog/697698709.sHTML +
+wap.neuduf.asia/blog/397836752.sHTML +
+wap.neuduf.asia/blog/659400273.sHTML +
+wap.neuduf.asia/blog/370986597.sHTML +
+wap.neuduf.asia/blog/997654704.sHTML +
+wap.neuduf.asia/blog/669469464.sHTML +
+wap.neuduf.asia/blog/964320531.sHTML +
+wap.neuduf.asia/blog/281092154.sHTML +
+wap.neuduf.asia/blog/792114369.sHTML +
+wap.neuduf.asia/blog/686533314.sHTML +
+wap.neuduf.asia/blog/086987592.sHTML +
+wap.neuduf.asia/blog/960898254.sHTML +
+wap.neuduf.asia/blog/692547719.sHTML +
+wap.neuduf.asia/blog/521197198.sHTML +
+wap.neuduf.asia/blog/775417521.sHTML +
+wap.neuduf.asia/blog/510490578.sHTML +
+wap.neuduf.asia/blog/520426487.sHTML +
+wap.neuduf.asia/blog/246926481.sHTML +
+wap.neuduf.asia/blog/760926481.sHTML +
+wap.neuduf.asia/blog/731087043.sHTML +
+wap.neuduf.asia/blog/707291671.sHTML +
+wap.neuduf.asia/blog/581109219.sHTML +
+wap.neuduf.asia/blog/181082609.sHTML +
+wap.neuduf.asia/blog/747586369.sHTML +
+wap.neuduf.asia/blog/420977559.sHTML +
+wap.neuduf.asia/blog/519711211.sHTML +
+wap.neuduf.asia/blog/000858787.sHTML +
+wap.neuduf.asia/blog/588776248.sHTML +
+wap.neuduf.asia/blog/704516549.sHTML +
+wap.neuduf.asia/blog/537276782.sHTML +
+wap.neuduf.asia/blog/188954125.sHTML +
+wap.neuduf.asia/blog/044832221.sHTML +
+wap.neuduf.asia/blog/704175099.sHTML +
+wap.neuduf.asia/blog/477165049.sHTML +
+wap.neuduf.asia/blog/717668245.sHTML +
+wap.neuduf.asia/blog/483782165.sHTML +
+wap.neuduf.asia/blog/254943822.sHTML +
+wap.neuduf.asia/blog/143379348.sHTML +
+wap.neuduf.asia/blog/226804782.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日20时03分49秒
