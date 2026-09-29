@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+www.blog.oibdf16.cn/POST/261957995.Shtml +
+www.blog.oibdf16.cn/POST/881935195.Shtml +
+www.blog.oibdf16.cn/POST/339139637.Shtml +
+www.blog.oibdf16.cn/POST/002585465.Shtml +
+www.blog.oibdf16.cn/POST/044056245.Shtml +
+www.blog.oibdf16.cn/POST/501129258.Shtml +
+www.blog.oibdf16.cn/POST/938344178.Shtml +
+www.blog.oibdf16.cn/POST/170791579.Shtml +
+www.blog.oibdf16.cn/POST/515296357.Shtml +
+www.blog.oibdf16.cn/POST/624245535.Shtml +
+www.blog.oibdf16.cn/POST/257423207.Shtml +
+www.blog.oibdf16.cn/POST/972781168.Shtml +
+www.blog.oibdf16.cn/POST/321505562.Shtml +
+www.blog.oibdf16.cn/POST/110735790.Shtml +
+www.blog.oibdf16.cn/POST/590179877.Shtml +
+www.blog.oibdf16.cn/POST/067566773.Shtml +
+www.blog.oibdf16.cn/POST/883678080.Shtml +
+www.blog.oibdf16.cn/POST/872280106.Shtml +
+www.blog.oibdf16.cn/POST/060673277.Shtml +
+www.blog.oibdf16.cn/POST/487804448.Shtml +
+www.blog.oibdf16.cn/POST/118261352.Shtml +
+www.blog.oibdf16.cn/POST/391807414.Shtml +
+www.blog.oibdf16.cn/POST/617785568.Shtml +
+www.blog.oibdf16.cn/POST/890241469.Shtml +
+www.blog.oibdf16.cn/POST/957085294.Shtml +
+www.blog.oibdf16.cn/POST/095745540.Shtml +
+www.blog.oibdf16.cn/POST/891968575.Shtml +
+www.blog.oibdf16.cn/POST/452246928.Shtml +
+www.blog.oibdf16.cn/POST/170319752.Shtml +
+www.blog.oibdf16.cn/POST/631857039.Shtml +
+www.blog.oibdf16.cn/POST/674242574.Shtml +
+www.blog.oibdf16.cn/POST/091628082.Shtml +
+www.blog.oibdf16.cn/POST/790633174.Shtml +
+www.blog.oibdf16.cn/POST/496696869.Shtml +
+www.blog.oibdf16.cn/POST/445796364.Shtml +
+www.blog.oibdf16.cn/POST/050725803.Shtml +
+www.blog.oibdf16.cn/POST/370738400.Shtml +
+www.blog.oibdf16.cn/POST/600794678.Shtml +
+www.blog.oibdf16.cn/POST/406970256.Shtml +
+www.blog.oibdf16.cn/POST/847963076.Shtml +
+www.blog.oibdf16.cn/POST/735758929.Shtml +
+www.blog.oibdf16.cn/POST/067974636.Shtml +
+www.blog.oibdf16.cn/POST/840795730.Shtml +
+www.blog.oibdf16.cn/POST/050667270.Shtml +
+www.blog.oibdf16.cn/POST/711831624.Shtml +
+www.blog.oibdf16.cn/POST/957473074.Shtml +
+www.blog.oibdf16.cn/POST/785253545.Shtml +
+www.blog.oibdf16.cn/POST/736468635.Shtml +
+www.blog.oibdf16.cn/POST/490174558.Shtml +
+www.blog.oibdf16.cn/POST/449298419.Shtml +
+www.blog.oibdf16.cn/POST/063706463.Shtml +
+www.blog.oibdf16.cn/POST/141479252.Shtml +
+www.blog.oibdf16.cn/POST/568035830.Shtml +
+www.blog.oibdf16.cn/POST/918070919.Shtml +
+www.blog.oibdf16.cn/POST/622673451.Shtml +
+www.blog.oibdf16.cn/POST/493896296.Shtml +
+www.blog.oibdf16.cn/POST/886629180.Shtml +
+www.blog.oibdf16.cn/POST/512651963.Shtml +
+www.blog.oibdf16.cn/POST/891813085.Shtml +
+www.blog.oibdf16.cn/POST/684752521.Shtml +
+www.blog.oibdf16.cn/POST/777702335.Shtml +
+www.blog.oibdf16.cn/POST/490362414.Shtml +
+www.blog.oibdf16.cn/POST/940696946.Shtml +
+www.blog.oibdf16.cn/POST/907535279.Shtml +
+www.blog.oibdf16.cn/POST/124297417.Shtml +
+www.blog.oibdf16.cn/POST/013747480.Shtml +
+www.blog.oibdf16.cn/POST/159665112.Shtml +
+www.blog.oibdf16.cn/POST/399134019.Shtml +
+www.blog.oibdf16.cn/POST/762439685.Shtml +
+www.blog.oibdf16.cn/POST/735742941.Shtml +
+www.blog.oibdf16.cn/POST/641858570.Shtml +
+www.blog.oibdf16.cn/POST/388574696.Shtml +
+www.blog.oibdf16.cn/POST/784084051.Shtml +
+www.blog.oibdf16.cn/POST/330265741.Shtml +
+www.blog.oibdf16.cn/POST/887422852.Shtml +
+www.blog.oibdf16.cn/POST/902978185.Shtml +
+www.blog.oibdf16.cn/POST/223134191.Shtml +
+www.blog.oibdf16.cn/POST/729242963.Shtml +
+www.blog.oibdf16.cn/POST/040681242.Shtml +
+www.blog.oibdf16.cn/POST/042745913.Shtml +
+www.blog.oibdf16.cn/POST/398070243.Shtml +
+www.blog.oibdf16.cn/POST/006688514.Shtml +
+www.blog.oibdf16.cn/POST/398681342.Shtml +
+www.blog.oibdf16.cn/POST/347146901.Shtml +
+www.blog.oibdf16.cn/POST/685077380.Shtml +
+www.blog.oibdf16.cn/POST/099123884.Shtml +
+www.blog.oibdf16.cn/POST/669791435.Shtml +
+www.blog.oibdf16.cn/POST/560367020.Shtml +
+www.blog.oibdf16.cn/POST/896079675.Shtml +
+www.blog.oibdf16.cn/POST/775214624.Shtml +
+www.blog.oibdf16.cn/POST/408085358.Shtml +
+www.blog.oibdf16.cn/POST/013568968.Shtml +
+www.blog.oibdf16.cn/POST/179851784.Shtml +
+www.blog.oibdf16.cn/POST/129181302.Shtml +
+www.blog.oibdf16.cn/POST/297753242.Shtml +
+www.blog.oibdf16.cn/POST/413266435.Shtml +
+www.blog.oibdf16.cn/POST/180319862.Shtml +
+www.blog.oibdf16.cn/POST/180979804.Shtml +
+www.blog.oibdf16.cn/POST/681582089.Shtml +
+www.blog.oibdf16.cn/POST/969203686.Shtml +
+www.blog.oibdf16.cn/POST/085314208.Shtml +
+www.blog.oibdf16.cn/POST/373415620.Shtml +
+www.blog.oibdf16.cn/POST/070869768.Shtml +
+www.blog.oibdf16.cn/POST/125813383.Shtml +
+www.blog.oibdf16.cn/POST/529754692.Shtml +
+www.blog.oibdf16.cn/POST/524316425.Shtml +
+www.blog.oibdf16.cn/POST/071370831.Shtml +
+www.blog.oibdf16.cn/POST/186975369.Shtml +
+www.blog.oibdf16.cn/POST/392753647.Shtml +
+www.blog.oibdf16.cn/POST/804775697.Shtml +
+www.blog.oibdf16.cn/POST/487531425.Shtml +
+www.blog.oibdf16.cn/POST/014992102.Shtml +
+www.blog.oibdf16.cn/POST/071420925.Shtml +
+www.blog.oibdf16.cn/POST/746208119.Shtml +
+www.blog.oibdf16.cn/POST/519758370.Shtml +
+www.blog.oibdf16.cn/POST/069347581.Shtml +
+www.blog.oibdf16.cn/POST/303864708.Shtml +
+www.blog.oibdf16.cn/POST/969758003.Shtml +
+www.blog.oibdf16.cn/POST/858319269.Shtml +
+www.blog.oibdf16.cn/POST/325319703.Shtml +
+www.blog.oibdf16.cn/POST/525714244.Shtml +
+www.blog.oibdf16.cn/POST/454708103.Shtml +
+www.blog.oibdf16.cn/POST/686304783.Shtml +
+www.blog.oibdf16.cn/POST/914203192.Shtml +
+www.blog.oibdf16.cn/POST/520820865.Shtml +
+www.blog.oibdf16.cn/POST/858641970.Shtml +
+www.blog.oibdf16.cn/POST/529370258.Shtml +
+www.blog.oibdf16.cn/POST/414203197.Shtml +
+www.blog.oibdf16.cn/POST/303204647.Shtml +
+www.blog.oibdf16.cn/POST/963108691.Shtml +
+www.blog.oibdf16.cn/POST/521420365.Shtml +
+www.blog.oibdf16.cn/POST/529751081.Shtml +
+www.blog.oibdf16.cn/POST/387287449.Shtml +
+www.blog.oibdf16.cn/POST/636471475.Shtml +
+www.blog.oibdf16.cn/POST/414208864.Shtml +
+www.blog.oibdf16.cn/POST/542587580.Shtml +
+www.blog.oibdf16.cn/POST/091926814.Shtml +
+www.blog.oibdf16.cn/POST/292533642.Shtml +
+www.blog.oibdf16.cn/POST/747531492.Shtml +
+www.blog.oibdf16.cn/POST/525750270.Shtml +
+www.blog.oibdf16.cn/POST/631975475.Shtml +
+www.blog.oibdf16.cn/POST/802091980.Shtml +
+www.blog.oibdf16.cn/POST/093843326.Shtml +
+www.blog.oibdf16.cn/POST/211624138.Shtml +
+www.blog.oibdf16.cn/POST/407955567.Shtml +
+www.blog.oibdf16.cn/POST/718984645.Shtml +
+www.blog.oibdf16.cn/POST/827001636.Shtml +
+www.blog.oibdf16.cn/POST/284076621.Shtml +
+www.blog.oibdf16.cn/POST/648394349.Shtml +
+www.blog.oibdf16.cn/POST/051891355.Shtml +
+www.blog.oibdf16.cn/POST/991755113.Shtml +
+www.blog.oibdf16.cn/POST/594019458.Shtml +
+www.blog.oibdf16.cn/POST/275649506.Shtml +
+www.blog.oibdf16.cn/POST/056846801.Shtml +
+www.blog.oibdf16.cn/POST/835307542.Shtml +
+www.blog.oibdf16.cn/POST/447465742.Shtml +
+www.blog.oibdf16.cn/POST/623792018.Shtml +
+www.blog.oibdf16.cn/POST/024752574.Shtml +
+www.blog.oibdf16.cn/POST/789692963.Shtml +
+www.blog.oibdf16.cn/POST/157234852.Shtml +
+www.blog.oibdf16.cn/POST/440396661.Shtml +
+www.blog.oibdf16.cn/POST/386817496.Shtml +
+www.blog.oibdf16.cn/POST/951529620.Shtml +
+www.blog.oibdf16.cn/POST/595584174.Shtml +
+www.blog.oibdf16.cn/POST/068796052.Shtml +
+www.blog.oibdf16.cn/POST/227880777.Shtml +
+www.blog.oibdf16.cn/POST/562570795.Shtml +
+www.blog.oibdf16.cn/POST/773051908.Shtml +
+www.blog.oibdf16.cn/POST/557285823.Shtml +
+www.blog.oibdf16.cn/POST/286302920.Shtml +
+www.blog.oibdf16.cn/POST/881426363.Shtml +
+www.blog.oibdf16.cn/POST/650405733.Shtml +
+www.blog.oibdf16.cn/POST/574685550.Shtml +
+www.blog.oibdf16.cn/POST/864191801.Shtml +
+www.blog.oibdf16.cn/POST/068791358.Shtml +
+www.blog.oibdf16.cn/POST/230196314.Shtml +
+www.blog.oibdf16.cn/POST/442307408.Shtml +
+www.blog.oibdf16.cn/POST/711788423.Shtml +
+www.blog.oibdf16.cn/POST/822840589.Shtml +
+www.blog.oibdf16.cn/POST/005694011.Shtml +
+www.blog.oibdf16.cn/POST/222349511.Shtml +
+www.blog.oibdf16.cn/POST/825056727.Shtml +
+www.blog.oibdf16.cn/POST/378627344.Shtml +
+www.blog.oibdf16.cn/POST/338905849.Shtml +
+www.blog.oibdf16.cn/POST/328848345.Shtml +
+www.blog.oibdf16.cn/POST/557808413.Shtml +
+www.blog.oibdf16.cn/POST/070819364.Shtml +
+www.blog.oibdf16.cn/POST/662309684.Shtml +
+www.blog.oibdf16.cn/POST/002029606.Shtml +
+www.blog.oibdf16.cn/POST/429141202.Shtml +
+www.blog.oibdf16.cn/POST/596301784.Shtml +
+www.blog.oibdf16.cn/POST/456638941.Shtml +
+www.blog.oibdf16.cn/POST/972833306.Shtml +
+www.blog.oibdf16.cn/POST/210516766.Shtml +
+www.blog.oibdf16.cn/POST/179131075.Shtml +
+www.blog.oibdf16.cn/POST/651151711.Shtml +
+www.blog.oibdf16.cn/POST/259452348.Shtml +
+www.blog.oibdf16.cn/POST/174186217.Shtml +
+www.blog.oibdf16.cn/POST/618334949.Shtml +
+www.blog.oibdf16.cn/POST/472912778.Shtml +
+www.blog.oibdf16.cn/POST/116628327.Shtml +
+www.blog.oibdf16.cn/POST/834134035.Shtml +
+www.blog.oibdf16.cn/POST/262023517.Shtml +
+www.blog.oibdf16.cn/POST/908847544.Shtml +
+www.blog.oibdf16.cn/POST/120264578.Shtml +
+www.blog.oibdf16.cn/POST/336734477.Shtml +
+www.blog.oibdf16.cn/POST/685319132.Shtml +
+www.blog.oibdf16.cn/POST/335299134.Shtml +
+www.blog.oibdf16.cn/POST/472499169.Shtml +
+www.blog.oibdf16.cn/POST/431784511.Shtml +
+www.blog.oibdf16.cn/POST/517989440.Shtml +
+www.blog.oibdf16.cn/POST/886390173.Shtml +
+www.blog.oibdf16.cn/POST/621803185.Shtml +
+www.blog.oibdf16.cn/POST/206119624.Shtml +
+www.blog.oibdf16.cn/POST/880309677.Shtml +
+www.blog.oibdf16.cn/POST/990617473.Shtml +
+www.blog.oibdf16.cn/POST/417899568.Shtml +
+www.blog.oibdf16.cn/POST/018074734.Shtml +
+www.blog.oibdf16.cn/POST/720245786.Shtml +
+www.blog.oibdf16.cn/POST/817524180.Shtml +
+www.blog.oibdf16.cn/POST/663161847.Shtml +
+www.blog.oibdf16.cn/POST/117574794.Shtml +
+www.blog.oibdf16.cn/POST/779066723.Shtml +
+www.blog.oibdf16.cn/POST/348524491.Shtml +
+www.blog.oibdf16.cn/POST/872907702.Shtml +
+www.blog.oibdf16.cn/POST/628917378.Shtml +
+www.blog.oibdf16.cn/POST/784679624.Shtml +
+www.blog.oibdf16.cn/POST/642807402.Shtml +
+www.blog.oibdf16.cn/POST/334136757.Shtml +
+www.blog.oibdf16.cn/POST/601139358.Shtml +
+www.blog.oibdf16.cn/POST/218519785.Shtml +
+www.blog.oibdf16.cn/POST/263248941.Shtml +
+www.blog.oibdf16.cn/POST/419770819.Shtml +
+www.blog.oibdf16.cn/POST/929631240.Shtml +
+www.blog.oibdf16.cn/POST/185870864.Shtml +
+www.blog.oibdf16.cn/POST/911975865.Shtml +
+www.blog.oibdf16.cn/POST/164513042.Shtml +
+www.blog.oibdf16.cn/POST/308642602.Shtml +
+www.blog.oibdf16.cn/POST/413649719.Shtml +
+www.blog.oibdf16.cn/POST/529814703.Shtml +
+www.blog.oibdf16.cn/POST/963152033.Shtml +
+www.blog.oibdf16.cn/POST/113529124.Shtml +
+www.blog.oibdf16.cn/POST/852088087.Shtml +
+www.blog.oibdf16.cn/POST/534552918.Shtml +
+www.blog.oibdf16.cn/POST/996419639.Shtml +
+www.blog.oibdf16.cn/POST/617963917.Shtml +
+www.blog.oibdf16.cn/POST/006312344.Shtml +
+www.blog.oibdf16.cn/POST/901414256.Shtml +
+www.blog.oibdf16.cn/POST/910919138.Shtml +
+www.blog.oibdf16.cn/POST/199501673.Shtml +
+www.blog.oibdf16.cn/POST/099409398.Shtml +
+www.blog.oibdf16.cn/POST/170364219.Shtml +
+www.blog.oibdf16.cn/POST/716513795.Shtml +
+www.blog.oibdf16.cn/POST/247962891.Shtml +
+www.blog.oibdf16.cn/POST/525836530.Shtml +
+www.blog.oibdf16.cn/POST/568603024.Shtml +
+www.blog.oibdf16.cn/POST/163136968.Shtml +
+www.blog.oibdf16.cn/POST/167099158.Shtml +
+www.blog.oibdf16.cn/POST/880660762.Shtml +
+www.blog.oibdf16.cn/POST/562296307.Shtml +
+www.blog.oibdf16.cn/POST/113629688.Shtml +
+www.blog.oibdf16.cn/POST/378415740.Shtml +
+www.blog.oibdf16.cn/POST/739952851.Shtml +
+www.blog.oibdf16.cn/POST/689533449.Shtml +
+www.blog.oibdf16.cn/POST/051879506.Shtml +
+www.blog.oibdf16.cn/POST/835252069.Shtml +
+www.blog.oibdf16.cn/POST/201682300.Shtml +
+www.blog.oibdf16.cn/POST/998074185.Shtml +
+www.blog.oibdf16.cn/POST/366893559.Shtml +
+www.blog.oibdf16.cn/POST/475073017.Shtml +
+www.blog.oibdf16.cn/POST/235624832.Shtml +
+www.blog.oibdf16.cn/POST/906252139.Shtml +
+www.blog.oibdf16.cn/POST/756677387.Shtml +
+www.blog.oibdf16.cn/POST/100566838.Shtml +
+www.blog.oibdf16.cn/POST/002413153.Shtml +
+www.blog.oibdf16.cn/POST/207778350.Shtml +
+www.blog.oibdf16.cn/POST/173027068.Shtml +
+www.blog.oibdf16.cn/POST/336927644.Shtml +
+www.blog.oibdf16.cn/POST/826629530.Shtml +
+www.blog.oibdf16.cn/POST/608827261.Shtml +
+www.blog.oibdf16.cn/POST/384855790.Shtml +
+www.blog.oibdf16.cn/POST/778521029.Shtml +
+www.blog.oibdf16.cn/POST/379127796.Shtml +
+www.blog.oibdf16.cn/POST/790291802.Shtml +
+www.blog.oibdf16.cn/POST/452018997.Shtml +
+www.blog.oibdf16.cn/POST/835139522.Shtml +
+www.blog.oibdf16.cn/POST/445437913.Shtml +
+www.blog.oibdf16.cn/POST/789139341.Shtml +
+www.blog.oibdf16.cn/POST/990561307.Shtml +
+www.blog.oibdf16.cn/POST/542452878.Shtml +
+www.blog.oibdf16.cn/POST/101606117.Shtml +
+www.blog.oibdf16.cn/POST/385746123.Shtml +
+www.blog.oibdf16.cn/POST/556372796.Shtml +
+www.blog.oibdf16.cn/POST/088317902.Shtml +
+www.blog.oibdf16.cn/POST/168075778.Shtml +
+www.blog.oibdf16.cn/POST/006377904.Shtml +
+www.blog.oibdf16.cn/POST/191629603.Shtml +
+www.blog.oibdf16.cn/POST/979868208.Shtml +
+www.blog.oibdf16.cn/POST/963152654.Shtml +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日14时56分27秒
