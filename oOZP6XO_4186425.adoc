@@ -1,0 +1,445 @@
+# Mobile Article Aggregator Platform (MAP) + +
+
+---
+
+Mobile Article Aggregator Platform 是一个面向移动端内容聚合与分发场景的开源技术资源导航站。该项目定位于为开发者、技术研究人员以及内容运营团队提供结构化的移动端文章链接索引与快速检索能力，解决移动端技术文章分散、检索效率低下、域名迁移频繁导致链接失效等实际问题。
+
+项目本身不存储任何文章内容，仅作为外链元数据的索引层与展示层，通过静态化的资源列表与分类标签体系，帮助用户在海量移动端技术文档中快速定位目标资源。目标用户包括移动端开发工程师、全栈技术学习者、技术博客维护者以及企业内部知识库管理人员。
+
+# 功能概览
+
+*海量链接索引管理*：支持对超过 250 条移动端技术文章链接进行集中存储与分类展示，覆盖多种技术子领域。
+
+*静态化资源列表呈现*：所有链接以纯 Markdown 形式维护于项目仓库中，无需数据库依赖，便于版本控制与协作编辑。
+
+*分类标签体系*：根据文章主题、技术栈或访问热度对链接进行逻辑分组，降低用户筛选成本。</p>
+
+*快速检索入口*：提供基于文章 ID 或路径关键字的本地搜索功能，提升链接定位速度。</p>
+
+*链接状态检测工具*：集成可选的定时检测脚本，自动标记可能失效或响应异常的链接，保障资源列表的有效性。</p>
+
+*移动端适配展示*：前端模板针对手机和平板设备进行优化，确保在移动浏览器上获得良好的阅读与导航体验。</p>
+
+*开源协作扩展机制*：支持社区用户通过提交 Issue 或 Pull Request 的方式新增、更新或删除链接条目，保持资源列表的时效性。</p>
+
+*轻量化部署能力*：项目整体基于静态文件生成，可托管于任何支持 HTTP 服务的平台，包括 GitHub Pages、Cloudflare Pages 或自建 Nginx 服务器。</p>
+
+# 应用场景
+
+技术团队内部知识库建设：企业内部的技术团队可将本项目作为基础框架，整理团队内部积累的移动端技术文章链接，形成统一的知识索引入口，减少重复的文档查找工作。
+
+个人技术博客的友情链接扩展：独立技术博客作者可利用本项目的资源列表作为博客侧边栏的补充，为读者提供更多外部阅读资源，同时降低博客维护外链的复杂度。
+
+技术社区的内容聚合展示：技术社区运营方可基于本项目快速搭建文章推荐专区，将社区内的高质量技术帖按分类进行外链汇总，提升社区内容的曝光率与复用率。
+
+技术培训课程的参考资料索引：培训机构或技术讲师可将本项目作为课程参考资料库，将课程中涉及的外部延伸阅读链接统一整理到项目列表中，方便学员课后查阅。
+
+开源项目文档的关联资源导航：开源项目维护者可在项目文档中引用本项目的资源列表，为使用者提供相关的技术背景阅读材料，丰富项目的辅助信息生态。
+
+# 快速开始
+
+以下步骤将帮助您在本地环境快速部署并运行本项目的静态站点。
+
+# 1. 克隆项目仓库到本地
+git clone https://github.com/example/mobile-article-aggregator.git
+cd mobile-article-aggregator
+
+# 2. 安装项目依赖（基于 Node.js 环境）
+npm install
+
+# 3. 运行本地开发服务器，默认监听端口 3000
+npm run dev
+
+执行上述命令后，在浏览器中访问 `http://localhost:3000` 即可查看资源列表页面。如需构建生产环境静态文件，请执行 `npm run build`，生成的静态资源位于 `dist` 目录下。
+
+# 安装要求
+
+| 依赖项 | 必需版本 | 说明 |
+|--------|----------|------|
+| Node.js | 18.0 及以上 | 项目构建工具与开发服务器运行环境 |
+| npm | 8.0 及以上 | Node.js 包管理器，用于安装项目依赖 |
+| Git | 2.30 及以上 | 用于克隆仓库与版本管理 |
+| 现代浏览器 | Chrome 90+ / Firefox 88+ | 前端页面访问与调试支持 |
+| HTTP 服务器 | 任意静态文件服务 | 生产环境托管构建后的静态文件，如 Nginx、Caddy 或 Apache |
+| 可选：Shell 环境 | Bash 4.0+ | 运行链接状态检测脚本（位于 scripts/ 目录） |
+
+# 文档导航
+
+| 层面 | 目录 | 回答的问题 |
+|------|------|------------|
+| 用户入门 | docs/getting-started.md | 如何使用本项目的资源列表？如何通过分类标签快速找到所需文章？ |
+| 维护者指南 | docs/maintenance.md | 如何新增、修改或删除链接条目？链接格式校验规则是什么？ |
+| 开发贡献 | docs/contributing.md | 如何搭建开发环境？代码风格规范与提交信息格式要求有哪些？ |
+| 部署运维 | docs/deployment.md | 如何将站点部署到生产服务器？如何配置自定义域名与 HTTPS？ |
+
+# 资源列表
+
+*移动端技术文章链接汇总*
+
+以下列表收录了本批次（第 8/24 批，共300 个资源链接）的全部移动端文章外链。所有链接均按照用户提供的原始格式原样呈现，未做任何协议、域名或路径的改动。
+
+pdf.izihux.asia/blog/537117159.sHTML +
+pdf.izihux.asia/blog/074365475.sHTML +
+pdf.izihux.asia/blog/292586426.sHTML +
+pdf.izihux.asia/blog/792531908.sHTML +
+pdf.izihux.asia/blog/743258691.sHTML +
+pdf.izihux.asia/blog/520085920.sHTML +
+pdf.izihux.asia/blog/204877152.sHTML +
+pdf.izihux.asia/blog/292197058.sHTML +
+pdf.izihux.asia/blog/803603533.sHTML +
+pdf.izihux.asia/blog/414658637.sHTML +
+pdf.izihux.asia/blog/181970854.sHTML +
+pdf.izihux.asia/blog/969475316.sHTML +
+pdf.izihux.asia/blog/551345150.sHTML +
+pdf.izihux.asia/blog/570819674.sHTML +
+pdf.izihux.asia/blog/414208193.sHTML +
+pdf.izihux.asia/blog/681470258.sHTML +
+pdf.izihux.asia/blog/810095112.sHTML +
+pdf.izihux.asia/blog/155748371.sHTML +
+pdf.izihux.asia/blog/362216094.sHTML +
+pdf.izihux.asia/blog/115162711.sHTML +
+pdf.izihux.asia/blog/292581097.sHTML +
+pdf.izihux.asia/blog/217353064.sHTML +
+pdf.izihux.asia/blog/985557179.sHTML +
+pdf.izihux.asia/blog/228404166.sHTML +
+pdf.izihux.asia/blog/572137267.sHTML +
+pdf.izihux.asia/blog/107542536.sHTML +
+pdf.izihux.asia/blog/414258588.sHTML +
+pdf.izihux.asia/blog/254696247.sHTML +
+pdf.izihux.asia/blog/377633955.sHTML +
+pdf.izihux.asia/blog/484889560.sHTML +
+pdf.izihux.asia/blog/181475319.sHTML +
+pdf.izihux.asia/blog/187596192.sHTML +
+pdf.izihux.asia/blog/051676419.sHTML +
+pdf.izihux.asia/blog/144932119.sHTML +
+pdf.izihux.asia/blog/900313567.sHTML +
+pdf.izihux.asia/blog/489199469.sHTML +
+pdf.izihux.asia/blog/748716470.sHTML +
+pdf.izihux.asia/blog/380212070.sHTML +
+pdf.izihux.asia/blog/746414220.sHTML +
+pdf.izihux.asia/blog/070864715.sHTML +
+pdf.izihux.asia/blog/331964207.sHTML +
+pdf.izihux.asia/blog/180820136.sHTML +
+pdf.izihux.asia/blog/853194243.sHTML +
+pdf.izihux.asia/blog/840613242.sHTML +
+pdf.izihux.asia/blog/776412099.sHTML +
+pdf.izihux.asia/blog/636977319.sHTML +
+pdf.izihux.asia/blog/724561291.sHTML +
+pdf.izihux.asia/blog/858725315.sHTML +
+pdf.izihux.asia/blog/769703637.sHTML +
+pdf.izihux.asia/blog/491806380.sHTML +
+pdf.izihux.asia/blog/893192692.sHTML +
+pdf.izihux.asia/blog/747708647.sHTML +
+pdf.izihux.asia/blog/955824254.sHTML +
+pdf.izihux.asia/blog/025870377.sHTML +
+pdf.izihux.asia/blog/419208697.sHTML +
+pdf.izihux.asia/blog/181033147.sHTML +
+pdf.izihux.asia/blog/609577161.sHTML +
+pdf.izihux.asia/blog/414477520.sHTML +
+pdf.izihux.asia/blog/363833901.sHTML +
+pdf.izihux.asia/blog/980371942.sHTML +
+pdf.izihux.asia/blog/514319982.sHTML +
+pdf.izihux.asia/blog/525397536.sHTML +
+pdf.izihux.asia/blog/747536472.sHTML +
+pdf.izihux.asia/blog/809864359.sHTML +
+pdf.izihux.asia/blog/338913830.sHTML +
+pdf.izihux.asia/blog/571970815.sHTML +
+pdf.izihux.asia/blog/294425360.sHTML +
+pdf.izihux.asia/blog/033807602.sHTML +
+pdf.izihux.asia/blog/958142108.sHTML +
+pdf.izihux.asia/blog/791420815.sHTML +
+pdf.izihux.asia/blog/303647039.sHTML +
+pdf.izihux.asia/blog/070835472.sHTML +
+pdf.izihux.asia/blog/180930531.sHTML +
+pdf.izihux.asia/blog/303197597.sHTML +
+pdf.izihux.asia/blog/070826486.sHTML +
+pdf.izihux.asia/blog/379516274.sHTML +
+pdf.izihux.asia/blog/214270859.sHTML +
+pdf.izihux.asia/blog/414208108.sHTML +
+pdf.izihux.asia/blog/521086426.sHTML +
+pdf.izihux.asia/blog/182081581.sHTML +
+pdf.izihux.asia/blog/681920369.sHTML +
+pdf.izihux.asia/blog/292508603.sHTML +
+pdf.izihux.asia/blog/781020314.sHTML +
+pdf.izihux.asia/blog/474888877.sHTML +
+pdf.izihux.asia/blog/211002384.sHTML +
+pdf.izihux.asia/blog/070366475.sHTML +
+pdf.izihux.asia/blog/792092514.sHTML +
+pdf.izihux.asia/blog/181425364.sHTML +
+pdf.izihux.asia/blog/968657142.sHTML +
+pdf.izihux.asia/blog/986592181.sHTML +
+pdf.izihux.asia/blog/031998614.sHTML +
+pdf.izihux.asia/blog/158214471.sHTML +
+pdf.izihux.asia/blog/147608360.sHTML +
+pdf.izihux.asia/blog/975927048.sHTML +
+pdf.izihux.asia/blog/302103216.sHTML +
+pdf.izihux.asia/blog/975426487.sHTML +
+pdf.izihux.asia/blog/748108765.sHTML +
+pdf.izihux.asia/blog/427654360.sHTML +
+pdf.izihux.asia/blog/865326539.sHTML +
+pdf.izihux.asia/blog/865372143.sHTML +
+pdf.izihux.asia/blog/682208175.sHTML +
+pdf.izihux.asia/blog/919833159.sHTML +
+pdf.izihux.asia/blog/086592203.sHTML +
+pdf.izihux.asia/blog/075875486.sHTML +
+pdf.izihux.asia/blog/133376932.sHTML +
+pdf.izihux.asia/blog/310370314.sHTML +
+pdf.izihux.asia/blog/643103259.sHTML +
+pdf.izihux.asia/blog/460326704.sHTML +
+pdf.izihux.asia/blog/914375928.sHTML +
+pdf.izihux.asia/blog/637597603.sHTML +
+pdf.izihux.asia/blog/392108605.sHTML +
+pdf.izihux.asia/blog/964325587.sHTML +
+pdf.izihux.asia/blog/945074075.sHTML +
+pdf.izihux.asia/blog/464947693.sHTML +
+pdf.izihux.asia/blog/070981023.sHTML +
+pdf.izihux.asia/blog/969098153.sHTML +
+pdf.izihux.asia/blog/253100642.sHTML +
+pdf.izihux.asia/blog/642598259.sHTML +
+pdf.izihux.asia/blog/631447693.sHTML +
+pdf.izihux.asia/blog/354371693.sHTML +
+pdf.izihux.asia/blog/076772582.sHTML +
+pdf.izihux.asia/blog/460375365.sHTML +
+pdf.izihux.asia/blog/309210388.sHTML +
+pdf.izihux.asia/blog/572648703.sHTML +
+pdf.izihux.asia/blog/525325525.sHTML +
+pdf.izihux.asia/blog/413215987.sHTML +
+pdf.izihux.asia/blog/208754337.sHTML +
+pdf.izihux.asia/blog/649337276.sHTML +
+pdf.izihux.asia/blog/520108754.sHTML +
+pdf.izihux.asia/blog/308769215.sHTML +
+pdf.izihux.asia/blog/086437508.sHTML +
+pdf.izihux.asia/blog/975422109.sHTML +
+pdf.izihux.asia/blog/636559714.sHTML +
+pdf.izihux.asia/blog/983869265.sHTML +
+pdf.izihux.asia/blog/919310476.sHTML +
+pdf.izihux.asia/blog/297158204.sHTML +
+pdf.izihux.asia/blog/147593214.sHTML +
+pdf.izihux.asia/blog/625703216.sHTML +
+pdf.izihux.asia/blog/415332032.sHTML +
+pdf.izihux.asia/blog/258664365.sHTML +
+pdf.izihux.asia/blog/065373154.sHTML +
+pdf.izihux.asia/blog/389843179.sHTML +
+pdf.izihux.asia/blog/298705970.sHTML +
+pdf.izihux.asia/blog/186765471.sHTML +
+pdf.izihux.asia/blog/864765420.sHTML +
+pdf.izihux.asia/blog/319832548.sHTML +
+pdf.izihux.asia/blog/572986689.sHTML +
+pdf.izihux.asia/blog/666285917.sHTML +
+pdf.izihux.asia/blog/094506066.sHTML +
+pdf.izihux.asia/blog/388690387.sHTML +
+pdf.izihux.asia/blog/864365821.sHTML +
+pdf.izihux.asia/blog/044888722.sHTML +
+pdf.izihux.asia/blog/325664175.sHTML +
+pdf.izihux.asia/blog/947467888.sHTML +
+pdf.izihux.asia/blog/446053068.sHTML +
+pdf.izihux.asia/blog/644556780.sHTML +
+pdf.izihux.asia/blog/554500054.sHTML +
+pdf.izihux.asia/blog/548200326.sHTML +
+pdf.izihux.asia/blog/854310949.sHTML +
+pdf.izihux.asia/blog/753276032.sHTML +
+pdf.izihux.asia/blog/636581975.sHTML +
+pdf.izihux.asia/blog/070864203.sHTML +
+pdf.izihux.asia/blog/555544966.sHTML +
+pdf.izihux.asia/blog/570865364.sHTML +
+pdf.izihux.asia/blog/458643169.sHTML +
+pdf.izihux.asia/blog/837846463.sHTML +
+pdf.izihux.asia/blog/327728778.sHTML +
+pdf.izihux.asia/blog/756507229.sHTML +
+pdf.izihux.asia/blog/075319759.sHTML +
+pdf.izihux.asia/blog/964269719.sHTML +
+pdf.izihux.asia/blog/925814203.sHTML +
+pdf.izihux.asia/blog/418647186.sHTML +
+pdf.izihux.asia/blog/913503758.sHTML +
+pdf.izihux.asia/blog/853470321.sHTML +
+pdf.izihux.asia/blog/964487047.sHTML +
+pdf.izihux.asia/blog/742103259.sHTML +
+pdf.izihux.asia/blog/253210599.sHTML +
+pdf.izihux.asia/blog/308203254.sHTML +
+pdf.izihux.asia/blog/809769325.sHTML +
+pdf.izihux.asia/blog/925875431.sHTML +
+pdf.izihux.asia/blog/460865421.sHTML +
+pdf.izihux.asia/blog/353625448.sHTML +
+pdf.izihux.asia/blog/300497093.sHTML +
+pdf.izihux.asia/blog/706634252.sHTML +
+pdf.izihux.asia/blog/044432230.sHTML +
+pdf.izihux.asia/blog/618343975.sHTML +
+pdf.izihux.asia/blog/208762053.sHTML +
+pdf.izihux.asia/blog/745325482.sHTML +
+pdf.izihux.asia/blog/297653255.sHTML +
+pdf.izihux.asia/blog/915826587.sHTML +
+pdf.izihux.asia/blog/864310728.sHTML +
+pdf.izihux.asia/blog/704210331.sHTML +
+pdf.izihux.asia/blog/208211975.sHTML +
+pdf.izihux.asia/blog/797048625.sHTML +
+pdf.izihux.asia/blog/136169817.sHTML +
+pdf.izihux.asia/blog/964826442.sHTML +
+pdf.izihux.asia/blog/329482459.sHTML +
+pdf.izihux.asia/blog/687097921.sHTML +
+pdf.izihux.asia/blog/793269820.sHTML +
+pdf.izihux.asia/blog/262535308.sHTML +
+pdf.izihux.asia/blog/964870927.sHTML +
+pdf.izihux.asia/blog/631582587.sHTML +
+pdf.izihux.asia/blog/242114108.sHTML +
+pdf.izihux.asia/blog/681033771.sHTML +
+pdf.izihux.asia/blog/464315481.sHTML +
+pdf.izihux.asia/blog/854423698.sHTML +
+pdf.izihux.asia/blog/076908710.sHTML +
+pdf.izihux.asia/blog/474270866.sHTML +
+pdf.izihux.asia/blog/841036476.sHTML +
+pdf.izihux.asia/blog/781492038.sHTML +
+pdf.izihux.asia/blog/681976864.sHTML +
+pdf.izihux.asia/blog/008757586.sHTML +
+pdf.izihux.asia/blog/626093095.sHTML +
+pdf.izihux.asia/blog/414758664.sHTML +
+pdf.izihux.asia/blog/876078563.sHTML +
+pdf.izihux.asia/blog/419753192.sHTML +
+pdf.izihux.asia/blog/741043587.sHTML +
+pdf.izihux.asia/blog/292425319.sHTML +
+pdf.izihux.asia/blog/964209815.sHTML +
+pdf.izihux.asia/blog/180970364.sHTML +
+pdf.izihux.asia/blog/858640661.sHTML +
+pdf.izihux.asia/blog/376501662.sHTML +
+pdf.izihux.asia/blog/659831605.sHTML +
+pdf.izihux.asia/blog/657844521.sHTML +
+pdf.izihux.asia/blog/297532142.sHTML +
+pdf.izihux.asia/blog/291425697.sHTML +
+pdf.izihux.asia/blog/187546198.sHTML +
+pdf.izihux.asia/blog/096031087.sHTML +
+pdf.izihux.asia/blog/147087592.sHTML +
+pdf.izihux.asia/blog/525594758.sHTML +
+pdf.izihux.asia/blog/506552417.sHTML +
+pdf.izihux.asia/blog/298769708.sHTML +
+pdf.izihux.asia/blog/288147758.sHTML +
+pdf.izihux.asia/blog/636420819.sHTML +
+pdf.izihux.asia/blog/182091981.sHTML +
+pdf.izihux.asia/blog/964869459.sHTML +
+pdf.izihux.asia/blog/081920219.sHTML +
+pdf.izihux.asia/blog/969703146.sHTML +
+pdf.izihux.asia/blog/824313647.sHTML +
+pdf.izihux.asia/blog/515818794.sHTML +
+pdf.izihux.asia/blog/671970453.sHTML +
+pdf.izihux.asia/blog/858653142.sHTML +
+pdf.izihux.asia/blog/329420819.sHTML +
+pdf.izihux.asia/blog/525819758.sHTML +
+pdf.izihux.asia/blog/297531921.sHTML +
+pdf.izihux.asia/blog/414264699.sHTML +
+pdf.izihux.asia/blog/736648143.sHTML +
+pdf.izihux.asia/blog/741086420.sHTML +
+pdf.izihux.asia/blog/524218750.sHTML +
+pdf.izihux.asia/blog/945054072.sHTML +
+pdf.izihux.asia/blog/186425475.sHTML +
+pdf.izihux.asia/blog/109106458.sHTML +
+pdf.izihux.asia/blog/074219208.sHTML +
+pdf.izihux.asia/blog/981535425.sHTML +
+pdf.izihux.asia/blog/336470476.sHTML +
+pdf.izihux.asia/blog/792042031.sHTML +
+pdf.izihux.asia/blog/303611920.sHTML +
+pdf.izihux.asia/blog/070303087.sHTML +
+pdf.izihux.asia/blog/392087526.sHTML +
+pdf.izihux.asia/blog/308192031.sHTML +
+pdf.izihux.asia/blog/439528302.sHTML +
+pdf.izihux.asia/blog/103203753.sHTML +
+pdf.izihux.asia/blog/965864798.sHTML +
+pdf.izihux.asia/blog/230741391.sHTML +
+pdf.izihux.asia/blog/697258137.sHTML +
+pdf.izihux.asia/blog/418609708.sHTML +
+pdf.izihux.asia/blog/470864264.sHTML +
+pdf.izihux.asia/blog/746431931.sHTML +
+pdf.izihux.asia/blog/741080531.sHTML +
+pdf.izihux.asia/blog/783042059.sHTML +
+pdf.izihux.asia/blog/181193824.sHTML +
+pdf.izihux.asia/blog/971483192.sHTML +
+pdf.izihux.asia/blog/079314222.sHTML +
+pdf.izihux.asia/blog/547003796.sHTML +
+pdf.izihux.asia/blog/958616831.sHTML +
+pdf.izihux.asia/blog/188003810.sHTML +
+pdf.izihux.asia/blog/808697336.sHTML +
+pdf.izihux.asia/blog/969758686.sHTML +
+pdf.izihux.asia/blog/748603147.sHTML +
+pdf.izihux.asia/blog/966470838.sHTML +
+pdf.izihux.asia/blog/520865753.sHTML +
+pdf.izihux.asia/blog/030864759.sHTML +
+pdf.izihux.asia/blog/181475536.sHTML +
+pdf.izihux.asia/blog/521642536.sHTML +
+pdf.izihux.asia/blog/969724319.sHTML +
+pdf.izihux.asia/blog/968142536.sHTML +
+pdf.izihux.asia/blog/074214708.sHTML +
+pdf.izihux.asia/blog/598647528.sHTML +
+pdf.izihux.asia/blog/636420861.sHTML +
+pdf.izihux.asia/blog/273659488.sHTML +
+pdf.izihux.asia/blog/769198031.sHTML +
+pdf.izihux.asia/blog/020387537.sHTML +
+pdf.izihux.asia/blog/418647704.sHTML +
+pdf.izihux.asia/blog/742041991.sHTML +
+pdf.izihux.asia/blog/380666257.sHTML +
+pdf.izihux.asia/blog/259719708.sHTML +
+pdf.izihux.asia/blog/736925314.sHTML +
+pdf.izihux.asia/blog/427956995.sHTML +
+pdf.izihux.asia/blog/414247758.sHTML +
+
+# 项目结构
+
+项目目录采用模块化分层设计，便于维护与扩展。各子目录职责清晰，核心资源列表与前端展示逻辑分离。
+
+
+mobile-article-aggregator/
+├── public/                          # 静态资源目录，无需构建直接复制
+│   ├── favicon.ico                  # 站点图标文件
+│   └── robots.txt                   # 搜索引擎爬虫规则，屏蔽非生产环境路径
+├── src/                             # 源代码主目录
+│   ├── assets/                      # 前端资源文件（图片、字体、全局样式）
+│   │   ├── images/                  # 项目用到的矢量图与位图素材
+│   │   └── styles/                  # 全局基础样式与 CSS 变量定义
+│   ├── components/                  # 可复用的 UI 组件
+│   │   ├── LinkList.vue             # 链接列表核心渲染组件，支持分页与过滤
+│   │   ├── SearchBar.vue            # 关键字搜索输入组件
+│   │   └── CategoryFilter.vue       # 分类标签筛选组件
+│   ├── data/                        # 数据层，存放静态链接资源列表
+│   │   ├── links.json               # 主链接索引文件，包含全部 250 条记录
+│   │   └── categories.json          # 分类映射表，定义标签与链接 ID 的对应关系
+│   ├── layouts/                     # 页面布局模板
+│   │   ├── default.vue              # 默认两栏布局（侧边栏 + 主内容区）
+│   │   └── full-width.vue           # 全宽布局，用于搜索与统计页面
+│   ├── pages/                       # 路由页面入口
+│   │   ├── index.vue                # 首页，展示全部资源列表与分类概览
+│   │   ├── about.vue                # 项目介绍与使用说明页面
+│   │   └── stats.vue                # 链接统计信息页面（总数、分类分布）
+│   ├── utils/                       # 工具函数库
+│   │   ├── validator.js             # 链接格式校验与规范化工具
+│   │   └── filter.js                # 数组过滤与排序辅助函数
+│   └── main.js                      # 应用入口文件，初始化 Vue 实例与插件
+├── scripts/                         # 运维与辅助脚本
+│   ├── check-links.sh               # 批量检测链接可用性的 Bash 脚本
+│   └── generate-sitemap.js          # 生成站点地图 XML 文件的 Node 脚本
+├── tests/                           # 单元测试与集成测试
+│   ├── unit/                        # 组件与函数的单元测试用例
+│   └── e2e/                         # 端到端测试脚本（基于 Playwright）
+├── .gitignore                       # Git 版本忽略规则文件
+├── package.json                     # Node.js 项目依赖与脚本定义
+├── README.md                        # 项目说明文档（本文件）
+├── LICENSE                          # MIT 许可证全文
+└── vite.config.js                   # Vite 构建工具配置文件
+
+
+# 贡献指南
+
+我们欢迎社区开发者以多种形式参与本项目的维护与改进。所有贡献需遵守项目行为准则，并按照以下流程操作。
+
+第一步：查阅现有 Issue 与 Pull Request。在提交新贡献之前，请先浏览 GitHub 上的现有议题，确认无人正在处理相同问题或功能请求，避免重复劳动。
+
+第二步：Fork 项目并创建功能分支。将本仓库 Fork 至个人账号下，然后基于 `main` 分支创建一个新的分支，分支命名建议采用 `feature/功能描述` 或 `fix/问题简述` 的格式。
+
+第三步：完成代码或文档修改。请遵循项目既定的代码风格（ESLint 配置）与提交信息规范（使用 Conventional Commits 格式）。若涉及链接列表的增删，请同步更新 `src/data/links.json` 中的对应条目。
+
+第四步：编写或更新测试用例。对于新增的功能或修复的缺陷，请在 `tests/` 目录下补充相应的单元测试或端到端测试，确保代码覆盖率不下降。
+
+第五步：提交 Pull Request。推送本地分支到远程仓库后，向本项目的 `main` 分支发起 Pull Request，并在描述中清晰说明修改内容、动机以及相关 Issue 编号。项目维护者会在三个工作日内进行审阅。
+
+# 常见问题
+
+问：如何快速判断某条链接是否仍然有效？
+
+答：项目根目录下的 `scripts/check
+
+> 外链数量: 350 | 生成时间:2026年09月29日19时48分00秒
